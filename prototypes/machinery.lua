@@ -1,0 +1,1175 @@
+function compressor_pipepictures()
+return {
+	north = {
+	  filename = "__RExtended__/graphics/entity/machinery/compressor-pipe-n.png",
+	  priority = "extra-high",
+	  width = 256,
+	  height = 256,
+	  shift = {0.28125, 1.875},
+	  scale = 0.5
+	},
+	south = {
+	  filename = "__RExtended__/graphics/entity/machinery/compressor-pipe-s.png",
+	  priority = "extra-high",
+	  width = 256,
+	  height = 256,
+	  shift = {0.28125, -2},
+	  scale = 0.5
+	},
+	east = {
+	  filename = "__RExtended__/graphics/entity/machinery/compressor-pipe-e.png",
+	  priority = "extra-high",
+	  width = 256,
+	  height = 256,
+	  shift = {-1.71875, 0},
+	  scale = 0.5
+	},
+	west = {
+	  filename = "__RExtended__/graphics/entity/machinery/compressor-pipe-w.png",
+	  priority = "extra-high",
+	  width = 256,
+	  height = 256,
+	  shift = {2.28125, 0},
+	  scale = 0.5
+	}
+}
+end
+function washerpipepictures()
+return {
+	north = {
+	  filename = "__RExtended__/graphics/entity/machinery/washer-pipe-n.png",
+	  priority = "extra-high",
+	  width = 256,
+	  height = 256,
+	  shift = {0.28125, 2},
+	  scale = 0.5
+	},
+	east = {
+	  filename = "__RExtended__/graphics/entity/machinery/washer-pipe-e.png",
+	  priority = "extra-high",
+	  width = 256,
+	  height = 256,
+	  shift = {-1.71875, 0},
+	  scale = 0.5
+	},
+	south = {
+	  filename = "__RExtended__/graphics/entity/machinery/washer-pipe-s.png",
+	  priority = "extra-high",
+	  width = 256,
+	  height = 256,
+	  shift = {0.28125, -2},
+	  scale = 0.5
+	},
+	west = {
+	  filename = "__RExtended__/graphics/entity/machinery/washer-pipe-w.png",
+	  priority = "extra-high",
+	  width = 256,
+	  height = 256,
+	  shift = {2.28125, 0},
+	  scale = 0.5
+	}
+}
+end
+function castpipepictures()
+return{
+    north = {
+		filename = "__RExtended__/graphics/entity/machinery/cast-chamber-pipe-n.png",
+		priority = "extra-high",
+		width = 256,
+		height = 256,
+		shift = {0.28125, 2},
+		scale = 0.5
+    },
+    east = {
+		filename = "__RExtended__/graphics/entity/machinery/cast-chamber-pipe-e.png",
+		priority = "extra-high",
+		width = 256,
+		height = 256,
+		shift = {-1.71875, 0},
+		scale = 0.5
+    },
+    south = {
+		filename = "__RExtended__/graphics/entity/machinery/cast-chamber-pipe-s.png",
+		priority = "extra-high",
+		width = 256,
+		height = 256,
+		shift = {0.28125, -2},
+		scale = 0.5
+    },
+    west = {
+		filename = "__RExtended__/graphics/entity/machinery/cast-chamber-pipe-w.png",
+		priority = "extra-high",
+		width = 256,
+		height = 256,
+		shift = {2.28125, 0},
+		scale = 0.5
+    }
+}
+end
+function forgepipepictures()
+return {
+    north = {
+		filename = "__RExtended__/graphics/entity/machinery/heat-forge-n.png",
+		priority = "extra-high",
+		width = 256,
+		height = 256,
+		shift = {0.28125, 1.875},
+		scale = 0.5
+    },
+	south = {
+		filename = "__RExtended__/graphics/entity/machinery/heat-forge-s.png",
+		priority = "extra-high",
+		width = 256,
+		height = 256,
+		shift = {0.28125, -2},
+		scale = 0.5
+    },
+    east = {
+		filename = "__RExtended__/graphics/entity/machinery/heat-forge-e.png",
+		priority = "extra-high",
+		width = 256,
+		height = 256,
+		shift = {-1.71875, 0},
+		scale = 0.5
+    },
+    west = {
+		filename = "__RExtended__/graphics/entity/machinery/heat-forge-w.png",
+		priority = "extra-high",
+		width = 256,
+		height = 256,
+		shift = {2.28125, 0},
+		scale = 0.5
+    }
+}
+end
+function chemicalpipepictures()
+return {
+    north = {
+      filename = "__RExtended__/graphics/entity/machinery/chemical-pipe-n.png",
+      priority = "extra-high",
+      width = 256,
+      height = 256,
+      shift = {0.28125, 2},
+	  scale = 0.5
+    },
+    east = {
+      filename = "__RExtended__/graphics/entity/machinery/chemical-pipe-e.png",
+      priority = "extra-high",
+      width = 256,
+      height = 256,
+      shift = {-1.71875, 0},
+	  scale = 0.5
+    },
+    south = {
+      filename = "__RExtended__/graphics/entity/machinery/chemical-pipe-s.png",
+      priority = "extra-high",
+      width = 256,
+      height = 256,
+      shift = {0.28125, -2},
+	  scale = 0.5
+    },
+    west = {
+      filename = "__RExtended__/graphics/entity/machinery/chemical-pipe-w.png",
+      priority = "extra-high",
+      width = 256,
+      height = 256,
+      shift = {2.28125, 0},
+	  scale = 0.5
+    }
+}
+end
+function npipecovers()
+return {
+    north = {
+		filename = "__RExtended__/graphics/entity/machinery/pipe-cover-north.png",
+		priority = "extra-high",
+		width = 128,
+		height = 128,
+		scale = 0.5,
+    },
+    east = {
+		filename = "__RExtended__/graphics/entity/machinery/clear.png",
+		priority = "extra-high",
+		width = 32,
+		height = 32,
+    },
+    south = {
+		filename = "__RExtended__/graphics/entity/machinery/pipe-cover-south.png",
+		priority = "extra-high",
+		width = 128,
+		height = 128,
+		scale = 0.5,
+    },
+    west = {
+		filename = "__RExtended__/graphics/entity/machinery/clear.png",
+		priority = "extra-high",
+		width = 32,
+		height = 32,
+    }
+}
+end
+
+data:extend({
+--ITEM
+{--Compressor
+	type = "item",
+	name = "compressor-r1",
+	icon = "__RExtended__/graphics/icons/machinery/compressor-r1.png",
+	icon_size = 32,
+	subgroup = "machinery-ore",
+	order = "a-a-a",
+	place_result = "compressor-r1",
+	stack_size = 50
+},
+{--Washer Chamber
+	type = "item",
+	name = "washer-chamber-r1",
+	icon = "__RExtended__/graphics/icons/machinery/washer-chamber-r1.png",
+	icon_size = 32,
+	subgroup = "machinery-ore",
+	order = "a-b-a",
+	place_result = "washer-chamber-r1",
+	stack_size = 50
+},
+{--Water Condenser
+    type = "item",
+    name = "water-condenser-electric-r1",
+    icon = "__RExtended__/graphics/icons/machinery/water-condenser-electric-r1.png",
+	icon_size = 32,
+    subgroup = "machinery-condenser",
+    order = "c-a-a",
+    place_result = "water-condenser-electric-r1",
+    stack_size = 50
+},
+{--Mixer
+	type = "item",
+	name = "mixer-r1",
+	icon = "__RExtended__/graphics/icons/machinery/mixer-r1.png",
+	icon_size = 32,
+	subgroup = "machinery-condenser",
+	order = "c-b-a",
+	place_result = "mixer-r1",
+	stack_size = 50
+},
+{--Formation Furnace
+    type = "item",
+    name = "formation-furnace-r1",
+    icon = "__RExtended__/graphics/icons/machinery/formation-furnace-r1.png",
+	icon_size = 32,
+    subgroup = "machinery-formation",
+    order = "d-a-a",
+    place_result = "formation-furnace-r1",
+    stack_size = 50
+},
+{--Formation Furnace Eletric
+    type = "item",
+    name = "formation-furnace-electric-r1",
+    icon = "__RExtended__/graphics/icons/machinery/electric-formation-furnace-r1.png",
+	icon_size = 32,
+    subgroup = "machinery-formation",
+    order = "d-b-a",
+    place_result = "formation-furnace-electric-r1",
+    stack_size = 50
+},
+{--Cast Chamber
+	type = "item",
+	name = "cast-chamber-r1",
+	icon = "__RExtended__/graphics/icons/machinery/cast-chamber-r1.png",
+	icon_size = 32,
+	subgroup = "machinery-ore",
+	order = "a-d-a",
+	place_result = "cast-chamber-r1",
+	stack_size = 50
+},
+{--Heat Forge
+    type = "item",
+    name = "heat-forge-chamber-r1",
+    icon = "__RExtended__/graphics/icons/machinery/heat-forge-chamber-r1.png",
+	icon_size = 32,
+    subgroup = "machinery-ore",
+    order = "a-c-a",
+    place_result = "heat-forge-chamber-r1",
+    stack_size = 50
+},
+{--Chemical Machine
+    type = "item",
+    name = "chemical-machine-r1",
+    icon = "__RExtended__/graphics/icons/machinery/chemical-machine-r1.png",
+	icon_size = 32,
+    subgroup = "machinery-condenser",
+	order = "c-c-a",
+	place_result = "chemical-machine-r1",
+	stack_size = 50
+},
+{--Enrichement Chamber
+    type = "item",
+    name = "enrichment-chamber-r1",
+    icon = "__RExtended__/graphics/icons/machinery/enrichment-chamber-r1.png",
+	icon_size = 32,
+    subgroup = "machinery-condenser",
+	order = "c-d-a",
+    place_result = "enrichment-chamber-r1",
+    stack_size = 50
+},
+{--Refinery
+    type = "item",
+    name = "refinery-r1",
+    icon = "__RExtended__/graphics/icons/machinery/refinery-r1.png",
+	icon_size = 32,
+    subgroup = "machinery-condenser",
+	order = "c-e-a",
+    place_result = "refinery-r1",
+    stack_size = 50
+},
+{--Beacon
+    type = "item",
+    name = "beacon-r1",
+    icon = "__RExtended__/graphics/icons/machinery/beacon-r1.png",
+	icon_size = 64,
+    subgroup = "machinery-lab",
+    order = "g-c-a",
+    place_result = "beacon-r1",
+    stack_size = 25
+},
+--RECIPE
+{--Compressor-
+	type = "recipe",
+	name = "compressor-r1",
+	energy_required = 2,
+	enabled = false,
+	ingredients = {
+		{"steel-plate", 5},
+		{"reinforced-gear-copper-r1", 3},
+		{"reinforced-copper-plate-r1", 5},
+		{"assembling-machine-2", 1}
+	},
+	result = "compressor-r1"
+},
+{--Washer Chamber-
+	type = "recipe",
+	name = "washer-chamber-r1",
+	energy_required = 4,
+	enabled = false,
+	ingredients = {
+		{"steel-plate", 5},
+		{"reinforced-gear-iron-r1", 3},
+		{"reinforced-coal-plate-r1", 5},
+		{"assembling-machine-2", 1}
+	},
+	result = "washer-chamber-r1"
+},
+{--Water Condenser-
+    type = "recipe",
+    name = "water-condenser-electric-r1",
+	energy_required = 5,
+    enabled = false,
+    ingredients = {
+		{"iron-plate", 10},
+		{"copper-plate", 10},
+		{"reinforced-iron-plate-r1", 10},
+		{"cable-r1", 10}
+    },
+    result = "water-condenser-electric-r1"
+},
+{--Mixer-
+	type = "recipe",
+	name = "mixer-r1",
+	energy_required = 7,
+	enabled = false,
+	ingredients = {
+		{"iron-plate", 10},
+		{"copper-plate", 10},
+		{"iron-stick", 10},
+		{"reinforced-component-r1", 20}
+	},
+	result = "mixer-r1"
+},
+{--Formation Furnace-
+    type = "recipe",
+    name = "formation-furnace-r1",
+	energy_required = 2,
+    enabled = false,
+    ingredients = {
+		{"reinforced-component-r1", 4},
+		{"iron-plate", 4},
+		{"copper-plate", 4}
+    },
+    result = "formation-furnace-r1"
+},
+{--Formation Furnace Eletric-
+    type = "recipe",
+    name = "formation-furnace-electric-r1",
+	energy_required = 6,
+    enabled = false,
+    ingredients = 
+    {
+		{"reinforced-coal-plate-r1", 10},
+		{"reinforced-iron-plate-r1", 10},
+		{"reinforced-copper-plate-r1", 10},
+		{"reinforced-component-r1", 10},
+		{"cable-r1", 10}
+    },
+    result = "formation-furnace-electric-r1"
+},
+{--Cast Chamber-
+    type = "recipe",
+    name = "cast-chamber-r1",
+	energy_required = 7,
+    enabled = false,
+    ingredients = {
+		{"reinforced-copper-plate-r1", 4},
+		{"reinforced-coal-plate-r1", 4},
+		{"pipe", 10},
+		{"electric-component-r1", 5}
+    },
+    result = "cast-chamber-r1"
+},
+{--Heat Forge-
+    type = "recipe",
+    name = "heat-forge-chamber-r1",
+	energy_required = 7,
+    enabled = false,
+    ingredients = {
+		{"reinforced-iron-plate-r1", 4},
+		{"reinforced-coal-plate-r1", 4},
+		{"pipe", 10},
+		{"electric-component-r1", 5}
+    },
+    result = "heat-forge-chamber-r1"
+},
+{--Chemical Machine-
+    type = "recipe",
+    name = "chemical-machine-r1",
+	energy_required = 5,
+    enabled = false,
+    ingredients = {
+		{"steel-plate", 12},
+		{"reinforced-gear-iron-r1", 5},
+		{"reinforced-gear-copper-r1", 3},
+		{"electric-component-r1", 2},
+		{"pipe", 6},
+    },
+    result = "chemical-machine-r1"
+},
+{--Enrichement Chamber
+    type = "recipe",
+    name = "enrichment-chamber-r1",
+	energy_required = 4,
+    enabled = false,
+    ingredients = {
+		{"reinforced-coal-plate-r1", 10},
+		{"reinforced-iron-plate-r1", 10},
+		{"reinforced-copper-plate-r1", 10},
+		{"electric-component-r1", 10},
+		{"cable-r1", 10},
+    },
+    result = "enrichment-chamber-r1"
+},
+{--Refinery-
+    type = "recipe",
+    name = "refinery-r1",
+	energy_required = 5,
+    enabled = false,
+    ingredients = {
+		{"reinforced-iron-plate-r1", 25},
+		{"reinforced-copper-plate-r1", 25},
+		{"reinforced-coal-plate-r1", 25},
+		{"electric-component-r1", 20},
+		{"pipe", 25},
+    },
+    result = "refinery-r1"
+},
+{--Beacon
+	type = "recipe",
+	name = "beacon-r1",
+	energy_required = 4,
+	enabled = false,
+	ingredients = {
+		{"reinforced-gear-iron-r1", 5},
+		{"reinforced-gear-copper-r1", 5},
+		{"reinforced-coal-plate-r1", 5},
+		{"electric-component-r1", 2}
+	},
+	result = "beacon-r1"
+},
+--ENTITY
+{--Compressor
+	type = "assembling-machine",
+	name = "compressor-r1",
+	icon = "__RExtended__/graphics/icons/machinery/compressor-r1.png",
+	icon_size = 32,
+	flags = {"placeable-neutral","placeable-player", "player-creation"},
+	minable = {hardness = 0.2, mining_time = 0.5, result = "compressor-r1"},
+	max_health = 300,
+	corpse = "big-remnants",
+	resistances = {{type = "fire",percent = 70}},
+	fluid_boxes = {
+		{
+			production_type = "input",
+			pipe_picture = compressor_pipepictures(),
+			pipe_covers = npipecovers(),
+			base_area = 10,
+			base_level = -1,
+			pipe_connections = {{ type="input", position = {0, -2} }},
+			secondary_draw_orders = { north = -1 }
+		},
+		{
+			production_type = "output",
+			pipe_picture = compressor_pipepictures(),
+			pipe_covers = npipecovers(),
+			base_area = 10,
+			base_level = 1,
+			pipe_connections = {{ type="output", position = {0, 2} }},
+			secondary_draw_orders = { north = -1 }
+		},
+		off_when_no_fluid_recipe = true
+	},
+	collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
+	selection_box = {{-1.5, -1.5}, {1.5, 1.5}},	
+	crafting_categories = {"red-compressing"},
+	energy_usage = "260kW",
+	ingredient_count = 4,
+	crafting_speed = 1,
+	energy_source = {type = "electric", input_priority = "secondary", usage_priority = "secondary-input", emissions = 0.004, },
+	fast_replaceable_group = "assembling-machine",
+	module_specification = { module_slots = 2 },
+	allowed_effects = {"consumption", "speed", "productivity", "pollution"},
+	working_sound = {
+		sound = {{ filename = "__base__/sound/chemical-plant.ogg", volume = 0.8 },},
+		idle_sound = { filename = "__base__/sound/idle1.ogg", volume = 0.6 },
+		apparent_volume = 1.5,
+	},
+	animation = {
+		south = { filename = "__RExtended__/graphics/entity/machinery/compressor-r1-v.png", width = 256, height = 256, shift = {0.3125, 0.125}, scale = 0.5, frame_count = 16, line_length = 8, animation_speed=1.0, },							
+		west  = { filename = "__RExtended__/graphics/entity/machinery/compressor-r1-h.png", width = 256, height = 256, shift = {0.375, 0}, scale = 0.5, frame_count = 16, line_length = 8, animation_speed=1.0, },					
+		north = { filename = "__RExtended__/graphics/entity/machinery/compressor-r1-v.png", width = 256, height = 256, shift = {0.3125, 0.125}, scale = 0.5, frame_count = 16, line_length = 8, animation_speed=1.0, },							
+		east  = { filename = "__RExtended__/graphics/entity/machinery/compressor-r1-h.png", width = 256, height = 256, shift = {0.375, 0}, scale = 0.5, frame_count = 16, line_length = 8, animation_speed=1.0, },							
+	},
+},
+{--Washer Chamber
+    type = "assembling-machine",
+	name = "washer-chamber-r1",
+	icon = "__RExtended__/graphics/icons/machinery/washer-chamber-r1.png",
+	icon_size = 32,
+	flags = {"placeable-neutral","placeable-player", "player-creation"},
+	minable = {hardness = 0.2, mining_time = 0.5, result = "washer-chamber-r1"},
+	max_health = 300,
+	corpse = "big-remnants",
+	resistances = {{type = "fire",percent = 70}},
+	fluid_boxes = {
+		{
+			production_type = "input",
+			pipe_picture = washerpipepictures(),
+			pipe_covers = npipecovers(),
+			base_area = 10,
+			base_level = -1,
+			pipe_connections = {{ type="input", position = {0, -2} }},
+		},
+		off_when_no_fluid_recipe = true
+	},
+	collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
+	selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
+	crafting_categories = {"red-washer-chamber"},
+	energy_usage = "210kW",
+	ingredient_count = 4,
+	crafting_speed = 1,
+	energy_source = {type = "electric", input_priority = "secondary", usage_priority = "secondary-input", emissions = 0.021, },
+	fast_replaceable_group = "assembling-machine",
+	open_sound = { filename = "__base__/sound/machine-open.ogg", volume = 0.85 },
+	close_sound = { filename = "__base__/sound/machine-close.ogg", volume = 0.75 },
+	module_specification = { module_slots = 2 },
+	allowed_effects = {"consumption", "speed", "productivity", "pollution"},
+	working_sound = {
+		sound = {{ filename = "__base__/sound/chemical-plant.ogg", volume = 0.8 },},
+		idle_sound = { filename = "__base__/sound/idle1.ogg", volume = 0.6 },
+		apparent_volume = 1.5,
+	},
+	animation = {
+		south = { filename = "__RExtended__/graphics/entity/machinery/washer-chamber-r1.png", width = 256, height = 256, shift = {0.28125, -0}, scale = 0.5, frame_count = 16, line_length = 8, animation_speed=1.0, }	,							
+		west  = { filename = "__RExtended__/graphics/entity/machinery/washer-chamber-r1.png", width = 256, height = 256, shift = {0.28125, -0}, scale = 0.5, frame_count = 16, line_length = 8, animation_speed=1.0, }	,				
+		north = { filename = "__RExtended__/graphics/entity/machinery/washer-chamber-r1.png", width = 256, height = 256, shift = {0.28125, -0}, scale = 0.5, frame_count = 16, line_length = 8, animation_speed=1.0, }	,							
+		east  = { filename = "__RExtended__/graphics/entity/machinery/washer-chamber-r1.png", width = 256, height = 256, shift = {0.28125, -0}, scale = 0.5, frame_count = 16, line_length = 8, animation_speed=1.0, }	,						
+	},
+},
+{--Water Condenser
+    type = "assembling-machine",
+	name = "water-condenser-electric-r1",
+	icon = "__RExtended__/graphics/icons/machinery/water-condenser-electric-r1.png",
+	icon_size = 32,
+	flags = {"placeable-neutral","placeable-player", "player-creation"},
+	minable = {hardness = 0.2, mining_time = 0.5, result = "water-condenser-electric-r1"},
+	max_health = 240,
+	corpse = "big-remnants",
+	resistances = {{type = "fire",percent = 80}},
+	fluid_boxes = {
+		{
+			production_type = "output",
+			pipe_picture = washerpipepictures(),
+			pipe_covers = npipecovers(),
+			base_area = 50,
+			base_level = 1,
+			pipe_connections = { {type="output", position = {0, 2}}, {type="output", position = { 0, -2}},{type="output", position = {2, 0}}, {type="output", position = {-2,  0}},},
+			secondary_draw_orders = { north = -1 },
+		},
+		off_when_no_fluid_recipe = true
+	},
+	collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
+	selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
+	crafting_categories = {"red-water-condenser"},
+	energy_usage = "350kW",
+	ingredient_count = 4,
+	crafting_speed = 1,
+	energy_source = {type = "electric", input_priority = "secondary", usage_priority = "secondary-input", emissions = 0.008, },
+	fast_replaceable_group = "assembling-machine",
+	open_sound = { filename = "__base__/sound/machine-open.ogg", volume = 0.85 },
+	close_sound = { filename = "__base__/sound/machine-close.ogg", volume = 0.75 },
+	module_specification = { module_slots = 3 },
+	allowed_effects = {"consumption", "speed", "productivity", "pollution"},
+	working_sound = {
+		sound = {{ filename = "__base__/sound/chemical-plant.ogg", },},
+		idle_sound = { filename = "__base__/sound/idle1.ogg", volume = 0.6 },
+		apparent_volume = 1.5,
+	},
+	animation = { 
+		filename = "__RExtended__/graphics/entity/machinery/water-condenser-electric-r1.png", width = 256, height = 304, shift = {0.375, -0.71875}, frame_count = 24, line_length = 8, scale = 0.5, animation_speed=0.4,
+	},
+},
+{--Mixer
+    type = "assembling-machine",
+	name = "mixer-r1",
+	icon = "__RExtended__/graphics/icons/machinery/mixer-r1.png",
+	icon_size = 32,
+	flags = {"placeable-neutral","placeable-player", "player-creation"},
+	minable = {hardness = 0.2, mining_time = 0.5, result = "mixer-r1"},
+	max_health = 300,
+	corpse = "big-remnants",
+	resistances = {{type = "fire",percent = 70}},
+	fluid_boxes = {
+		{
+			production_type = "input",
+			pipe_picture = compressor_pipepictures(),
+			pipe_covers = npipecovers(),
+			base_area = 10,
+			base_level = -1,
+			pipe_connections = {{ type="input", position = {0, -2} }},
+			secondary_draw_orders = { north = -1 }
+		},
+		off_when_no_fluid_recipe = true
+	},
+	collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
+	selection_box = {{-1.5, -1.5}, {1.5, 1.5}},	
+	crafting_categories = {"red-mixing"},
+	energy_usage = "200kW",
+	ingredient_count = 4,
+	crafting_speed = 1,
+	energy_source = {type = "electric", input_priority = "secondary", usage_priority = "secondary-input", emissions = 0.005, },
+	fast_replaceable_group = "assembling-machine",
+	module_specification = {module_slots = 2},
+	allowed_effects = {"consumption", "speed", "productivity", "pollution"},
+	working_sound = {
+		sound = {{filename = "__base__/sound/chemical-plant.ogg",volume = 0.8},},
+		idle_sound = { filename = "__base__/sound/idle1.ogg", volume = 0.6 },
+		apparent_volume = 1.5,
+	},
+	animation = {
+		south = { filename = "__RExtended__/graphics/entity/machinery/mixer-r1-v.png", width = 256, height = 256, shift = {0.3125, 0.125}, scale = 0.5, frame_count = 14, line_length = 7, animation_speed=1.0, },							
+		west  = { filename = "__RExtended__/graphics/entity/machinery/mixer-r1-h.png", width = 256, height = 256, shift = {0.3125, 0}, scale = 0.5, frame_count = 14, line_length = 7, animation_speed=1.0, },					
+		north = { filename = "__RExtended__/graphics/entity/machinery/mixer-r1-v.png", width = 256, height = 256, shift = {0.3125, 0.125}, scale = 0.5, frame_count = 14, line_length = 7, animation_speed=1.0, },							
+		east  = { filename = "__RExtended__/graphics/entity/machinery/mixer-r1-h.png", width = 256, height = 256, shift = {0.3125, 0}, scale = 0.5, frame_count = 14, line_length = 7, animation_speed=1.0, },							
+	},
+},
+{--Formation Furnace
+    type = "assembling-machine",
+    name = "formation-furnace-r1",
+    icon = "__RExtended__/graphics/icons/machinery/formation-furnace-r1.png",
+	icon_size = 32,
+    flags = {"placeable-neutral", "placeable-player", "player-creation"},
+    minable = {mining_time = 1, result = "formation-furnace-r1"},
+    max_health = 200,
+    corpse = "medium-remnants",
+	open_sound = { filename = "__base__/sound/machine-open.ogg", volume = 0.85 },
+    close_sound = { filename = "__base__/sound/machine-close.ogg", volume = 0.75 },
+    working_sound = { sound = { filename = "__base__/sound/furnace.ogg" } },
+    resistances = {{type = "fire",percent = 100}},
+    collision_box = {{-0.7, -0.7}, {0.7, 0.7}},
+    selection_box = {{-0.8, -1}, {0.8, 1}},
+    crafting_categories = {"red-furnace"},
+    energy_usage = "340kW",
+    ingredient_count = 2,
+    crafting_speed = 1,
+    energy_source = {
+		type = "burner",
+		effectivity = 1,
+		fuel_inventory_size = 1,
+		emissions = 0.007,
+		smoke = { {
+			name = "smoke",
+			deviation = {0.1, 0.1},
+			frequency = 0.5,
+			position = {0, 0},
+			starting_vertical_speed = 0.05
+		}}
+    },
+    animation = {
+		filename = "__RExtended__/graphics/entity/machinery/formation-furnace-r1.png",
+		priority = "extra-high",
+		width = 96,
+		height = 64,
+		frame_count = 1,
+		shift = {0.3, 0 }
+    },
+    working_visualisations = {{
+		north_position = { 0.078125, 0.5234375},
+		west_position = { 0.078125, 0.5234375},
+		south_position = { 0.078125, 0.5234375},
+		east_position = { 0.078125, 0.5234375},
+		animation = {
+			filename = "__RExtended__/graphics/entity/machinery/formation-furnace-r1-fire.png",
+			width = 23,
+			height = 38,
+			frame_count = 12,
+		}
+    },},
+    fast_replaceable_group = "furnace"
+},
+{--Formation Furnace Eletric
+    type = "assembling-machine",
+    name = "formation-furnace-electric-r1",
+    icon = "__RExtended__/graphics/icons/machinery/electric-formation-furnace-r1.png",
+	icon_size = 32,
+    flags = {"placeable-neutral", "placeable-player", "player-creation"},
+    minable = {mining_time = 1, result = "formation-furnace-electric-r1"},
+    max_health = 200,
+    corpse = "medium-remnants",
+	open_sound = { filename = "__base__/sound/machine-open.ogg", volume = 0.85 },
+    close_sound = { filename = "__base__/sound/machine-close.ogg", volume = 0.75 },
+	module_specification = { module_slots = 3 },
+	allowed_effects = {"consumption", "speed", "productivity", "pollution"},
+    working_sound = { sound = { filename = "__base__/sound/furnace.ogg" } },
+    resistances = {{ type = "fire", percent = 100 }},
+    collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
+	selection_box = {{-1.5, -1.5}, {1.5, 1.5}},	
+    crafting_categories = {"red-furnace"},
+    energy_usage = "350kW",
+    ingredient_count = 2,
+    crafting_speed = 2,
+    energy_source = {
+		type = "electric",
+		usage_priority = "secondary-input",
+		emissions = 0.005
+    },
+    animation = {
+		filename = "__RExtended__/graphics/entity/machinery/formation-furnace-electric-r1.png",
+		priority = "extra-high",
+		width = 256,
+		height = 256,
+		frame_count = 1,
+		shift = {0.46875, -0.46875 },
+		scale = 0.5,
+    },
+    working_visualisations = {{
+		north_position = { 0.078125, 0.5234375},
+		west_position = { 0.078125, 0.5234375},
+		south_position = { 0.078125, 0.5234375},
+		east_position = { 0.078125, 0.5234375},
+		animation = {
+			filename = "__RExtended__/graphics/entity/machinery/formation-furnace-electric-r1-fire.png",
+			priority = "extra-high",
+			width = 12,
+			height = 16,
+			frame_count = 12,
+			shift = {-0.11, 0.346}
+		},
+	},},
+    fast_replaceable_group = "furnace"
+},
+{--Cast Chamber
+    type = "assembling-machine",
+	name = "cast-chamber-r1",
+	icon = "__RExtended__/graphics/icons/machinery/cast-chamber-r1.png",
+	icon_size = 32,
+	flags = {"placeable-neutral","placeable-player", "player-creation"},
+	minable = {hardness = 0.2, mining_time = 0.5, result = "cast-chamber-r1"},
+	max_health = 300,
+	corpse = "big-remnants",
+	resistances = {{type = "fire",percent = 70}},
+	fluid_boxes = {
+		{
+			production_type = "input",
+			pipe_picture = castpipepictures(),
+			pipe_covers = npipecovers(),
+			base_area = 10,
+			base_level = -1,
+			pipe_connections = {{ type="input", position = {1, -2} }},
+			secondary_draw_orders = { north = -1 },
+		},
+		{
+			production_type = "input",
+			pipe_picture = castpipepictures(),
+			pipe_covers = npipecovers(),
+			base_area = 10,
+			base_level = -1,
+			pipe_connections = {{ type="input", position = {-1, -2} }},
+			secondary_draw_orders = { north = -1 },
+		},
+		off_when_no_fluid_recipe = true
+	},
+	collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
+	selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
+	crafting_categories = {"red-casting-chamber"},
+	energy_usage = "400kW",
+	ingredient_count = 4,
+	crafting_speed = 1,
+	energy_source = {type = "electric", input_priority = "secondary", usage_priority = "secondary-input", emissions = 0.018, },
+	fast_replaceable_group = "assembling-machine",
+	module_specification = { module_slots = 2 },
+	allowed_effects = {"consumption", "speed", "productivity", "pollution"},
+	working_sound = {
+		sound = {{ filename = "__base__/sound/chemical-plant.ogg", volume = 0.8 },},
+		idle_sound = { filename = "__base__/sound/idle1.ogg", volume = 0.6 },
+		apparent_volume = 1.5,
+	},
+	animation = {
+		south = { filename = "__RExtended__/graphics/entity/machinery/cast-chamber-r1.png", width = 256, height = 256, shift = {0.28125, 0.1875}, scale = 0.5, frame_count = 16, line_length = 8, animation_speed=0.25, },							
+		west  = { filename = "__RExtended__/graphics/entity/machinery/cast-chamber-r1.png", width = 256, height = 256, shift = {0.28125, 0.1875}, scale = 0.5, frame_count = 16, line_length = 8, animation_speed=0.25, },				
+		north = { filename = "__RExtended__/graphics/entity/machinery/cast-chamber-r1.png", width = 256, height = 256, shift = {0.28125, 0.1875}, scale = 0.5, frame_count = 16, line_length = 8, animation_speed=0.25, },						
+		east  = { filename = "__RExtended__/graphics/entity/machinery/cast-chamber-r1.png", width = 256, height = 256, shift = {0.28125, 0.1875}, scale = 0.5, frame_count = 16, line_length = 8, animation_speed=0.25, },							
+	},
+},
+{--Heat Forge
+    type = "assembling-machine",
+	name = "heat-forge-chamber-r1",
+	icon = "__RExtended__/graphics/icons/machinery/heat-forge-chamber-r1.png",
+	icon_size = 32,
+	flags = {"placeable-neutral","placeable-player", "player-creation"},
+	minable = {hardness = 0.2, mining_time = 0.5, result = "heat-forge-chamber-r1"},
+	max_health = 300,
+	corpse = "big-remnants",
+	resistances = {{type = "fire",percent = 70}},
+	fluid_boxes = {
+		{
+			production_type = "output",
+			pipe_picture = forgepipepictures(),
+			pipe_covers = npipecovers(),
+			base_area = 10,
+			base_level = 1,
+			pipe_connections = {{ type="output", position = {0, 2} }},
+			secondary_draw_orders = { north = -1 },
+		},
+		off_when_no_fluid_recipe = true
+	},
+	collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
+	selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
+	crafting_categories = {"red-forge-chamber"},
+	energy_usage = "400kW",
+	ingredient_count = 4,
+	crafting_speed = 1,
+	energy_source = {type = "electric", input_priority = "secondary", usage_priority = "secondary-input", emissions = 0.023, },
+	fast_replaceable_group = "assembling-machine",
+	module_specification = { module_slots = 2 },
+	allowed_effects = {"consumption", "speed", "productivity", "pollution"},
+	working_sound = {
+		sound = {{ filename = "__base__/sound/chemical-plant.ogg", volume = 0.8},},
+		idle_sound = { filename = "__base__/sound/idle1.ogg", volume = 0.6 },
+		apparent_volume = 1.5,
+	},
+	animation = {
+		south = { filename = "__RExtended__/graphics/entity/machinery/heat-forge-chamber-r1.png", width = 256, height = 256, shift = {0.25, 0.125}, scale = 0.5, frame_count = 16, line_length = 8, animation_speed=1.0, }	,							
+		west  = { filename = "__RExtended__/graphics/entity/machinery/heat-forge-chamber-r1.png", width = 256, height = 256, shift = {0.25, 0.125}, scale = 0.5, frame_count = 16, line_length = 8, animation_speed=1.0, }	,					
+		north = { filename = "__RExtended__/graphics/entity/machinery/heat-forge-chamber-r1.png", width = 256, height = 256, shift = {0.25, 0.125}, scale = 0.5, frame_count = 16, line_length = 8, animation_speed=1.0, }	,							
+		east  = { filename = "__RExtended__/graphics/entity/machinery/heat-forge-chamber-r1.png", width = 256, height = 256, shift = {0.25, 0.125}, scale = 0.5, frame_count = 16, line_length = 8, animation_speed=1.0, }	,						
+	},
+},
+{--Chemical Machine
+    type = "assembling-machine",
+	name = "chemical-machine-r1",
+	icon = "__RExtended__/graphics/icons/machinery/chemical-machine-r1.png",
+	icon_size = 32,
+	flags = {"placeable-neutral","placeable-player", "player-creation"},
+	minable = {hardness = 0.2, mining_time = 0.5, result = "chemical-machine-r1"},
+	max_health = 500,
+	corpse = "big-remnants",
+	resistances = {{type = "fire",percent = 70}},
+	fluid_boxes = {
+		{
+			production_type = "input",
+			pipe_picture = chemicalpipepictures(),
+			pipe_covers = npipecovers(),
+			base_area = 10,
+			base_level = -1,
+			pipe_connections = {{ type="input", position = {-1, -2} }},
+			secondary_draw_orders = { north = -1 },
+		},
+		{
+			production_type = "input",
+			pipe_picture = chemicalpipepictures(),
+			pipe_covers = npipecovers(),
+			base_area = 10,
+			base_level = -1,
+			pipe_connections = {{ type="input", position = {1, -2} }},
+			secondary_draw_orders = { north = -1 },
+		},
+		{
+			production_type = "output",
+			pipe_picture = chemicalpipepictures(),
+			pipe_covers = npipecovers(),
+			base_level = 1,
+			pipe_connections = {{ position = {-1, 2} }},
+			secondary_draw_orders = { north = -1 },
+		},
+		{
+			production_type = "output",
+			pipe_picture = chemicalpipepictures(),
+			pipe_covers = npipecovers(),
+			base_level = 1,
+			pipe_connections = {{ position = {1, 2} }},
+			secondary_draw_orders = { north = -1 },
+		},
+		off_when_no_fluid_recipe = true
+	},
+	collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
+	selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
+	crafting_categories = {"chemistry"},
+	energy_usage = "350kW",
+	ingredient_count = 6,
+	crafting_speed = 2,
+	energy_source = {type = "electric", input_priority = "secondary", usage_priority = "secondary-input", emissions = 0.018, },
+	fast_replaceable_group = "assembling-machine",
+	module_specification = { module_slots = 3 },
+	allowed_effects = {"consumption", "speed", "productivity", "pollution"},
+	working_sound = {
+		sound = { { filename = "__base__/sound/chemical-plant.ogg", volume = 0.8 }, },
+		idle_sound = { filename = "__base__/sound/idle1.ogg", volume = 0.6 },
+		apparent_volume = 1.5,
+	},
+	animation = {
+		filename = "__RExtended__/graphics/entity/machinery/chemical-machine-r1.png",
+		width = 320,
+		height = 320,
+		frame_count = 8,
+		line_length = 4,
+		animation_speed=0.3,
+		shift = {0.875, -0.8125},
+		scale  = 0.5,
+	},
+},
+{--Enrichement Chamber
+    type = "assembling-machine",
+	name = "enrichment-chamber-r1",
+	icon = "__RExtended__/graphics/icons/machinery/enrichment-chamber-r1.png",
+	icon_size = 32,
+	flags = {"placeable-neutral","placeable-player", "player-creation"},
+	minable = {hardness = 0.2, mining_time = 0.5, result = "enrichment-chamber-r1"},
+	max_health = 300,
+	corpse = "big-remnants",
+	resistances = {{type = "fire",percent = 70}},
+	fluid_boxes = {
+		{
+			production_type = "input",
+			pipe_picture = compressor_pipepictures(),
+			pipe_covers = npipecovers(),
+			base_area = 10,
+			base_level = -1,
+			pipe_connections = {{ type="input", position = {0, -2} }},
+			secondary_draw_orders = { north = -1 },
+		},
+		{
+			production_type = "output",
+			pipe_picture = compressor_pipepictures(),
+			pipe_covers = npipecovers(),
+			base_area = 10,
+			base_level = 1,
+			pipe_connections = {{ type="output", position = {0, 2} }},
+			secondary_draw_orders = { north = -1 },
+		},
+		off_when_no_fluid_recipe = true
+	},
+	collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
+	selection_box = {{-1.5, -1.5}, {1.5, 1.5}},	
+	crafting_categories = {"red-enrichment-chamber"},
+	energy_usage = "1MW",
+	ingredient_count = 4,
+	crafting_speed = 1,
+	energy_source = {type = "electric", input_priority = "secondary", usage_priority = "secondary-input", emissions = 0.05, },
+	module_specification = { module_slots = 2 },
+	allowed_effects = {"consumption", "speed", "productivity", "pollution"},
+	working_sound = {
+		sound = { { filename = "__base__/sound/chemical-plant.ogg", volume = 0.8 }, },
+		idle_sound = { filename = "__base__/sound/idle1.ogg", volume = 0.6 },
+		apparent_volume = 1.5,
+	},
+	animation = {
+		south = { filename = "__RExtended__/graphics/entity/machinery/enrichment-chamber-r1.png", width = 256, height = 256, shift = {0.3, 0}, scale = 0.5, frame_count = 16, line_length = 8, animation_speed=1.0, },							
+		west  = { filename = "__RExtended__/graphics/entity/machinery/enrichment-chamber-r1.png", width = 256, height = 256, shift = {0.3, 0}, scale = 0.5, frame_count = 16, line_length = 8, animation_speed=1.0, },					
+		north = { filename = "__RExtended__/graphics/entity/machinery/enrichment-chamber-r1.png", width = 256, height = 256, shift = {0.3, 0}, scale = 0.5, frame_count = 16, line_length = 8, animation_speed=1.0, },						
+		east  = { filename = "__RExtended__/graphics/entity/machinery/enrichment-chamber-r1.png", width = 256, height = 256, shift = {0.3, 0}, scale = 0.5, frame_count = 16, line_length = 8, animation_speed=1.0, },							
+	},
+},
+{--Refinery
+    type = "assembling-machine",
+    name = "refinery-r1",
+    icon = "__RExtended__/graphics/icons/machinery/refinery-r1.png",
+	icon_size = 32,
+    flags = {"placeable-neutral","placeable-player", "player-creation"},
+    minable = {mining_time = 1, result = "refinery-r1"},
+    max_health = 650,
+    corpse = "big-remnants",
+    dying_explosion = "medium-explosion",
+    collision_box = {{-2.4, -2.4}, {2.4, 2.4}},
+    selection_box = {{-2.5, -2.5}, {2.5, 2.5}},
+    module_specification = { module_slots = 3 },
+    scale_entity_info_icon = true,
+    allowed_effects = {"consumption", "speed", "productivity", "pollution"},
+    crafting_categories = {"oil-processing","red-oil-process"},
+    crafting_speed = 2,
+    has_backer_name = false,
+    energy_source = {
+		type = "electric",
+		usage_priority = "secondary-input",
+		emissions = 0.05
+    },
+    energy_usage = "650kW",
+    ingredient_count = 4,
+    animation = {
+	    south = { filename = "__RExtended__/graphics/entity/machinery/refinery-r1-s.png", width = 448, height = 448, shift = {1, -0}, frame_count = 1, line_length = 1, scale = 0.5, animation_speed=1.0, }	,							
+		west  = { filename = "__RExtended__/graphics/entity/machinery/refinery-r1-w.png", width = 448, height = 448, shift = {0.65625, -0.71875}, frame_count = 1, line_length = 1, scale = 0.5, animation_speed=1.0, }	,					
+		north = { filename = "__RExtended__/graphics/entity/machinery/refinery-r1-n.png", width = 448, height = 448, shift = {1, -0}, frame_count = 1, line_length = 1, scale = 0.5, animation_speed=1.0, }	,							
+		east  = { filename = "__RExtended__/graphics/entity/machinery/refinery-r1-e.png", width = 448, height = 448, shift = {0.65625, -0.71875}, frame_count = 1, line_length = 1, scale = 0.5, animation_speed=1.0, }	,							
+	},
+    working_visualisations = {
+		{
+			north_position = {1.25, -3.3},
+			east_position = {-0.125, -2.25},
+			south_position = {1.25, -3.125},
+			west_position = {0, -2.125},
+			animation = {
+				filename = "__RExtended__/graphics/entity/machinery/refinery-r1-fire.png",
+				line_length = 10,
+				width = 40,
+				height = 81,
+				frame_count = 60,
+				animation_speed = 0.75,
+				scale = 0.75,
+				shift = util.by_pixel(0, -14.25),
+			},
+			light = {intensity = 0.4, size = 6, color = {r = 1.0, g = 1.0, b = 1.0}}
+		},
+		{
+			north_position = {-1.25, -3.3},
+			east_position = {-0.125, -4},
+			south_position = {-1.25, -3.125},
+			west_position = {0, -3.875},
+			animation = {
+				filename = "__RExtended__/graphics/entity/machinery/refinery-r1-fire.png",
+				line_length = 10,
+				width = 40,
+				height = 81,
+				frame_count = 60,
+				animation_speed = 0.75,
+				scale = 0.75,
+				shift = util.by_pixel(0, -14.25),
+			},
+			light = {intensity = 0.4, size = 6, color = {r = 1.0, g = 1.0, b = 1.0}}
+		}
+    },
+    vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
+    working_sound = {
+		sound = { filename = "__base__/sound/oil-refinery.ogg" },
+		idle_sound = { filename = "__base__/sound/idle1.ogg", volume = 0.6 },
+		apparent_volume = 2.5,
+    },
+    fluid_boxes = {
+		{
+			production_type = "input",
+			pipe_covers = npipecovers(),
+			base_area = 10,
+			base_level = -1,
+			pipe_connections = {{ type="input", position = {-1, 3} }}
+		},
+		{
+			production_type = "input",
+			pipe_covers = npipecovers(),
+			base_area = 10,
+			base_level = -1,
+			pipe_connections = {{ type="input", position = {1, 3} }}
+		},
+		{
+			production_type = "output",
+			pipe_covers = npipecovers(),
+			base_level = 1,
+			pipe_connections = {{ position = {-2, -3} }}
+		},
+		{
+			production_type = "output",
+			pipe_covers = npipecovers(),
+			base_level = 1,
+			pipe_connections = {{ position = {0, -3} }}
+		},
+		{
+			production_type = "output",
+			pipe_covers = npipecovers(),
+			base_level = 1,
+			pipe_connections = {{ position = {2, -3} }}
+		}
+    },
+},
+{--Beacon
+	type = "beacon",
+	name = "beacon-r1",
+	icon = "__RExtended__/graphics/icons/machinery/beacon-r1.png",
+	icon_size = 64,
+	flags = {"placeable-player", "player-creation"},
+	minable = {mining_time = 1, result = "beacon-r1"},
+	max_health = 400,
+	corpse = "big-remnants",
+	dying_explosion = "medium-explosion",
+	collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
+	selection_box = {{-1.5, -1.5}, {1.5, 1.5}},	
+	supply_area_distance = 6,
+	energy_source = {
+		type = "electric",
+		usage_priority = "secondary-input"
+	},
+	vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
+	energy_usage = "1MW",
+	distribution_effectivity = 0.90,
+	module_specification = {
+		module_slots = 5,
+		module_info_icon_shift = {0, 0.2},
+		module_info_multi_row_initial_height_modifier = -0.3
+	},
+	allowed_effects = {"consumption", "speed", "pollution"},		
+	base_picture = {
+		filename = "__RExtended__/graphics/entity/machinery/beacon-r1-stop.png",
+		width = 288,
+		height = 288,
+		shift = { 0.4375, -1},
+		scale = 0.5,
+	},
+	animation = {
+		filename = "__RExtended__/graphics/entity/machinery/beacon-r1.png",
+		width = 288,
+		height = 288,
+		line_length = 6,
+		frame_count = 30,
+		shift = { 0.4375, -1},
+		scale = 0.5,
+		animation_speed = 0.25
+	},
+	animation_shadow = {		
+		filename = "__RExtended__/graphics/entity/machinery/clear.png",
+		width = 3,
+		height = 3,
+		line_length = 6,
+		frame_count = 30,
+		shift = { 0, 0},	
+	},		
+	radius_visualisation_picture = {
+		filename = "__base__/graphics/entity/beacon/beacon-radius-visualization.png",
+		priority = "extra-high-no-scale",
+		width = 10,
+		height = 10
+	},
+},
+
+})
