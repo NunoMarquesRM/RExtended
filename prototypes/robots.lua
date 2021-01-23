@@ -775,6 +775,7 @@ data:extend({
     selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
     resistances = { { type = "fire", percent = 90 }, { type = "impact", percent = 60 } },
     fast_replaceable_group = "container",
+    max_logistic_slots = 1,
     inventory_size = 75,
     logistic_mode = "storage",
     open_sound = { filename = "__base__/sound/metallic-chest-open.ogg", volume=0.65 },
