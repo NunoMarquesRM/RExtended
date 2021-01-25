@@ -1,21 +1,21 @@
 data:extend({
 --RECIPE
-	{--Copper Gear Wheel R1
-		type = "recipe",
-		name = "copper-gear-wheel-r1",
-		normal = {
-			energy_required = 0.5,
-			enabled = true,
-			ingredients = {{"copper-plate", 2}},
-			result = "copper-gear-wheel-r1"
-		},
-		expensive = {
-			energy_required = 0.5,
-			enabled = true,
-			ingredients = {{"copper-plate", 4}},
-			result = "copper-gear-wheel-r1"
-		}
+{--Copper Gear Wheel R1
+	type = "recipe",
+	name = "copper-gear-wheel-r1",
+	normal = {
+		energy_required = 0.5,
+		enabled = true,
+		ingredients = {{"copper-plate", 2}},
+		result = "copper-gear-wheel-r1"
 	},
+	expensive = {
+		energy_required = 0.5,
+		enabled = true,
+		ingredients = {{"copper-plate", 4}},
+		result = "copper-gear-wheel-r1"
+	}
+},
 {--Coal (wood)-
 	type = "recipe",
 	name = "coal-r1",

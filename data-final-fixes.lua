@@ -43,6 +43,20 @@ if settings.startup["alternative-science-r1"].value then
 			subgroup = "bio-red-products-r1",
 			order = "n-a-a",
 		},
+		{--Small Pole 2
+			type = "recipe",
+			name = "small-pole-r1-2",
+			energy_required = 1,
+			enabled = false,
+			ingredients =  {
+				{"wood-gear-wheel-r1", 1},
+				{"resin-r1", 1},
+				{"copper-cable",1}
+			},
+			order = "a-a-b",
+			result = "small-pole-r1",
+			result_count = 2,
+		},
 		--ITENS
 		{--Wood Gear Wheel
 			type = "item",
