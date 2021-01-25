@@ -50,7 +50,7 @@ if settings.startup["alternative-science-r1"].value then
 			icon_size = 64, 
 			icon_mipmaps = 4,
 			energy_required = 1,
-			enabled = false,
+			enabled = true,
 			ingredients =  {
 				{"wood-gear-wheel-r1", 1},
 				{"resin-r1", 1},

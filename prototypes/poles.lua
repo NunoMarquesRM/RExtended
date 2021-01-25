@@ -59,7 +59,7 @@ data:extend({
 	icon_size = 64, 
 	icon_mipmaps = 4,
 	energy_required = 1,
-	enabled = false,
+	enabled = true,
 	ingredients =  {
 		{"small-electric-pole", 8}
 	},
