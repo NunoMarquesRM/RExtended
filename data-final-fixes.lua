@@ -46,6 +46,9 @@ if settings.startup["alternative-science-r1"].value then
 		{--Small Pole 2
 			type = "recipe",
 			name = "small-pole-r1-2",
+			icon = "__RExtended__/graphics/icons/poles/small-electric-pole-r1.png",
+			icon_size = 64, 
+			icon_mipmaps = 4,
 			energy_required = 1,
 			enabled = false,
 			ingredients =  {

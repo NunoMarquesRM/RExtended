@@ -1,15 +1,15 @@
 data:extend({
 --ITEM
 {--Small Pole
-type = "item",
-name = "small-pole-r1",
-icon = "__RExtended__/graphics/icons/poles/small-electric-pole-r1.png",
-icon_size = 64, 
-icon_mipmaps = 4,
-subgroup = "power-poles",
-order = "a-a-b",
-place_result = "small-pole-r1",
-stack_size = 50
+	type = "item",
+	name = "small-pole-r1",
+	icon = "__RExtended__/graphics/icons/poles/small-electric-pole-r1.png",
+	icon_size = 64, 
+	icon_mipmaps = 4,
+	subgroup = "power-poles",
+	order = "a-a-b",
+	place_result = "small-pole-r1",
+	stack_size = 50
 },
 {--Medium Pole
     type = "item",
@@ -55,6 +55,9 @@ stack_size = 50
 {--Small Pole 1
 	type = "recipe",
 	name = "small-pole-r1-1",
+	icon = "__RExtended__/graphics/icons/poles/small-electric-pole-r1.png",
+	icon_size = 64, 
+	icon_mipmaps = 4,
 	energy_required = 1,
 	enabled = false,
 	ingredients =  {
@@ -117,121 +120,6 @@ stack_size = 50
 	result = "light-pole-r1",
 },
 --ENTITY
-{--Small Pole
-	type = "electric-pole",
-	name = "small-pole-r1",
-	icon = "__RExtended__/graphics/icons/poles/small-electric-pole-r1.png",
-	icon_size = 64, 
-	icon_mipmaps = 4,
-	flags = {"placeable-neutral", "player-creation", "fast-replaceable-no-build-while-moving"},
-	minable = {mining_time = 0.1, result = "small-pole-r1"},
-	max_health = 100,
-	corpse = "small-electric-pole-remnants",
-	dying_explosion = "small-electric-pole-explosion",
-	collision_box = {{-0.15, -0.15}, {0.15, 0.15}},
-	selection_box = {{-0.4, -0.4}, {0.4, 0.4}},
-	damaged_trigger_effect = hit_effects.entity({{-0.2, -2.2}, {0.2, 0.2}}),
-	drawing_box = {{-0.5, -2.6}, {0.5, 0.5}},
-	maximum_wire_distance = 9,
-	supply_area_distance = 4,
-	vehicle_impact_sound = sounds.car_wood_impact(0.5),
-	open_sound = sounds.electric_network_open,
-	close_sound = sounds.electric_network_close,
-	track_coverage_during_build_by_moving = true,
-	fast_replaceable_group = "electric-pole",
-	pictures = {
-		layers = {
-			{
-				filename = "__RExtended__/graphics/entity/poles/small-pole-r1.png",
-				priority = "extra-high",
-				width = 72,
-				height = 220,
-				direction_count = 4,
-				shift = util.by_pixel(1.5, -42.5),
-				scale = 0.5
-			},
-			{
-				filename = "__base__/graphics/entity/small-electric-pole/hr-small-electric-pole-shadow.png",
-				priority = "extra-high",
-				width = 256,
-				height = 52,
-				direction_count = 4,
-				shift = util.by_pixel(51, 3),
-				draw_as_shadow = true,
-				scale = 0.5
-			}
-		}
-	},
-	connection_points = {
-		{
-			shadow = {
-				copper = util.by_pixel(98.5, 2.5),
-				red = util.by_pixel(111.0, 4.5),
-				green = util.by_pixel(85.5, 4.0)
-			},
-			wire = {
-				copper = util.by_pixel(0.0, -82.5),
-				red = util.by_pixel(13.0, -81.0),
-				green = util.by_pixel(-12.5, -81.0)
-			}
-		},
-		{
-			shadow = {
-				copper = util.by_pixel(99.5, 4.0),
-				red = util.by_pixel(110.0, 9.0),
-				green = util.by_pixel(92.5, -4.0)
-			},
-			wire = {
-				copper = util.by_pixel(1.5, -81.0),
-				red = util.by_pixel(12.0, -76.0),
-				green = util.by_pixel(-6.0, -89.5)
-			}
-		},
-		{
-			shadow = {
-				copper = util.by_pixel(100.5, 5.5),
-				red = util.by_pixel(102.5, 14.5),
-				green = util.by_pixel(103.5, -3.5)
-			},
-			wire = {
-				copper = util.by_pixel(2.5, -79.5),
-				red = util.by_pixel(4.0, -71.0),
-				green = util.by_pixel(5.0, -89.5)
-			}
-		},
-		{
-			shadow = {
-				copper = util.by_pixel(98.5, -1.5),
-				red = util.by_pixel(88.0, 3.5),
-				green = util.by_pixel(106.0, -9.0)
-			},
-			wire = {
-				copper = util.by_pixel(0.5, -86.5),
-				red = util.by_pixel(-10.5, -81.5),
-				green = util.by_pixel(8.0, -93.5)
-			}
-		}
-	},
-	radius_visualisation_picture = {
-		filename = "__base__/graphics/entity/small-electric-pole/electric-pole-radius-visualization.png",
-		width = 12,
-		height = 12,
-		priority = "extra-high-no-scale"
-	},
-	water_reflection = {
-		pictures = {
-			filename = "__base__/graphics/entity/small-electric-pole/small-electric-pole-reflection.png",
-			priority = "extra-high",
-			width = 12,
-			height = 28,
-			shift = util.by_pixel(5, 40),
-			variation_count = 4,
-			scale = 5
-		},
-		rotate = false,
-		orientation_to_variation = true
-	}
-},
 {--Medium Pole
     type = "electric-pole",
     name = "medium-pole-r1",
@@ -470,3 +358,35 @@ stack_size = 50
 }
 
 })
+
+--Small Pole
+local entity_smallPole = table.deepcopy(data.raw['electric-pole']['small-electric-pole'])
+entity_smallPole.name = "small-pole-r1"
+entity_smallPole.icon = "__RExtended__/graphics/icons/poles/small-electric-pole-r1.png"
+entity_smallPole.minable = {mining_time = 0.1, result = "small-pole-r1"}
+entity_smallPole.maximum_wire_distance = 9
+entity_smallPole.supply_area_distance = 4
+entity_smallPole.pictures = {
+	layers = {
+		{
+			filename = "__RExtended__/graphics/entity/poles/small-pole-r1.png",
+			priority = "extra-high",
+			width = 72,
+			height = 220,
+			direction_count = 4,
+			shift = util.by_pixel(1.5, -42.5),
+			scale = 0.5
+		},
+		{
+			filename = "__base__/graphics/entity/small-electric-pole/hr-small-electric-pole-shadow.png",
+			priority = "extra-high",
+			width = 256,
+			height = 52,
+			direction_count = 4,
+			shift = util.by_pixel(51, 3),
+			draw_as_shadow = true,
+			scale = 0.5
+		}
+	}
+}
+data:extend({entity_smallPole})
