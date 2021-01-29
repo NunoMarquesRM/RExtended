@@ -2,7 +2,7 @@
 local item_iron_ingot = table.deepcopy(data.raw.item['iron-plate'])
 item_iron_ingot.name = "iron-ingot-s1"
 item_iron_ingot.icon = "__RExtended__/graphics/icons/Satisfactory/Iron_Ingot.png"
-item_iron_ingot.icon_size = 256
+item_iron_ingot.icon_size = 64
 item_iron_ingot.subgroup = "ingots"
 item_iron_ingot.order = "a-a"
 
@@ -21,7 +21,7 @@ data:extend({item_iron_ingot,recipe_iron_ingot})
 local item_copper_ingot = table.deepcopy(data.raw.item['iron-plate'])
 item_copper_ingot.name = "copper-ingot-s1"
 item_copper_ingot.icon = "__RExtended__/graphics/icons/Satisfactory/Copper_Ingot.png"
-item_copper_ingot.icon_size = 256
+item_copper_ingot.icon_size = 64
 item_copper_ingot.subgroup = "ingots"
 item_copper_ingot.order = "a-b"
 
@@ -34,5 +34,24 @@ recipe_copper_ingot.enabled = true
 
 
 
-
 data:extend({item_copper_ingot,recipe_copper_ingot})
+
+
+--- Iron Plate
+local item_plate_ingot = table.deepcopy(data.raw.item['electronic-circuit'])
+item_plate_ingot.name = "iron-plate-s1"
+item_plate_ingot.icon = "__RExtended__/graphics/icons/Satisfactory/Iron_Plate.png"
+item_plate_ingot.icon_size = 64
+item_plate_ingot.subgroup = "iron-extends"
+item_plate_ingot.order = "b-a"
+
+local recipe_plate_ingot = table.deepcopy(data.raw.recipe['electronic-circuit'])
+recipe_plate_ingot.name = "iron-plate-s1"
+recipe_plate_ingot.energy_required = 2
+recipe_plate_ingot.result = "iron-plate-s1"
+recipe_plate_ingot.ingredients = {{"iron-ingot-s1", 3}}
+recipe_plate_ingot.enabled = true
+
+
+
+data:extend({item_plate_ingot,recipe_plate_ingot})
