@@ -42,14 +42,14 @@ recipe_copper_ingot.subgroup = "ingots"
 data:extend({item_copper_ingot,recipe_copper_ingot})
 --------------------------------------------------------------------------
 --- Iron Plate
-local item_iron_plate = table.deepcopy(data.raw.item['electronic-circuit'])
+local item_iron_plate = table.deepcopy(data.raw.item['copper-cable'])
 item_iron_plate.name = "iron-plate-sat1"
 item_iron_plate.icon = "__RExtended__/graphics/icons/Satisfactory/Iron_Plate.png"
 item_iron_plate.icon_size = 64
 item_iron_plate.subgroup = "iron-extends"
 item_iron_plate.order = "b-a"
 
-local recipe_iron_plate = table.deepcopy(data.raw.recipe['electronic-circuit'])
+local recipe_iron_plate = table.deepcopy(data.raw.recipe['copper-cable'])
 recipe_iron_plate.name = "iron-plate-sat1"
 recipe_iron_plate.icon = "__RExtended__/graphics/icons/Satisfactory/Iron_Plate.png"
 recipe_iron_plate.icon_size = 64
@@ -63,17 +63,17 @@ recipe_iron_plate.subgroup = "iron-extends"
 data:extend({item_iron_plate,recipe_iron_plate})
 --------------------------------------------------------------------------
 --- Copper Sheet
-local item_copper_sheet = table.deepcopy(data.raw.item['electronic-circuit'])
+local item_copper_sheet = table.deepcopy(data.raw.item['copper-cable'])
 item_copper_sheet.name = "copper-sheet-sat1"
 item_copper_sheet.icon = "__RExtended__/graphics/icons/Satisfactory/Copper_Sheet.png"
 item_copper_sheet.icon_size = 64
 item_copper_sheet.subgroup = "copper-extends"
 item_copper_sheet.order = "c-a"
 
-local recipe_copper_sheet = table.deepcopy(data.raw.recipe['electronic-circuit'])
+local recipe_copper_sheet = table.deepcopy(data.raw.recipe['copper-cable'])
 recipe_copper_sheet.name = "copper-sheet-sat1"
-item_copper_sheet.icon = "__RExtended__/graphics/icons/Satisfactory/Copper_Sheet.png"
-item_copper_sheet.icon_size = 64
+recipe_copper_sheet.icon = "__RExtended__/graphics/icons/Satisfactory/Copper_Sheet.png"
+recipe_copper_sheet.icon_size = 64
 recipe_copper_sheet.energy_required = 2
 recipe_copper_sheet.result = "copper-sheet-sat1"
 recipe_copper_sheet.ingredients = {{"copper-ingot-sat1", 3}}
@@ -82,5 +82,5 @@ recipe_copper_sheet.category = "crafting"
 recipe_copper_sheet.subgroup = "copper-extends"
 
 
-data:extend({item_plate_ingot,recipe_copper_sheet})
+data:extend({item_copper_sheet,recipe_copper_sheet})
 --------------------------------------------------------------------------
