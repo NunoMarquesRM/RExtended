@@ -1,6 +1,6 @@
-if settings.startup["alternative-science-r1"].value then
+if(settings.startup["alternative-science-r1"].value == 'Yes') then
 	data:extend({
-		--RECIPE
+	--RECIPE
 		{--Wood Gear Wheel
 			type = "recipe",
 			name = "wood-gear-wheel-r1",
@@ -60,7 +60,7 @@ if settings.startup["alternative-science-r1"].value then
 			result = "small-pole-r1",
 			result_count = 2,
 		},
-		--ITENS
+	--ITENS
 		{--Wood Gear Wheel
 			type = "item",
 			name = "wood-gear-wheel-r1",

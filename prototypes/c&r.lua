@@ -244,14 +244,14 @@ data:extend({
 },
 {--Steel Plate v1-
 	type = "recipe",
-	name = "steel-plate-r1v1",				
+	name = "steel-plate-r1v1",
 	icon = "__base__/graphics/icons/steel-plate.png",
 	icon_size = 64, icon_mipmaps = 4,
 	energy_required = 1,
 	enabled = false,
 	ingredients = {
 		{type="item", name="clean-steel-r1", amount=1},
-	},		
+	},
 	result = "steel-plate",
 	result_count = 2,
 	category = "red-furnace",

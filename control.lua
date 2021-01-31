@@ -1,4 +1,4 @@
-if settings.startup["robots-help"].value == "Yes" then
+if(settings.startup["robots-help"].value == 'Yes') then
 
 	script.on_event(defines.events.on_player_created, function(event)
 		local iteminsert = game.players[event.player_index].insert
@@ -18,8 +18,8 @@ if settings.startup["robots-help"].value == "Yes" then
 		p_armor.put({name = "initial-roboport"})
 	end)
 
-	else
-    
+else
+	
 end
 
 script.on_event(defines.events.on_player_selected_area, function(event)
