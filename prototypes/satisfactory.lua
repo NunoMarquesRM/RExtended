@@ -174,3 +174,72 @@ recipe_copper_cable.subgroup = "copper-extends"
 
 data:extend({item_copper_cable,recipe_copper_cable})
 --------------------------------------------------------------------------
+--- Reinforced Iron Plate
+local item_reinforcerced_iron_plate = table.deepcopy(data.raw.item['copper-cable'])
+item_reinforcerced_iron_plate.name = "reinforced-iron-plate-sat1"
+item_reinforcerced_iron_plate.icon = "__RExtended__/graphics/icons/Satisfactory/Reinforced_Iron_Plate.png"
+item_reinforcerced_iron_plate.icon_size = 64
+item_reinforcerced_iron_plate.subgroup = "iron-extends"
+item_reinforcerced_iron_plate.order = "b-d"
+
+local recipe_reinforcerced_iron_plate = table.deepcopy(data.raw.recipe['copper-cable'])
+recipe_reinforcerced_iron_plate.name = "reinforced-iron-plate-sat1"
+recipe_reinforcerced_iron_plate.icon = "__RExtended__/graphics/icons/Satisfactory/Reinforced_Iron_Plate.png"
+recipe_reinforcerced_iron_plate.icon_size = 64
+recipe_reinforcerced_iron_plate.energy_required = 12
+recipe_reinforcerced_iron_plate.result = "reinforced-iron-plate-sat1"
+recipe_reinforcerced_iron_plate.result_count = 1
+recipe_reinforcerced_iron_plate.ingredients = {{"iron-plate-sat1", 6},{"iron-screw-sat1", 12}}
+recipe_reinforcerced_iron_plate.enabled = true
+recipe_reinforcerced_iron_plate.category = "crafting"
+recipe_reinforcerced_iron_plate.subgroup = "iron-extends"
+
+
+data:extend({item_reinforcerced_iron_plate,recipe_reinforcerced_iron_plate})
+--------------------------------------------------------------------------
+--- Rotor
+local item_rotor = table.deepcopy(data.raw.item['copper-cable'])
+item_rotor.name = "rotor-sat1"
+item_rotor.icon = "__RExtended__/graphics/icons/Satisfactory/Rotor.png"
+item_rotor.icon_size = 64
+item_rotor.subgroup = "iron-extends"
+item_rotor.order = "b-e"
+
+local recipe_rotor = table.deepcopy(data.raw.recipe['copper-cable'])
+recipe_rotor.name = "rotor-sat1"
+recipe_rotor.icon = "__RExtended__/graphics/icons/Satisfactory/Rotor.png"
+recipe_rotor.icon_size = 64
+recipe_rotor.energy_required = 15
+recipe_rotor.result = "rotor-sat1"
+recipe_rotor.result_count = 1
+recipe_rotor.ingredients = {{"iron-rod-sat1", 5},{"iron-screw-sat1", 25}}
+recipe_rotor.enabled = true
+recipe_rotor.category = "crafting"
+recipe_rotor.subgroup = "iron-extends"
+
+
+data:extend({item_rotor,recipe_rotor})
+--------------------------------------------------------------------------
+--- Modular Frame
+local item_modular_frame = table.deepcopy(data.raw.item['copper-cable'])
+item_modular_frame.name = "modular-frame-sat1"
+item_modular_frame.icon = "__RExtended__/graphics/icons/Satisfactory/Modular_Frame.png"
+item_modular_frame.icon_size = 64
+item_modular_frame.subgroup = "iron-extends"
+item_modular_frame.order = "b-f"
+
+local recipe_modular_frame = table.deepcopy(data.raw.recipe['copper-cable'])
+recipe_modular_frame.name = "modular-frame-sat1"
+recipe_modular_frame.icon = "__RExtended__/graphics/icons/Satisfactory/Modular_Frame.png"
+recipe_modular_frame.icon_size = 64
+recipe_modular_frame.energy_required = 60
+recipe_modular_frame.result = "modular-frame-sat1"
+recipe_modular_frame.result_count = 2
+recipe_modular_frame.ingredients = {{"reinforced-iron-plate-sat1", 3},{"iron-rod-sat1", 12}}
+recipe_modular_frame.enabled = true
+recipe_modular_frame.category = "crafting"
+recipe_modular_frame.subgroup = "iron-extends"
+
+
+data:extend({item_modular_frame,recipe_modular_frame})
+--------------------------------------------------------------------------
