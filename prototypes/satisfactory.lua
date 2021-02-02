@@ -6,6 +6,7 @@ item_iron_ingot.icon = "__RExtended__/graphics/icons/Satisfactory/Iron_Ingot.png
 item_iron_ingot.icon_size = 64
 item_iron_ingot.subgroup = "ingots"
 item_iron_ingot.order = "a-a"
+item_iron_ingot.stack_size = 100
 
 local recipe_iron_ingot = table.deepcopy(data.raw.recipe['iron-plate'])
 recipe_iron_ingot.name = "iron-ingot-sat1"
@@ -27,6 +28,7 @@ item_copper_ingot.icon = "__RExtended__/graphics/icons/Satisfactory/Copper_Ingot
 item_copper_ingot.icon_size = 64
 item_copper_ingot.subgroup = "ingots"
 item_copper_ingot.order = "a-b"
+item_copper_ingot.stack_size = 100
 
 local recipe_copper_ingot = table.deepcopy(data.raw.recipe['iron-plate'])
 recipe_copper_ingot.name = "copper-ingot-sat1"
@@ -48,6 +50,7 @@ item_iron_plate.icon = "__RExtended__/graphics/icons/Satisfactory/Iron_Plate.png
 item_iron_plate.icon_size = 64
 item_iron_plate.subgroup = "iron-extends"
 item_iron_plate.order = "b-a"
+item_iron_plate.stack_size = 100
 
 local recipe_iron_plate = table.deepcopy(data.raw.recipe['copper-cable'])
 recipe_iron_plate.name = "iron-plate-sat1"
@@ -70,6 +73,7 @@ item_copper_sheet.icon = "__RExtended__/graphics/icons/Satisfactory/Copper_Sheet
 item_copper_sheet.icon_size = 64
 item_copper_sheet.subgroup = "copper-extends"
 item_copper_sheet.order = "c-a"
+item_copper_sheet.stack_size = 100
 
 local recipe_copper_sheet = table.deepcopy(data.raw.recipe['copper-cable'])
 recipe_copper_sheet.name = "copper-sheet-sat1"
@@ -92,6 +96,7 @@ item_iron_rod.icon = "__RExtended__/graphics/icons/Satisfactory/Iron_Rod.png"
 item_iron_rod.icon_size = 64
 item_iron_rod.subgroup = "iron-extends"
 item_iron_rod.order = "b-b"
+item_iron_rod.stack_size = 100
 
 local recipe_iron_rod = table.deepcopy(data.raw.recipe['copper-cable'])
 recipe_iron_rod.name = "iron-rod-sat1"
@@ -113,6 +118,7 @@ item_iron_screw.icon = "__RExtended__/graphics/icons/Satisfactory/Screw.png"
 item_iron_screw.icon_size = 64
 item_iron_screw.subgroup = "iron-extends"
 item_iron_screw.order = "b-c"
+item_iron_screw.stack_size = 500
 
 local recipe_iron_screw = table.deepcopy(data.raw.recipe['copper-cable'])
 recipe_iron_screw.name = "iron-screw-sat1"
@@ -135,6 +141,7 @@ item_copper_wire.icon = "__RExtended__/graphics/icons/Satisfactory/Wire.png"
 item_copper_wire.icon_size = 64
 item_copper_wire.subgroup = "copper-extends"
 item_copper_wire.order = "c-b"
+item_copper_wire.stack_size = 500
 
 local recipe_copper_wire = table.deepcopy(data.raw.recipe['copper-cable'])
 recipe_copper_wire.name = "copper-wire-sat1"
@@ -158,6 +165,7 @@ item_copper_cable.icon = "__RExtended__/graphics/icons/Satisfactory/Cable.png"
 item_copper_cable.icon_size = 64
 item_copper_cable.subgroup = "copper-extends"
 item_copper_cable.order = "c-c"
+item_copper_cable.stack_size = 100
 
 local recipe_copper_cable = table.deepcopy(data.raw.recipe['copper-cable'])
 recipe_copper_cable.name = "copper-cable-sat1"
@@ -175,27 +183,28 @@ recipe_copper_cable.subgroup = "copper-extends"
 data:extend({item_copper_cable,recipe_copper_cable})
 --------------------------------------------------------------------------
 --- Reinforced Iron Plate
-local item_reinforcerced_iron_plate = table.deepcopy(data.raw.item['copper-cable'])
-item_reinforcerced_iron_plate.name = "reinforced-iron-plate-sat1"
-item_reinforcerced_iron_plate.icon = "__RExtended__/graphics/icons/Satisfactory/Reinforced_Iron_Plate.png"
-item_reinforcerced_iron_plate.icon_size = 64
-item_reinforcerced_iron_plate.subgroup = "iron-extends"
-item_reinforcerced_iron_plate.order = "b-d"
+local item_reinforced_iron_plate = table.deepcopy(data.raw.item['copper-cable'])
+item_reinforced_iron_plate.name = "reinforced-iron-plate-sat1"
+item_reinforced_iron_plate.icon = "__RExtended__/graphics/icons/Satisfactory/Reinforced_Iron_Plate.png"
+item_reinforced_iron_plate.icon_size = 64
+item_reinforced_iron_plate.subgroup = "iron-extends"
+item_reinforced_iron_plate.order = "b-d"
+item_reinforced_iron_plate.stack_size = 100
 
-local recipe_reinforcerced_iron_plate = table.deepcopy(data.raw.recipe['copper-cable'])
-recipe_reinforcerced_iron_plate.name = "reinforced-iron-plate-sat1"
-recipe_reinforcerced_iron_plate.icon = "__RExtended__/graphics/icons/Satisfactory/Reinforced_Iron_Plate.png"
-recipe_reinforcerced_iron_plate.icon_size = 64
-recipe_reinforcerced_iron_plate.energy_required = 12
-recipe_reinforcerced_iron_plate.result = "reinforced-iron-plate-sat1"
-recipe_reinforcerced_iron_plate.result_count = 1
-recipe_reinforcerced_iron_plate.ingredients = {{"iron-plate-sat1", 6},{"iron-screw-sat1", 12}}
-recipe_reinforcerced_iron_plate.enabled = true
-recipe_reinforcerced_iron_plate.category = "crafting"
-recipe_reinforcerced_iron_plate.subgroup = "iron-extends"
+local recipe_reinforced_iron_plate = table.deepcopy(data.raw.recipe['copper-cable'])
+recipe_reinforced_iron_plate.name = "reinforced-iron-plate-sat1"
+recipe_reinforced_iron_plate.icon = "__RExtended__/graphics/icons/Satisfactory/Reinforced_Iron_Plate.png"
+recipe_reinforced_iron_plate.icon_size = 64
+recipe_reinforced_iron_plate.energy_required = 12
+recipe_reinforced_iron_plate.result = "reinforced-iron-plate-sat1"
+recipe_reinforced_iron_plate.result_count = 1
+recipe_reinforced_iron_plate.ingredients = {{"iron-plate-sat1", 6},{"iron-screw-sat1", 12}}
+recipe_reinforced_iron_plate.enabled = true
+recipe_reinforced_iron_plate.category = "crafting"
+recipe_reinforced_iron_plate.subgroup = "iron-extends"
 
 
-data:extend({item_reinforcerced_iron_plate,recipe_reinforcerced_iron_plate})
+data:extend({item_reinforced_iron_plate,recipe_reinforced_iron_plate})
 --------------------------------------------------------------------------
 --- Rotor
 local item_rotor = table.deepcopy(data.raw.item['copper-cable'])
@@ -204,6 +213,7 @@ item_rotor.icon = "__RExtended__/graphics/icons/Satisfactory/Rotor.png"
 item_rotor.icon_size = 64
 item_rotor.subgroup = "iron-extends"
 item_rotor.order = "b-e"
+item_rotor.stack_size = 100
 
 local recipe_rotor = table.deepcopy(data.raw.recipe['copper-cable'])
 recipe_rotor.name = "rotor-sat1"
@@ -227,6 +237,7 @@ item_modular_frame.icon = "__RExtended__/graphics/icons/Satisfactory/Modular_Fra
 item_modular_frame.icon_size = 64
 item_modular_frame.subgroup = "iron-extends"
 item_modular_frame.order = "b-f"
+item_modular_frame.stack_size = 50
 
 local recipe_modular_frame = table.deepcopy(data.raw.recipe['copper-cable'])
 recipe_modular_frame.name = "modular-frame-sat1"
