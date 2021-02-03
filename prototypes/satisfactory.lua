@@ -43,6 +43,30 @@ recipe_copper_ingot.subgroup = "ingots"
 
 data:extend({item_copper_ingot,recipe_copper_ingot})
 --------------------------------------------------------------------------
+--- Concrete
+local item_modular_frame = table.deepcopy(data.raw.item['copper-cable'])
+item_modular_frame.name = "concrete-sat1"
+item_modular_frame.icon = "__RExtended__/graphics/icons/Satisfactory/Concrete.png"
+item_modular_frame.icon_size = 64
+item_modular_frame.subgroup = "ingots"
+item_modular_frame.order = "a-c"
+item_modular_frame.stack_size = 100
+
+local recipe_modular_frame = table.deepcopy(data.raw.recipe['copper-cable'])
+recipe_modular_frame.name = "concrete-sat1"
+recipe_modular_frame.icon = "__RExtended__/graphics/icons/Satisfactory/Concrete.png"
+recipe_modular_frame.icon_size = 64
+recipe_modular_frame.energy_required = 4
+recipe_modular_frame.result = "concrete-sat1"
+recipe_modular_frame.result_count = 1
+recipe_modular_frame.ingredients = {{"stone", 3}}
+recipe_modular_frame.enabled = true
+recipe_modular_frame.category = "crafting"
+recipe_modular_frame.subgroup = "ingots"
+
+
+data:extend({item_modular_frame,recipe_modular_frame})
+--------------------------------------------------------------------------
 --- Iron Plate
 local item_iron_plate = table.deepcopy(data.raw.item['copper-cable'])
 item_iron_plate.name = "iron-plate-sat1"
@@ -250,6 +274,30 @@ recipe_modular_frame.ingredients = {{"reinforced-iron-plate-sat1", 3},{"iron-rod
 recipe_modular_frame.enabled = true
 recipe_modular_frame.category = "crafting"
 recipe_modular_frame.subgroup = "iron-extends"
+
+
+data:extend({item_modular_frame,recipe_modular_frame})
+--------------------------------------------------------------------------
+--- Smart Plating
+local item_modular_frame = table.deepcopy(data.raw.item['copper-cable'])
+item_modular_frame.name = "smart-plating-sat1"
+item_modular_frame.icon = "__RExtended__/graphics/icons/Satisfactory/Smart_Plating.png"
+item_modular_frame.icon_size = 64
+item_modular_frame.subgroup = "space-elevator-extends"
+item_modular_frame.order = "x-a"
+item_modular_frame.stack_size = 50
+
+local recipe_modular_frame = table.deepcopy(data.raw.recipe['copper-cable'])
+recipe_modular_frame.name = "smart-plating-sat1"
+recipe_modular_frame.icon = "__RExtended__/graphics/icons/Satisfactory/Smart_Plating.png"
+recipe_modular_frame.icon_size = 64
+recipe_modular_frame.energy_required = 30
+recipe_modular_frame.result = "smart-plating-sat1"
+recipe_modular_frame.result_count = 1
+recipe_modular_frame.ingredients = {{"reinforced-iron-plate-sat1", 1},{"rotor-sat1", 1}}
+recipe_modular_frame.enabled = true
+recipe_modular_frame.category = "crafting"
+recipe_modular_frame.subgroup = "space-elevator-extends"
 
 
 data:extend({item_modular_frame,recipe_modular_frame})
