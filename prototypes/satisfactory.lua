@@ -15,7 +15,7 @@ recipe_iron_ingot.icon_size = 64
 recipe_iron_ingot.energy_required = 3
 recipe_iron_ingot.result = "iron-ingot-sat1"
 recipe_iron_ingot.ingredients = {{"iron-ore", 1}}
-recipe_iron_ingot.enabled = true
+recipe_iron_ingot.enabled = false
 recipe_iron_ingot.category = "red-furnace"
 recipe_iron_ingot.subgroup = "ingots"
 
@@ -37,7 +37,7 @@ recipe_copper_ingot.icon_size = 64
 recipe_copper_ingot.energy_required = 3
 recipe_copper_ingot.result = "copper-ingot-sat1"
 recipe_copper_ingot.ingredients = {{"copper-ore", 1}}
-recipe_copper_ingot.enabled = true
+recipe_copper_ingot.enabled = false
 recipe_copper_ingot.category = "red-furnace"
 recipe_copper_ingot.subgroup = "ingots"
 
@@ -60,7 +60,7 @@ recipe_modular_frame.energy_required = 4
 recipe_modular_frame.result = "concrete-sat1"
 recipe_modular_frame.result_count = 1
 recipe_modular_frame.ingredients = {{"stone", 3}}
-recipe_modular_frame.enabled = true
+recipe_modular_frame.enabled = false
 recipe_modular_frame.category = "crafting"
 recipe_modular_frame.subgroup = "ingots"
 
@@ -84,7 +84,7 @@ recipe_iron_plate.energy_required = 6
 recipe_iron_plate.result = "iron-plate-sat1"
 recipe_iron_plate.result_count = 2
 recipe_iron_plate.ingredients = {{"iron-ingot-sat1", 3}}
-recipe_iron_plate.enabled = true
+recipe_iron_plate.enabled = false
 recipe_iron_plate.category = "crafting"
 recipe_iron_plate.subgroup = "iron-extends"
 
@@ -129,7 +129,7 @@ recipe_iron_rod.icon_size = 64
 recipe_iron_rod.energy_required = 4
 recipe_iron_rod.result = "iron-rod-sat1"
 recipe_iron_rod.ingredients = {{"iron-ingot-sat1", 1}}
-recipe_iron_rod.enabled = true
+recipe_iron_rod.enabled = false
 recipe_iron_rod.category = "crafting"
 recipe_iron_rod.subgroup = "iron-extends"
 
@@ -152,7 +152,7 @@ recipe_iron_screw.energy_required = 6
 recipe_iron_screw.result = "iron-screw-sat1"
 recipe_iron_screw.result_count = 4
 recipe_iron_screw.ingredients = {{"iron-rod-sat1", 1}}
-recipe_iron_screw.enabled = true
+recipe_iron_screw.enabled = false
 recipe_iron_screw.category = "crafting"
 recipe_iron_screw.subgroup = "iron-extends"
 
@@ -175,7 +175,7 @@ recipe_copper_wire.energy_required = 6
 recipe_copper_wire.result = "copper-wire-sat1"
 recipe_copper_wire.result_count = 2
 recipe_copper_wire.ingredients = {{"copper-ingot-sat1", 1}}
-recipe_copper_wire.enabled = true
+recipe_copper_wire.enabled = false
 recipe_copper_wire.category = "crafting"
 recipe_copper_wire.subgroup = "copper-extends"
 
@@ -199,7 +199,7 @@ recipe_copper_cable.energy_required = 6
 recipe_copper_cable.result = "copper-cable-sat1"
 recipe_copper_cable.result_count = 1
 recipe_copper_cable.ingredients = {{"copper-wire-sat1", 2}}
-recipe_copper_cable.enabled = true
+recipe_copper_cable.enabled = false
 recipe_copper_cable.category = "crafting"
 recipe_copper_cable.subgroup = "copper-extends"
 
@@ -223,7 +223,7 @@ recipe_reinforced_iron_plate.energy_required = 12
 recipe_reinforced_iron_plate.result = "reinforced-iron-plate-sat1"
 recipe_reinforced_iron_plate.result_count = 1
 recipe_reinforced_iron_plate.ingredients = {{"iron-plate-sat1", 6},{"iron-screw-sat1", 12}}
-recipe_reinforced_iron_plate.enabled = true
+recipe_reinforced_iron_plate.enabled = false
 recipe_reinforced_iron_plate.category = "crafting"
 recipe_reinforced_iron_plate.subgroup = "iron-extends"
 
