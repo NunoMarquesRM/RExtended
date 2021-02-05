@@ -106,7 +106,7 @@ recipe_copper_sheet.icon_size = 64
 recipe_copper_sheet.energy_required = 6
 recipe_copper_sheet.result = "copper-sheet-sat1"
 recipe_copper_sheet.ingredients = {{"copper-ingot-sat1", 2}}
-recipe_copper_sheet.enabled = true
+recipe_copper_sheet.enabled = false
 recipe_copper_sheet.category = "crafting"
 recipe_copper_sheet.subgroup = "copper-extends"
 
@@ -247,7 +247,7 @@ recipe_rotor.energy_required = 15
 recipe_rotor.result = "rotor-sat1"
 recipe_rotor.result_count = 1
 recipe_rotor.ingredients = {{"iron-rod-sat1", 5},{"iron-screw-sat1", 25}}
-recipe_rotor.enabled = true
+recipe_rotor.enabled = false
 recipe_rotor.category = "crafting"
 recipe_rotor.subgroup = "iron-extends"
 
@@ -271,7 +271,7 @@ recipe_modular_frame.energy_required = 60
 recipe_modular_frame.result = "modular-frame-sat1"
 recipe_modular_frame.result_count = 2
 recipe_modular_frame.ingredients = {{"reinforced-iron-plate-sat1", 3},{"iron-rod-sat1", 12}}
-recipe_modular_frame.enabled = true
+recipe_modular_frame.enabled = false
 recipe_modular_frame.category = "crafting"
 recipe_modular_frame.subgroup = "iron-extends"
 
@@ -295,7 +295,7 @@ recipe_modular_frame.energy_required = 30
 recipe_modular_frame.result = "smart-plating-sat1"
 recipe_modular_frame.result_count = 1
 recipe_modular_frame.ingredients = {{"reinforced-iron-plate-sat1", 1},{"rotor-sat1", 1}}
-recipe_modular_frame.enabled = true
+recipe_modular_frame.enabled = false
 recipe_modular_frame.category = "crafting"
 recipe_modular_frame.subgroup = "space-elevator-extends"
 
