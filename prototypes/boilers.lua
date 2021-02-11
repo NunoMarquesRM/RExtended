@@ -28,7 +28,8 @@ return {
     }
 }
 end
-
+------------------------------------------------------------
+--- Boiler R2
 local recipe_br2 = table.deepcopy(data.raw.recipe['boiler'])
 recipe_br2.name = "boiler-r2"
 recipe_br2.enabled = false
@@ -39,6 +40,7 @@ recipe_br2.ingredients = {
 }
 recipe_br2.result = "boiler-r2"
 
+
 local item_br2 = table.deepcopy(data.raw.item['boiler'])
 item_br2.name = "boiler-r2"
 item_br2.icon = "__RExtended__/graphics/icons/boiler/r2.png"
@@ -47,117 +49,111 @@ item_br2.subgroup = "power-steam"
 item_br2.order = "b-a"
 item_br2.place_result = "boiler-r2"
 
-data:extend({recipe_br2,item_br2})
 
+local br2 = table.deepcopy(data.raw['boiler']['boiler'])
+br2.name = "boiler-r2"
+br2.icon = "__RExtended__/graphics/icons/boiler/r2.png"
+br2.icon_size = 32
+br2.minable = {mining_time = 0.3, result = "boiler-r2"}
+br2.max_health = 350
+br2.collision_box = {{-1.2, -1.2}, {1.2, 1.2}}
+br2.selection_box = {{-1.5, -1.5}, {1.5, 1.5}}
+br2.mode = "output-to-separate-pipe"
+br2.target_temperature = 200
+br2.fluid_box = {
+	base_area = 5,
+	height = 2,
+	base_level = -1,
+	pipe_covers = npipecovers(),
+	pipe_connections = {
+		{type = "input-output", position = {0, -2}},
+		{type = "input-output", position = {0, 2}},
+		{type="input-output", position = {2, 0}},
+	},
+	production_type = "input-output",
+	filter = "water"
+}
+br2.output_fluid_box = {
+	base_area = 5,
+	height = 2,
+	pipe_covers = npipecovers(),
+	pipe_connections = { {type="output", position = {-2, 0}},},
+	production_type = "output",
+	filter = "steam"
+}
+br2.energy_consumption = "15MW"
+br2.energy_source = {
+	type = "burner",
+	fuel_category = "chemical",
+	effectivity = 1,
+	fuel_inventory_size = 1,
+	emissions = 0.011,
+	smoke = {{
+		name = "smoke",
+		north_position ={-0.125, -1}, south_position ={-0.125, -1},
+		east_position ={-0.125, -1}, west_position ={-0.125, -1},
+		height = 1, deviation = {0.1, 0.1},
+		frequency = 25,
+	}}
+}
+br2.structure = {
+	north = {
+		layers ={
+		{
+			filename = "__RExtended__/graphics/entity/boiler/r2.png",
+			priority = "extra-high",
+			width = 256,
+			height = 256,
+			shift = {0.25, -0.1},
+			scale = 0.5,
+		},}
+	},
+	east = {
+		layers ={
+		{
+			filename = "__RExtended__/graphics/entity/boiler/r2.png",
+			priority = "extra-high",
+			width = 256,
+			height = 256,
+			shift = {0.25, -0.1},
+			scale = 0.5,
+		},}
+	},
+	south = {
+		layers = {
+		{
+			filename = "__RExtended__/graphics/entity/boiler/r2.png",
+			priority = "extra-high",
+			width = 256,
+			height = 256,
+			shift = {0.25, -0.1},
+			scale = 0.5,
+		},}
+	},
+	west = {
+		layers = {
+		{
+			filename = "__RExtended__/graphics/entity/boiler/r2.png",
+			priority = "extra-high",
+			width = 256,
+			height = 256,
+			shift = {0.25, -0.1},
+			scale = 0.5,
+		},}
+	}
+}
+br2.fire = {}
+br2.fire_glow = {}
+br2.burning_cooldown = 20
+br2.pictures = pipepictures()
+
+data:extend({recipe_br2,item_br2,br2})
+
+
+------------------------------------------------------------
+--- Boiler R3
 data:extend({
 --Entity 
-{--Boiler R2
-	type = "boiler",
-	name = "boiler-r2",
-	icon = "__RExtended__/graphics/icons/boiler/r2.png",
-	icon_size = 32,
-	flags = {"placeable-player", "player-creation"},
-	minable = {mining_time = 0.3, result = "boiler-r2"},
-	max_health = 350,
-	corpse = "small-remnants",
-	resistances = {{type = "fire",percent = 80}},
-	working_sound = {sound = {filename = "__base__/sound/boiler.ogg",volume = 1.5},},
-	collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
-	selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
-	mode = "output-to-separate-pipe",
-	target_temperature = 200,
-	fluid_box = {
-		base_area = 5,
-		height = 2,
-		base_level = -1,
-		pipe_covers = npipecovers(),
-		pipe_connections = {
-			{type = "input-output", position = {0, -2}},
-			{type = "input-output", position = {0, 2}},
-			{type="input-output", position = {2, 0}},
-		},
-		production_type = "input-output",
-		filter = "water"
-	},
-	output_fluid_box = {
-		base_area = 5,
-		height = 2,
-		pipe_covers = npipecovers(),
-		pipe_connections = { {type="output", position = {-2, 0}},},
-		production_type = "output",
-		filter = "steam"
-	},
-	energy_consumption = "15MW",
-	energy_source =
-	{
-		type = "burner",
-		fuel_category = "chemical",
-		effectivity = 0.75,
-		fuel_inventory_size = 1,
-		emissions = 0.011,
-		smoke = {{
-			name = "smoke",
-			north_position ={-0.125, -1},
-			south_position ={-0.125, -1},
-			east_position ={-0.125, -1},
-			west_position ={-0.125, -1},
-			height = 1,
-			deviation = {0.1, 0.1},
-			frequency = 25,
-		}}
-	},
-	structure =
-	{
-		north = {
-			layers ={
-			{
-				filename = "__RExtended__/graphics/entity/boiler/r2.png",
-				priority = "extra-high",
-				width = 256,
-				height = 256,
-				shift = {0.25, -0.1},
-				scale = 0.5,
-			},}
-		},
-		east = {
-			layers ={
-			{
-				filename = "__RExtended__/graphics/entity/boiler/r2.png",
-				priority = "extra-high",
-				width = 256,
-				height = 256,
-				shift = {0.25, -0.1},
-				scale = 0.5,
-			},}
-		},
-		south = {
-			layers = {
-			{
-				filename = "__RExtended__/graphics/entity/boiler/r2.png",
-				priority = "extra-high",
-				width = 256,
-				height = 256,
-				shift = {0.25, -0.1},
-				scale = 0.5,
-			},}
-		},
-		west = {
-			layers = {
-			{
-				filename = "__RExtended__/graphics/entity/boiler/r2.png",
-				priority = "extra-high",
-				width = 256,
-				height = 256,
-				shift = {0.25, -0.1},
-				scale = 0.5,
-			},}
-		}
-	},
-	fire ={},
-	fire_glow = {},
-	burning_cooldown = 20,
-	pictures = pipepictures()
-},
 {--Boiler R3
 	type = "boiler",
 	name = "boiler-r3",
@@ -241,6 +237,7 @@ item_br3.place_result = "boiler-r3"
 
 data:extend({recipe_br3,item_br3})
 
+------------------------------------------------------------
 --Oil Steam Boiler
 data:extend({
 	{--Item
