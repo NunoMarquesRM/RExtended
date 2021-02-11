@@ -3,7 +3,7 @@ data:extend({
 		type = "string-setting",
 		name = "robots-help",
 		setting_type = "startup",
-		default_value = "Yes",
+		default_value = "No",
 		allowed_values =  {"Yes", "No"}
 	},
 	{
