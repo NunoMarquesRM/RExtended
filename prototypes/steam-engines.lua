@@ -220,7 +220,7 @@ data:extend({
 	minable = {mining_time = 1, result = "steam-engine-r3"},
 	max_health = 950,
 	corpse = "big-remnants",
-	effectivity = 18.1,
+	effectivity = 18,
 	fluid_usage_per_tick = 30/60, --0/30
 	maximum_temperature = 200,
 	resistances = {{type = "fire",percent = 70}},
@@ -237,9 +237,9 @@ data:extend({
 		filter = "steam",
 	},
 	fluid_input = {
-	  name = "steam",
-	  amount = 0.0,
-	  minimum_temperature = 100.0
+		name = "steam",
+		amount = 0.0,
+		minimum_temperature = 100.0
 	},
 	energy_source = {
 		type = "electric",
