@@ -167,7 +167,7 @@ data:extend({
 	minable = {mining_time = 0.3, result = "steam-engine-r2"},
 	max_health = 650,
 	corpse = "big-remnants",
-	effectivity = 4.55,
+	effectivity = 4.5,
 	fluid_usage_per_tick = 30/60,--0/30
 	maximum_temperature = 200,
 	resistances = {{type = "fire",percent = 70}},
