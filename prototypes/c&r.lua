@@ -339,10 +339,10 @@ data:extend({
 	enabled = false,
 	ingredients = 
 	{
-		{type="item", name="reinforced-iron-plate-r1", amount=4},
-		{type="item", name="reinforced-copper-plate-r1", amount=4},
-		{type="item", name="reinforced-coal-plate-r1", amount=4},
-		{type="item", name="cable-r1", amount=5},
+		{type="item", name="reinforced-iron-plate-r1", amount=2},
+		{type="item", name="reinforced-copper-plate-r1", amount=2},
+		{type="item", name="reinforced-coal-plate-r1", amount=2},
+		{type="item", name="cable-r1", amount=6},
 	},		
 	result = "electric-component-r1",
 	result_count = 1,
