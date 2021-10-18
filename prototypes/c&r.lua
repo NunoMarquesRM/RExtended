@@ -348,6 +348,22 @@ data:extend({
 	result_count = 1,
 	category = "crafting",
 },
+{--Plastic with Clean Coal-
+	type = "recipe",
+	name = "plastic-bar-r1",				
+	energy_required = 1,
+	enabled = false,
+	ingredients = 
+	{
+		{type="item", name="clean-coal-r1", amount=2},
+		{type="fluid", name="petroleum-gas", amount=20},
+	},		
+	result = "plastic-bar",
+	result_count = 4,
+	category = "chemistry",
+	subgroup = "chemical-products-r1",
+	order = "a-b-a",
+},
 --ITEM
 	{--Copper Gear Wheel R1
 		type = "item",
@@ -366,7 +382,7 @@ data:extend({
 	fuel_category = "chemical",
 	fuel_value = "72MJ",
 	subgroup = "chemical-products-r1",
-	order = "a-b-a",
+	order = "a-a-c",
 	stack_size = 200
 },
 {--Clean Coal R1
