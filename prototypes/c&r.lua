@@ -22,7 +22,7 @@ data:extend({
 	ingredients = {{"wood", 4}},
 	enabled = false,
 	subgroup = "chemical-products-r1",
-	order = "a-a-a",
+	order = "a-b-a",
 	result = "coal",
 },
 {--Enriched Coal-
@@ -131,7 +131,7 @@ data:extend({
 	result = "glue-r1",
 	result_count = 20,
 	category = "red-mixing",
-
+	order = "a-a-a",
 },
 {--Glue (Recipe 2)-
 	type = "recipe",
@@ -145,6 +145,7 @@ data:extend({
 	result = "glue-r1",
 	result_count = 50,
 	category = "red-mixing",
+	order = "a-a-b",
 },
 {--Clean Steel v1-
 	type = "recipe",
@@ -161,7 +162,7 @@ data:extend({
 	result_count = 1,
 	category = "red-furnace",
 	subgroup = "plate-products",
-	order = "b-c-a",
+	order = "b-a-c",
 },
 {--Clean Steel v2-
 	type = "recipe",
@@ -178,7 +179,7 @@ data:extend({
 	result_count = 5,
 	category = "red-furnace",
 	subgroup = "plate-products",
-	order = "b-c-b",
+	order = "b-a-d",
 },
 {--Iron Plate v1-
 	type = "recipe",
@@ -191,8 +192,8 @@ data:extend({
 	result = "iron-plate",
 	result_count = 3,
 	category = "smelting",
-	subgroup = "plate-products",
-	order = "b-a-b",
+	subgroup = "plates",
+	order = "c-a-a",
 },
 {--Iron Plate v2-
 	type = "recipe",
@@ -208,8 +209,8 @@ data:extend({
 	result = "iron-plate",
 	result_count = 5,
 	category = "red-casting-chamber",
-	subgroup = "plate-products",
-	order = "b-a-d",
+	subgroup = "plates",
+	order = "c-a-b",
 },
 {--Copper Plate v1-
 	type = "recipe",
@@ -222,8 +223,8 @@ data:extend({
 	result = "copper-plate",
 	result_count = 3,
 	category = "smelting",
-	subgroup = "plate-products",
-	order = "b-b-b",
+	subgroup = "plates",
+	order = "c-a-d",
 },
 {--Copper Plate v2-
 	type = "recipe",
@@ -239,8 +240,8 @@ data:extend({
 	result = "copper-plate",
 	result_count = 5,
 	category = "red-casting-chamber",
-	subgroup = "plate-products",
-	order = "b-b-d",
+	subgroup = "plates",
+	order = "c-a-e",
 },
 {--Steel Plate v1-
 	type = "recipe",
@@ -255,8 +256,8 @@ data:extend({
 	result = "steel-plate",
 	result_count = 2,
 	category = "red-furnace",
-	subgroup = "plate-products",
-	order = "b-c-a",
+	subgroup = "plates",
+	order = "c-a-f",
 },
 {--Steel Plate v2-
 	type = "recipe",
@@ -272,8 +273,8 @@ data:extend({
 	result = "steel-plate",
 	result_count = 5,
 	category = "red-casting-chamber",
-	subgroup = "plate-products",
-	order = "b-c-a",
+	subgroup = "plates",
+	order = "c-a-g",
 },
 {--Special Component-
 	type = "recipe",
@@ -362,7 +363,7 @@ data:extend({
 	result_count = 4,
 	category = "chemistry",
 	subgroup = "chemical-products-r1",
-	order = "a-b-a",
+	order = "a-c-a",
 },
 --ITEM
 	{--Copper Gear Wheel R1
@@ -382,7 +383,7 @@ data:extend({
 	fuel_category = "chemical",
 	fuel_value = "72MJ",
 	subgroup = "chemical-products-r1",
-	order = "a-a-c",
+	order = "a-b-c",
 	stack_size = 200
 },
 {--Clean Coal R1
@@ -393,7 +394,7 @@ data:extend({
 	fuel_category = "chemical",
 	fuel_value = "36MJ",
 	subgroup = "chemical-products-r1",
-	order = "a-a-b",
+	order = "a-b-b",
 	stack_size = 200
 },
 {--Clean Iron R1
@@ -411,7 +412,7 @@ data:extend({
     icon = "__RExtended__/graphics/icons/C&R/clean-copper-r1.png",
 	icon_size = 32,
     subgroup = "plate-products",
-    order = "b-b-a",
+    order = "b-a-b",
 	stack_size = 100,
 },
 {--Clean Steel R1
@@ -420,7 +421,7 @@ data:extend({
     icon = "__RExtended__/graphics/icons/C&R/clean-steel-r1.png",
 	icon_size = 32,
     subgroup = "plate-products",
-    order = "b-c-a",
+    order = "b-a-c",
 	stack_size = 100,
 },
 {--Cable R1
@@ -428,8 +429,8 @@ data:extend({
     name = "cable-r1",
     icon = "__RExtended__/graphics/icons/C&R/cable-r1.png",
 	icon_size = 32,
-    subgroup = "inter-products",
-    order = "c-a-a",
+    subgroup = "reinforced-products",
+    order = "i-c-a",
     stack_size = 200,
 },
 {--Reinforced Iron Gear
@@ -437,8 +438,8 @@ data:extend({
     name = "reinforced-gear-iron-r1",
     icon = "__RExtended__/graphics/icons/C&R/reinforced-gear-iron-r1.png",
 	icon_size = 32,
-    subgroup = "inter-products",
-    order = "c-b-a",
+    subgroup = "reinforced-products",
+    order = "i-b-e",
     stack_size = 200,
 },
 {--Reinforced Copper Gear
@@ -446,8 +447,8 @@ data:extend({
     name = "reinforced-gear-copper-r1",
     icon = "__RExtended__/graphics/icons/C&R/reinforced-gear-copper-r1.png",
 	icon_size = 32,
-    subgroup = "inter-products",
-    order = "c-b-b",
+    subgroup = "reinforced-products",
+    order = "i-b-f",
     stack_size = 200,
 },
 {--Glue
@@ -455,8 +456,7 @@ data:extend({
 	name = "glue-r1",
 	icon = "__RExtended__/graphics/icons/C&R/glue-r1.png",
 	icon_size = 32,
-	subgroup = "inter-products",
-	order = "c-c-a",
+	subgroup = "reinforced-products",
 	stack_size = 500,
 },
 {--Special Component
@@ -465,7 +465,7 @@ data:extend({
     icon = "__RExtended__/graphics/icons/C&R/reinforced-component-r1.png",
 	icon_size = 32,
     subgroup = "reinforced-products",
-    order = "d-a-a",
+    order = "i-b-a",
     stack_size = 400,
 },
 {--Reinforced Iron Plate
@@ -474,7 +474,7 @@ data:extend({
 	icon = "__RExtended__/graphics/icons/C&R/reinforced-iron-plate-r1.png",
 	icon_size = 32,
 	subgroup = "reinforced-products",
-	order = "d-a-b",
+	order = "i-b-b",
 	stack_size = 200,
 }, 
 {--Reinforced Copper Plate
@@ -483,7 +483,7 @@ data:extend({
     icon = "__RExtended__/graphics/icons/C&R/reinforced-copper-plate-r1.png",
 	icon_size = 32,
     subgroup = "reinforced-products",
-	order = "d-a-c",
+	order = "i-b-c",
 	stack_size = 200,
 },
 {--Reinforced Coal Plate
@@ -492,7 +492,7 @@ data:extend({
     icon = "__RExtended__/graphics/icons/C&R/reinforced-coal-plate-r1.png",
 	icon_size = 32,
     subgroup = "reinforced-products",
-	order = "d-a-d",
+	order = "i-b-d",
 	stack_size = 200,
 },
 {--Eletronic Component
@@ -501,7 +501,7 @@ data:extend({
     icon = "__RExtended__/graphics/icons/C&R/electric-component-r1.png",
 	icon_size = 32,
     subgroup = "reinforced-products",
-	order = "d-b-a",
+	order = "i-c-b",
 	stack_size = 200,
 }
 })
@@ -509,11 +509,11 @@ data:extend({
 local recipe_quartz = table.deepcopy(data.raw.recipe['iron-plate'])
 recipe_quartz.category = "crafting-with-fluid"
 recipe_quartz.name = "blue-quartz-r1"
-recipe_quartz.energy_required = 0.5
+recipe_quartz.energy_required = 1
 recipe_quartz.result = "blue-quartz-r1"
 recipe_quartz.ingredients = {
 	{"stone", 4},
-	{type="fluid", name="pressurized-water-r1", amount=100}
+	{type="fluid", name="pressurized-water-r1", amount=75}
 }
 recipe_quartz.enabled = false
 
@@ -522,7 +522,7 @@ local recipe_silicon = table.deepcopy(data.raw.recipe['iron-plate'])
 recipe_silicon.name = "crystalline-silicon-r1"
 recipe_silicon.energy_required = 10
 recipe_silicon.result = "crystalline-silicon-r1"
-recipe_silicon.ingredients = {{"blue-quartz-r1", 4}}
+recipe_silicon.ingredients = {{"blue-quartz-r1", 2}}
 recipe_silicon.enabled = false
 
 local recipe_solarCell = table.deepcopy(data.raw.recipe['engine-unit'])
@@ -543,7 +543,7 @@ item_quartz.name = "blue-quartz-r1"
 item_quartz.icon = "__RExtended__/graphics/icons/C&R/blue-quartz-r1.png"
 item_quartz.icon_size = 32
 item_quartz.subgroup = "solar-products"
-item_quartz.order = "e-a"
+item_quartz.order = "j-a"
 
 --Crystalline Silicon Item
 local item_silicon = table.deepcopy(data.raw.item['iron-plate'])
@@ -551,14 +551,14 @@ item_silicon.name = "crystalline-silicon-r1"
 item_silicon.icon = "__RExtended__/graphics/icons/C&R/crystalline-silicon-r1.png"
 item_silicon.icon_size = 32
 item_silicon.subgroup = "solar-products"
-item_silicon.order = "e-b"
+item_silicon.order = "j-b"
 
 local item_solarCell = table.deepcopy(data.raw.item['iron-stick'])
 item_solarCell.name = "solar-cell"
 item_solarCell.icon = "__RExtended__/graphics/icons/C&R/solar-cell-r1.png"
 item_solarCell.icon_size = 32
 item_solarCell.subgroup = "solar-products"
-item_solarCell.order = "e-c"
+item_solarCell.order = "j-c"
 
 data:extend({item_quartz,item_silicon,item_solarCell})
 

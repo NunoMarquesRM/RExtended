@@ -3,7 +3,7 @@ battery_r1_item.name = "battery-r1"
 battery_r1_item.icon_size = 64
 battery_r1_item.icon = "__RExtended__/graphics/icons/C&R/battery-r1.png"
 battery_r1_item.subgroup = "accumulators-products"
-battery_r1_item.order = "f-a"
+battery_r1_item.order = "k-a-d"
 
 local battery_r1_recipe = table.deepcopy(data.raw.recipe['battery'])
 battery_r1_recipe.name = "battery-r1"

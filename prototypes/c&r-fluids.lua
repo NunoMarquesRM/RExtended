@@ -63,7 +63,7 @@ data:extend({
 	results = {{type="fluid", name="molten-iron-r1", amount=50}},
 	category = "red-forge-chamber",
 	subgroup = "plate-products",
-	order = "b-a-c",
+	order = "b-b-a",
 },
 {--Molten Copper-
 	type = "recipe",
@@ -76,7 +76,7 @@ data:extend({
 	results = {{type="fluid", name="molten-copper-r1", amount=50}},
 	category = "red-forge-chamber",
 	subgroup = "plate-products",
-	order = "b-b-c",
+	order = "b-b-b",
 },
 {--Molten Steel-
 	type = "recipe",
@@ -89,7 +89,7 @@ data:extend({
 	results = {{type="fluid", name="molten-steel-r1", amount=50}},
 	category = "red-forge-chamber",
 	subgroup = "plate-products",
-	order = "b-c-c",
+	order = "b-b-c",
 },
 {--Molten Coal-
 	type = "recipe",
@@ -101,8 +101,8 @@ data:extend({
 	ingredients = {{"clean-coal-r1", 1},},		
 	results = {{type="fluid", name="molten-coal-r1", amount=50}},
 	category = "red-forge-chamber",
-	subgroup = "plate-products",
-	order = "b-d-c",
+	subgroup = "accumulators-products",
+	order = "k-a-a",
 },
 {--OIL Basic Heavy-
 	type = "recipe",
@@ -259,14 +259,14 @@ data:extend({
     enabled = false,
     energy_required = 5,
     ingredients = {
-		{type="fluid", name="molten-coal-r1", amount=100},
+		{type="fluid", name="molten-coal-r1", amount=50},
 		{type="fluid", name="crude-oil", amount=100}
     },
     results= {
 		{type="fluid", name="enriched-petro-r1", amount=150}
     },
-    subgroup = "oil-fluid-products",
-	order = "y-d-b",
+    subgroup = "accumulators-products",
+	order = "k-a-b",
 	allow_decomposition = false
 },
 {--Lithium
@@ -276,11 +276,11 @@ data:extend({
 	enabled = false,
 	energy_required = 5,
 	ingredients = {
-		{type = "fluid", name = "enriched-petro-r1", amount = 20},
-		{"crystalline-silicon-r1", 20}
+		{type = "fluid", name = "enriched-petro-r1", amount = 75},
+		{"crystalline-silicon-r1", 5}
 	},
 	results = {
-		{type = "fluid", name = "lithium-r1", amount = 30, temperature = 300}
+		{type = "fluid", name = "lithium-r1", amount = 50, temperature = 300}
 	},
 },
 --ITEM & Fluid
@@ -331,7 +331,7 @@ data:extend({
 	subgroup = "fluid-products",
 	order = "z-a-b", 
 },
-{--Molten Irone-
+{--Molten Iron-
 	type = "fluid", 
 	name = "molten-iron-r1", 
 	icon = "__RExtended__/graphics/icons/C&R/molten-iron-r1.png",
@@ -418,8 +418,8 @@ data:extend({
 	flow_color = {r = 0.5, g = 0.4, b = 0},
 	pressure_to_speed_ratio = 0.200, 
 	flow_to_energy_ratio = 0.200, 
-	subgroup = "fluid-products",
-	order = "z-d-e",
+	subgroup = "accumulators-products",
+	order = "k-a-c",
 },
 
 })
