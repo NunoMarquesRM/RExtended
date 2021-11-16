@@ -41,7 +41,7 @@ item_r2.name = "accumulator-r2"
 item_r2.icon = "__RExtended__/graphics/icons/accumulator/accumulator-r2.png"
 item_r2.icon_size = 32
 item_r2.subgroup = "power-energy"
-item_r2.order = "d-a"
+item_r2.order = "h-a"
 item_r2.place_result = "accumulator-r2"
 
 local r2 = table.deepcopy(data.raw['accumulator']['accumulator'])
@@ -117,7 +117,7 @@ item_r3.name = "accumulator-r3"
 item_r3.icon = "__RExtended__/graphics/icons/accumulator/accumulator-r3.png"
 item_r3.icon_size = 32
 item_r3.subgroup = "power-energy"
-item_r3.order = "d-b"
+item_r3.order = "h-b"
 item_r3.place_result = "accumulator-r3"
 
 local r3 = table.deepcopy(data.raw['accumulator']['accumulator'])

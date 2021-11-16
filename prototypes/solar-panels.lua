@@ -85,7 +85,7 @@ item_r2.name = "solar-panel-r2"
 item_r2.icon = "__RExtended__/graphics/icons/solar-panels/solar-panel-r2.png"
 item_r2.icon_size = 32
 item_r2.subgroup = "power-solar"
-item_r2.order = "c-a"
+item_r2.order = "g-a"
 item_r2.place_result = "solar-panel-r2"
 item_r2.stack_size = 50
 
@@ -94,7 +94,7 @@ item_r3.name = "solar-panel-r3"
 item_r3.icon = "__RExtended__/graphics/icons/solar-panels/solar-panel-r3.png"
 item_r3.icon_size = 32
 item_r3.subgroup = "power-solar"
-item_r3.order = "c-b"
+item_r3.order = "g-b"
 item_r3.place_result = "solar-panel-r3"
 item_r3.stack_size = 40
 
@@ -103,7 +103,7 @@ item_r4.name = "solar-panel-r4"
 item_r4.icon = "__RExtended__/graphics/icons/solar-panels/solar-panel-r4.png"
 item_r4.icon_size = 32
 item_r4.subgroup = "power-solar"
-item_r4.order = "c-c"
+item_r4.order = "g-c"
 item_r4.place_result = "solar-panel-r4"
 item_r4.stack_size = 30
 
@@ -112,7 +112,7 @@ item_r5.name = "solar-panel-r5"
 item_r5.icon = "__RExtended__/graphics/icons/solar-panels/solar-panel-r5.png"
 item_r5.icon_size = 32
 item_r5.subgroup = "power-solar"
-item_r5.order = "c-d"
+item_r5.order = "g-d"
 item_r5.place_result = "solar-panel-r5"
 item_r5.stack_size = 20
 

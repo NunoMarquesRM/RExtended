@@ -45,7 +45,7 @@ local item_br2 = table.deepcopy(data.raw.item['boiler'])
 item_br2.name = "boiler-r2"
 item_br2.icon = "__RExtended__/graphics/icons/boiler/r2.png"
 item_br2.icon_size = 32
-item_br2.subgroup = "power-steam"
+item_br2.subgroup = "power-boilers"
 item_br2.order = "b-a"
 item_br2.place_result = "boiler-r2"
 
@@ -166,8 +166,8 @@ local item_br3 = table.deepcopy(data.raw.item['boiler'])
 item_br3.name = "boiler-r3"
 item_br3.icon = "__RExtended__/graphics/icons/boiler/r3.png"
 item_br3.icon_size = 64
-item_br3.subgroup = "power-steam"
-item_br3.order = "b-c"
+item_br3.subgroup = "power-boilers"
+item_br3.order = "b-b"
 item_br3.place_result = "boiler-r3"
 
 
@@ -251,8 +251,8 @@ data:extend({
 		name = "oil-steam-boiler",
 		icon = "__RExtended__/graphics/icons/boiler/oil-steam-boiler.png",
 		icon_size = 32,
-		subgroup = "power-steam",
-		order = "b-e",
+		subgroup = "power-boilers",
+		order = "b-c",
 		place_result = "oil-steam-boiler",
 		stack_size = 25
 	},

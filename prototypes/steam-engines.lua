@@ -36,7 +36,7 @@ data:extend({
 		icon = "__RExtended__/graphics/icons/steam-engines/diesel-generator-icon.png",
 		icon_size = 32,
 		subgroup = "power-steam",
-		order = "b-f",
+		order = "c-c",
 		place_result = "petroleum-generator",
 		stack_size = 20
 	},
@@ -319,7 +319,7 @@ item_sr2.name = "steam-engine-r2"
 item_sr2.icon = "__RExtended__/graphics/icons/steam-engines/r2.png"
 item_sr2.icon_size = 32
 item_sr2.subgroup = "power-steam"
-item_sr2.order = "b-b"
+item_sr2.order = "c-a"
 item_sr2.place_result = "steam-engine-r2"
 
 local item_sr3 = table.deepcopy(data.raw.item['steam-engine'])
@@ -327,7 +327,7 @@ item_sr3.name = "steam-engine-r3"
 item_sr3.icon = "__RExtended__/graphics/icons/steam-engines/r3.png"
 item_sr3.icon_size = 32
 item_sr3.subgroup = "power-steam"
-item_sr3.order = "b-d"
+item_sr3.order = "c-b"
 item_sr3.place_result = "steam-engine-r3"
 
 data:extend({item_sr2,item_sr3})
