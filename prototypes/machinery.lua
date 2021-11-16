@@ -1171,5 +1171,33 @@ data:extend({
 		height = 10
 	},
 },
-
 })
+
+local recipe_ChemicalMachineR2 = table.deepcopy(data.raw.recipe['chemical-machine-r1'])
+recipe_ChemicalMachineR2.name = "chemical-machine-r2"
+recipe_ChemicalMachineR2.energy_required = 5
+recipe_ChemicalMachineR2.result = "chemical-machine-r2"
+recipe_ChemicalMachineR2.ingredients = {
+	{"steel-plate", 10},
+	{"pipe", 4},
+	{"chemical-machine-r1", 2}
+}
+recipe_ChemicalMachineR2.enabled = false
+
+local item_ChemicalMachineR2 = table.deepcopy(data.raw.item['chemical-machine-r1'])
+item_ChemicalMachineR2.name = "chemical-machine-r2"
+item_ChemicalMachineR2.icon = "__RExtended__/graphics/icons/machinery/chemical-machine-r2.png"
+item_ChemicalMachineR2.icon_size = 32
+item_ChemicalMachineR2.place_result = "chemical-machine-r2"
+item_ChemicalMachineR2.order = "c-c-b"
+
+local ChemicalMachineR2 = table.deepcopy(data.raw['assembling-machine']['chemical-machine-r1'])
+ChemicalMachineR2.name = "chemical-machine-r2"
+ChemicalMachineR2.icon = "__RExtended__/graphics/icons/machinery/chemical-machine-r2.png"
+ChemicalMachineR2.icon_size = 32
+ChemicalMachineR2.minable.result = "chemical-machine-r2"
+ChemicalMachineR2.energy_usage = "750kW"
+ChemicalMachineR2.animation.filename = "__RExtended__/graphics/entity/machinery/chemical-machine-r2.png"
+ChemicalMachineR2.crafting_speed = 4
+
+data:extend({recipe_ChemicalMachineR2, item_ChemicalMachineR2, ChemicalMachineR2})
