@@ -56,7 +56,7 @@ data:extend({
 	icon = "__RExtended__/graphics/icons/assemblers/assembler-r2.png",
 	icon_size = 32,
 	subgroup = "machinery-assemblers",
-	order = "a-c-a",
+	order = "a-b-b",
 	place_result = "assembler-r2",
 	stack_size = 50
 },
@@ -284,9 +284,9 @@ data:extend({
     collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
 	selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
     crafting_categories = {"crafting", "advanced-crafting", "crafting-with-fluid"},
-    energy_usage = "525kW",
+    energy_usage = "750kW",
     ingredient_count = 6,
-    crafting_speed = 2,
+    crafting_speed = 4,
 	fast_replaceable_group = "assembling-machine",
     energy_source = {type = "electric", input_priority = "secondary", usage_priority = "secondary-input", emissions = 0.018, },
 	fast_replaceable_group = "assembling-machine",
@@ -403,3 +403,35 @@ data:extend({
     },
 }
 })
+
+local recipe_HalfAssemblerMachineR2 = table.deepcopy(data.raw.recipe['half-assembler-r1'])
+recipe_HalfAssemblerMachineR2.name = "half-assembler-r2"
+recipe_HalfAssemblerMachineR2.result = "half-assembler-r2"
+recipe_HalfAssemblerMachineR2.ingredients = {
+	{"steel-plate", 10},
+	{"reinforced-iron-plate-r1", 1},
+	{"reinforced-copper-plate-r1", 1},
+	{"half-assembler-r1", 2}
+}
+recipe_HalfAssemblerMachineR2.enabled = false
+
+local item_HalfAssemblerMachineR2 = table.deepcopy(data.raw.item['half-assembler-r1'])
+item_HalfAssemblerMachineR2.name = "half-assembler-r2"
+item_HalfAssemblerMachineR2.icon = "__RExtended__/graphics/icons/assemblers/half-assembler-r2.png"
+item_HalfAssemblerMachineR2.place_result = "half-assembler-r2"
+item_HalfAssemblerMachineR2.order = "a-a-b"
+
+local HalfAssemblerMachineR2 = table.deepcopy(data.raw['assembling-machine']['half-assembler-r1'])
+HalfAssemblerMachineR2.name = "half-assembler-r2"
+HalfAssemblerMachineR2.icon = "__RExtended__/graphics/icons/assemblers/half-assembler-r2.png"
+HalfAssemblerMachineR2.icon_size = 32
+HalfAssemblerMachineR2.minable.result = "half-assembler-r2"
+HalfAssemblerMachineR2.energy_usage = "750kW"
+HalfAssemblerMachineR2.crafting_speed = 4
+HalfAssemblerMachineR2.module_specification.module_slots = 3
+HalfAssemblerMachineR2.animation.south.filename = "__RExtended__/graphics/entity/assemblers/half-assembler-r2.png"
+HalfAssemblerMachineR2.animation.west.filename = "__RExtended__/graphics/entity/assemblers/half-assembler-r2.png"
+HalfAssemblerMachineR2.animation.north.filename = "__RExtended__/graphics/entity/assemblers/half-assembler-r2.png"
+HalfAssemblerMachineR2.animation.east.filename = "__RExtended__/graphics/entity/assemblers/half-assembler-r2.png"
+
+data:extend({recipe_HalfAssemblerMachineR2, item_HalfAssemblerMachineR2, HalfAssemblerMachineR2})

@@ -1201,3 +1201,160 @@ ChemicalMachineR2.animation.filename = "__RExtended__/graphics/entity/machinery/
 ChemicalMachineR2.crafting_speed = 4
 
 data:extend({recipe_ChemicalMachineR2, item_ChemicalMachineR2, ChemicalMachineR2})
+
+local recipe_CompressorR2 = table.deepcopy(data.raw.recipe['compressor-r1'])
+recipe_CompressorR2.name = "compressor-r2"
+recipe_CompressorR2.energy_required = 5
+recipe_CompressorR2.result = "compressor-r2"
+recipe_CompressorR2.ingredients = {
+	{"steel-plate", 10},
+	{"compressor-r1", 2}
+}
+recipe_CompressorR2.enabled = false
+
+local item_CompressorR2 = table.deepcopy(data.raw.item['compressor-r1'])
+item_CompressorR2.name = "compressor-r2"
+item_CompressorR2.icon = "__RExtended__/graphics/icons/machinery/compressor-r2.png"
+item_CompressorR2.icon_size = 32
+item_CompressorR2.place_result = "compressor-r2"
+item_CompressorR2.order = "a-a-b"
+
+local CompressorR2 = table.deepcopy(data.raw['assembling-machine']['compressor-r1'])
+CompressorR2.name = "compressor-r2"
+CompressorR2.icon = "__RExtended__/graphics/icons/machinery/compressor-r2.png"
+CompressorR2.icon_size = 32
+CompressorR2.minable.result = "compressor-r2"
+CompressorR2.energy_usage = "750kW"
+CompressorR2.crafting_speed = 4
+CompressorR2.module_specification.module_slots = 3
+CompressorR2.animation.south.filename = "__RExtended__/graphics/entity/machinery/compressor-r2-v.png"
+CompressorR2.animation.west.filename = "__RExtended__/graphics/entity/machinery/compressor-r2-h.png"
+CompressorR2.animation.north.filename = "__RExtended__/graphics/entity/machinery/compressor-r2-v.png"
+CompressorR2.animation.east.filename = "__RExtended__/graphics/entity/machinery/compressor-r2-h.png"
+
+data:extend({recipe_CompressorR2, item_CompressorR2, CompressorR2})
+
+local recipe_CastChamberR2 = table.deepcopy(data.raw.recipe['cast-chamber-r1'])
+recipe_CastChamberR2.name = "cast-chamber-r2"
+recipe_CastChamberR2.energy_required = 5
+recipe_CastChamberR2.result = "cast-chamber-r2"
+recipe_CastChamberR2.ingredients = {
+	{"steel-plate", 10},
+	{"cast-chamber-r1", 2}
+}
+recipe_CastChamberR2.enabled = false
+
+local item_CastChamberR2 = table.deepcopy(data.raw.item['cast-chamber-r1'])
+item_CastChamberR2.name = "cast-chamber-r2"
+item_CastChamberR2.icon = "__RExtended__/graphics/icons/machinery/cast-chamber-r2.png"
+item_CastChamberR2.icon_size = 32
+item_CastChamberR2.place_result = "cast-chamber-r2"
+item_CastChamberR2.order = "a-d-b"
+
+local CastChamberR2 = table.deepcopy(data.raw['assembling-machine']['cast-chamber-r1'])
+CastChamberR2.name = "cast-chamber-r2"
+CastChamberR2.icon = "__RExtended__/graphics/icons/machinery/cast-chamber-r2.png"
+CastChamberR2.icon_size = 32
+CastChamberR2.minable.result = "cast-chamber-r2"
+CastChamberR2.energy_usage = "750kW"
+CastChamberR2.crafting_speed = 4
+CastChamberR2.module_specification.module_slots = 3
+CastChamberR2.animation.south.filename = "__RExtended__/graphics/entity/machinery/cast-chamber-r2.png"
+CastChamberR2.animation.west.filename = "__RExtended__/graphics/entity/machinery/cast-chamber-r2.png"
+CastChamberR2.animation.north.filename = "__RExtended__/graphics/entity/machinery/cast-chamber-r2.png"
+CastChamberR2.animation.east.filename = "__RExtended__/graphics/entity/machinery/cast-chamber-r2.png"
+
+data:extend({recipe_CastChamberR2, item_CastChamberR2, CastChamberR2})
+
+local recipe_WasherChamberR2 = table.deepcopy(data.raw.recipe['washer-chamber-r1'])
+recipe_WasherChamberR2.name = "washer-chamber-r2"
+recipe_WasherChamberR2.energy_required = 5
+recipe_WasherChamberR2.result = "washer-chamber-r2"
+recipe_WasherChamberR2.ingredients = {
+	{"steel-plate", 10},
+	{"washer-chamber-r1", 2}
+}
+recipe_WasherChamberR2.enabled = false
+
+local item_WasherChamberR2 = table.deepcopy(data.raw.item['washer-chamber-r1'])
+item_WasherChamberR2.name = "washer-chamber-r2"
+item_WasherChamberR2.icon = "__RExtended__/graphics/icons/machinery/washer-chamber-r2.png"
+item_WasherChamberR2.icon_size = 32
+item_WasherChamberR2.place_result = "washer-chamber-r2"
+item_WasherChamberR2.order = "a-b-b"
+
+local WasherChamberR2 = table.deepcopy(data.raw['assembling-machine']['washer-chamber-r1'])
+WasherChamberR2.name = "washer-chamber-r2"
+WasherChamberR2.icon = "__RExtended__/graphics/icons/machinery/washer-chamber-r2.png"
+WasherChamberR2.icon_size = 32
+WasherChamberR2.minable.result = "washer-chamber-r2"
+WasherChamberR2.energy_usage = "750kW"
+WasherChamberR2.crafting_speed = 4
+WasherChamberR2.module_specification.module_slots = 3
+WasherChamberR2.animation.south.filename = "__RExtended__/graphics/entity/machinery/washer-chamber-r2.png"
+WasherChamberR2.animation.west.filename = "__RExtended__/graphics/entity/machinery/washer-chamber-r2.png"
+WasherChamberR2.animation.north.filename = "__RExtended__/graphics/entity/machinery/washer-chamber-r2.png"
+WasherChamberR2.animation.east.filename = "__RExtended__/graphics/entity/machinery/washer-chamber-r2.png"
+
+data:extend({recipe_WasherChamberR2, item_WasherChamberR2, WasherChamberR2})
+
+local recipe_HeatForgeChamberR2 = table.deepcopy(data.raw.recipe['heat-forge-chamber-r1'])
+recipe_HeatForgeChamberR2.name = "heat-forge-chamber-r2"
+recipe_HeatForgeChamberR2.energy_required = 5
+recipe_HeatForgeChamberR2.result = "heat-forge-chamber-r2"
+recipe_HeatForgeChamberR2.ingredients = {
+	{"steel-plate", 10},
+	{"heat-forge-chamber-r1", 2}
+}
+recipe_HeatForgeChamberR2.enabled = false
+
+local item_HeatForgeChamberR2 = table.deepcopy(data.raw.item['heat-forge-chamber-r1'])
+item_HeatForgeChamberR2.name = "heat-forge-chamber-r2"
+item_HeatForgeChamberR2.icon = "__RExtended__/graphics/icons/machinery/heat-forge-chamber-r2.png"
+item_HeatForgeChamberR2.icon_size = 32
+item_HeatForgeChamberR2.place_result = "heat-forge-chamber-r2"
+item_HeatForgeChamberR2.order = "a-c-b"
+
+local HeatForgeChamberR2 = table.deepcopy(data.raw['assembling-machine']['heat-forge-chamber-r1'])
+HeatForgeChamberR2.name = "heat-forge-chamber-r2"
+HeatForgeChamberR2.icon = "__RExtended__/graphics/icons/machinery/heat-forge-chamber-r2.png"
+HeatForgeChamberR2.icon_size = 32
+HeatForgeChamberR2.minable.result = "heat-forge-chamber-r2"
+HeatForgeChamberR2.energy_usage = "750kW"
+HeatForgeChamberR2.crafting_speed = 4
+HeatForgeChamberR2.module_specification.module_slots = 3
+HeatForgeChamberR2.animation.south.filename = "__RExtended__/graphics/entity/machinery/heat-forge-chamber-r2.png"
+HeatForgeChamberR2.animation.west.filename = "__RExtended__/graphics/entity/machinery/heat-forge-chamber-r2.png"
+HeatForgeChamberR2.animation.north.filename = "__RExtended__/graphics/entity/machinery/heat-forge-chamber-r2.png"
+HeatForgeChamberR2.animation.east.filename = "__RExtended__/graphics/entity/machinery/heat-forge-chamber-r2.png"
+
+data:extend({recipe_HeatForgeChamberR2, item_HeatForgeChamberR2, HeatForgeChamberR2})
+
+local recipe_WaterCondenserR2 = table.deepcopy(data.raw.recipe['water-condenser-electric-r1'])
+recipe_WaterCondenserR2.name = "water-condenser-electric-r2"
+recipe_WaterCondenserR2.energy_required = 5
+recipe_WaterCondenserR2.result = "water-condenser-electric-r2"
+recipe_WaterCondenserR2.ingredients = {
+	{"steel-plate", 10},
+	{"water-condenser-electric-r1", 2}
+}
+recipe_WaterCondenserR2.enabled = false
+
+local item_WaterCondenserR2 = table.deepcopy(data.raw.item['water-condenser-electric-r1'])
+item_WaterCondenserR2.name = "water-condenser-electric-r2"
+item_WaterCondenserR2.icon = "__RExtended__/graphics/icons/machinery/water-condenser-electric-r2.png"
+item_WaterCondenserR2.icon_size = 32
+item_WaterCondenserR2.place_result = "water-condenser-electric-r2"
+item_WaterCondenserR2.order = "c-a-b"
+
+local WaterCondenserR2 = table.deepcopy(data.raw['assembling-machine']['water-condenser-electric-r1'])
+WaterCondenserR2.name = "water-condenser-electric-r2"
+WaterCondenserR2.icon = "__RExtended__/graphics/icons/machinery/water-condenser-electric-r2.png"
+WaterCondenserR2.icon_size = 32
+WaterCondenserR2.minable.result = "water-condenser-electric-r2"
+WaterCondenserR2.energy_usage = "750kW"
+WaterCondenserR2.crafting_speed = 4
+WaterCondenserR2.module_specification.module_slots = 3
+WaterCondenserR2.animation.filename = "__RExtended__/graphics/entity/machinery/water-condenser-electric-r2.png"
+
+data:extend({recipe_WaterCondenserR2, item_WaterCondenserR2, WaterCondenserR2})
