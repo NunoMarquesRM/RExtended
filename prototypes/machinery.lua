@@ -1358,3 +1358,37 @@ WaterCondenserR2.module_specification.module_slots = 3
 WaterCondenserR2.animation.filename = "__RExtended__/graphics/entity/machinery/water-condenser-electric-r2.png"
 
 data:extend({recipe_WaterCondenserR2, item_WaterCondenserR2, WaterCondenserR2})
+
+local recipe_RefineryR2 = table.deepcopy(data.raw.recipe['refinery-r1'])
+recipe_RefineryR2.name = "refinery-r2"
+recipe_RefineryR2.energy_required = 5
+recipe_RefineryR2.result = "refinery-r2"
+recipe_RefineryR2.ingredients = {
+	{"steel-plate", 10},
+	{"refinery-r1", 2}
+}
+recipe_RefineryR2.enabled = false
+
+local item_RefineryR2 = table.deepcopy(data.raw.item['refinery-r1'])
+item_RefineryR2.name = "refinery-r2"
+item_RefineryR2.icon = "__RExtended__/graphics/icons/machinery/refinery-r2.png"
+item_RefineryR2.icon_size = 32
+item_RefineryR2.place_result = "refinery-r2"
+item_RefineryR2.order = "c-e-b"
+
+local RefineryR2 = table.deepcopy(data.raw['assembling-machine']['refinery-r1'])
+RefineryR2.name = "refinery-r2"
+RefineryR2.icon = "__RExtended__/graphics/icons/machinery/refinery-r2.png"
+RefineryR2.icon_size = 32
+RefineryR2.minable.result = "refinery-r2"
+RefineryR2.energy_usage = "1.5MW"
+RefineryR2.crafting_speed = 4
+RefineryR2.module_specification.module_slots = 3
+RefineryR2.animation.south.filename = "__RExtended__/graphics/entity/machinery/refinery-r2-s.png"
+RefineryR2.animation.west.filename = "__RExtended__/graphics/entity/machinery/refinery-r2-w.png"
+RefineryR2.animation.north.filename = "__RExtended__/graphics/entity/machinery/refinery-r2-n.png"
+RefineryR2.animation.east.filename = "__RExtended__/graphics/entity/machinery/refinery-r2-e.png"
+RefineryR2.working_visualisations.animation.filename = "__RExtended__/graphics/entity/machinery/refinery-r2-fire.png"
+RefineryR2.working_visualisations.animation.filename = "__RExtended__/graphics/entity/machinery/refinery-r2-fire.png"
+
+data:extend({recipe_RefineryR2, item_RefineryR2, RefineryR2})
