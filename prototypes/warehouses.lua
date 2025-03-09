@@ -3,14 +3,13 @@ data:extend({
 {--Warehouse R1
 	type = "recipe",
 	name = "warehouse-r1",
-	enabled = "false",
-	ingredients =  {
-		{"steel-chest",5},
-		{"reinforced-iron-plate-r1",25},
-		{"reinforced-copper-plate-r1",25},
-		{"reinforced-coal-plate-r1",25}
+	enabled = false,
+	ingredients = {
+		{type = "item", name = "steel-chest", amount = 5},
+		{type = "item", name = "reinforced-iron-plate-r1", amount = 25},
+		{type = "item", name = "reinforced-coal-plate-r1", amount = 25}
 	},
-	result = "warehouse-r1"
+	results = {{type="item", name="warehouse-r1", amount=1}}
 },
 --ITEM
 {--Warehouse R1

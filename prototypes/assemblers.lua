@@ -66,26 +66,26 @@ data:extend({
 	name = "half-assembler-r1",
 	energy_required = 5,
 	enabled = false,
-	ingredients =  {
-		{"reinforced-gear-iron-r1", 5},
-		{"reinforced-gear-copper-r1", 5},
-		{"electronic-circuit", 5}
+	ingredients = {
+		{type = "item", name = "reinforced-gear-iron-r1", amount = 5},
+		{type = "item", name = "reinforced-gear-copper-r1", amount = 5},
+		{type = "item", name = "electronic-circuit", amount = 5}
 	},
-	result = "half-assembler-r1",
+	results = {{type="item", name="half-assembler-r1", amount=1}}
 },
 {--Assembler Machine R1
 	type = "recipe",
 	name = "assembler-r1",
 	energy_required = 5,
 	enabled = false,
-	ingredients =  {
-		{"reinforced-gear-iron-r1", 5},
-		{"reinforced-gear-copper-r1", 5},
-		{"copper-gear-wheel-r1", 5},
-		{"half-assembler-r1", 5},
-		{"reinforced-iron-plate-r1", 15}
+	ingredients = {
+		{type = "item", name = "reinforced-gear-iron-r1", amount = 5},
+		{type = "item", name = "reinforced-gear-copper-r1", amount = 5},
+		{type = "item", name = "copper-gear-wheel-r1", amount = 5},
+		{type = "item", name = "half-assembler-r1", amount = 5},
+		{type = "item", name = "reinforced-iron-plate-r1", amount = 15}
 	},
-	result = "assembler-r1",
+	results = {{type="item", name="assembler-r1", amount=1}}
 },
 {--Assembler Machine R2
 	type = "recipe",
@@ -93,13 +93,13 @@ data:extend({
 	energy_required = 5,
 	enabled = false,
 	ingredients = {
-		{"reinforced-gear-iron-r1", 5},
-		{"reinforced-gear-copper-r1", 5},
-		{"electric-engine-unit", 5},
-		{"assembler-r1", 5},
-		{"processing-unit", 5},
+		{type = "item", name = "reinforced-gear-iron-r1", amount = 5},
+		{type = "item", name = "reinforced-gear-copper-r1", amount = 5},
+		{type = "item", name = "electric-engine-unit", amount = 5},
+		{type = "item", name = "assembler-r1", amount = 5},
+		{type = "item", name = "processing-unit", amount = 5}
 	},
-	result = "assembler-r2",
+	results = {{type="item", name="assembler-r2", amount=1}}
 },
 --ENTITY
 {--Half Assembler Machine
@@ -406,12 +406,13 @@ data:extend({
 
 local recipe_HalfAssemblerMachineR2 = table.deepcopy(data.raw.recipe['half-assembler-r1'])
 recipe_HalfAssemblerMachineR2.name = "half-assembler-r2"
-recipe_HalfAssemblerMachineR2.result = "half-assembler-r2"
+recipe_HalfAssemblerMachineR2.results = {{type="item", name="half-assembler-r2", amount=1}}
 recipe_HalfAssemblerMachineR2.ingredients = {
-	{"steel-plate", 10},
-	{"reinforced-iron-plate-r1", 1},
-	{"reinforced-copper-plate-r1", 1},
-	{"half-assembler-r1", 2}
+	{type = "item", name = "steel-plate", amount = 10},
+	{type = "item", name = "reinforced-iron-plate-r1", amount = 1},
+	{type = "item", name = "reinforced-copper-plate-r1", amount = 1},
+	{type = "item", name = "half-assembler-r1", amount = 2}
+
 }
 recipe_HalfAssemblerMachineR2.enabled = false
 

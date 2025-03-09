@@ -17,10 +17,10 @@ data:extend({
 	energy_required = 5,
 	enabled = true,
 	ingredients = {
-		{"radar", 2},
-		{"copper-gear-wheel-r1", 4}
+		{type = "item", name = "radar", amount = 2},
+		{type = "item", name = "copper-gear-wheel-r1", amount = 4}
 	},
-	result = "red-radar"
+	results = {{type="item", name="red-radar", amount=1}}
 },
 --Entity
 {

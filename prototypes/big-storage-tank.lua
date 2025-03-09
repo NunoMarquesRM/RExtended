@@ -27,12 +27,12 @@ data:extend({
 	energy_required = 4,
 	enabled = false,
 	ingredients = {
-		{"storage-tank", 5},
-		{"pipe", 5},
-		{"steel-plate", 5},
-		{"glue-r1", 10},
+		{type = "item", name = "storage-tank", amount = 5},
+		{type = "item", name = "pipe", amount = 5},
+		{type = "item", name = "steel-plate", amount = 5},
+		{type = "item", name = "glue-r1", amount = 10}
 	},
-	result = "big-storage-tank-r1",
+	results = {{type="item", name="big-storage-tank-r1", amount=1}}
 },
 {--Storage Tank 10M-
 	type = "recipe",
@@ -40,13 +40,13 @@ data:extend({
 	energy_required = 4,
 	enabled = false,
 	ingredients = {
-		{"big-storage-tank-r1", 5},
-		{"pipe", 15},
-		{"reinforced-copper-plate-r1", 20},
-		{"reinforced-coal-plate-r1", 20},
-		{"glue-r1", 15},
+		{type = "item", name = "big-storage-tank-r1", amount = 5},
+		{type = "item", name = "pipe", amount = 15},
+		{type = "item", name = "reinforced-copper-plate-r1", amount = 20},
+		{type = "item", name = "reinforced-coal-plate-r1", amount = 20},
+		{type = "item", name = "glue-r1", amount = 15}
 	},
-	result = "big-storage-tank-r2",
+	results = {{type="item", name="big-storage-tank-r2", amount=1}}
 },
 --ENTITY
 {--Storage Tank 1M
@@ -200,6 +200,5 @@ data:extend({
 	circuit_wire_connection_points = circuit_connector_definitions["storage-tank"].points,
 	circuit_connector_sprites = circuit_connector_definitions["storage-tank"].sprites,
 	circuit_wire_max_distance = default_circuit_wire_max_distance
-},
-
+}
 })

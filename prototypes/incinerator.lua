@@ -13,7 +13,7 @@ data:extend({
 	place_result = "incinerator-r1",
 	stack_size = 50
 },
-{--Incinerator
+{--Incinerator Liquid
 	type = "item",
 	name = "incinerator-liquid-r1",
 	icon = "__RExtended__/graphics/icons/incinerator/incinerator-liquid-r1.png",
@@ -30,25 +30,25 @@ data:extend({
 	energy_required = 2,
 	enabled = false,
 	ingredients = {
-		{"electric-stone-furnace", 1},
-		{"iron-gear-wheel", 5},
-		{"electronic-circuit", 5},
-		{"pipe", 5}
+		{type = "item", name = "electric-stone-furnace", amount = 1},
+		{type = "item", name = "iron-gear-wheel", amount = 5},
+		{type = "item", name = "electronic-circuit", amount = 5},
+		{type = "item", name = "pipe", amount = 5}
 	},
-	result = "incinerator-r1"
+	results = {{type="item", name="incinerator-r1", amount=1}}
 },
-{--Incinerator
+{--Incinerator Liquid
 	type = "recipe",
 	name = "incinerator-liquid-r1",
 	energy_required = 2,
 	enabled = false,
 	ingredients = {
-		{"electric-stone-furnace", 1},
-		{"iron-gear-wheel", 5},
-		{"electronic-circuit", 5},
-		{"pipe", 5}
+		{type = "item", name = "electric-stone-furnace", amount = 1},
+		{type = "item", name = "iron-gear-wheel", amount = 5},
+		{type = "item", name = "electronic-circuit", amount = 5},
+		{type = "item", name = "pipe", amount = 5}
 	},
-	result = "incinerator-liquid-r1"
+	results = {{type="item", name="incinerator-r1", amount=1}}
 },
 --ENTITY
 {--Incinerator
@@ -91,7 +91,7 @@ data:extend({
 		apparent_volume = 2.5,
 	},
 },
-{--Incinerator Liquids
+{--Incinerator Liquid
 	type = "furnace",
 	name = "incinerator-liquid-r1",
 	icon = "__RExtended__/graphics/icons/incinerator/incinerator-liquid-r1.png",
@@ -171,8 +171,7 @@ data:extend({
 		base_area = 1,
 		base_level = -1,
 		pipe_connections ={{ position = {0, -1} }}
-    } },
-    pipe_covers = pipecoverspictures()
-},
-
+	}},
+	pipe_covers = pipecoverspictures()
+}
 })

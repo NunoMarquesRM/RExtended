@@ -9,8 +9,7 @@ data:extend({
 	ingredients = {
 		{type="fluid", name="water", amount=200}
 	},
-	result= "water-r1",
-	result_count = 1
+	results = {{type="item", name="water-r1", amount=1}},
 },
 {--Diesel Fuel
 	type = "recipe",
@@ -24,42 +23,42 @@ data:extend({
 	},
 	results = {
 		{type = "fluid", name = "diesel-fuel", amount = 30, temperature = 300}
-	},
+	}
 },
 {--Pressurized Water R1-
 	type = "recipe",
 	name = "pressurized-water-r1",
-	icon = "__RExtended__/graphics/icons/C&R/pressurized-water-r1.png", 
+	icon = "__RExtended__/graphics/icons/CR/pressurized-water-r1.png", 
 	icon_size = 32,
 	energy_required = 1,
 	enabled = false,
-	ingredients = {{type = "fluid", name="water" , amount = 100},},		
-	results = {{type="fluid", name="pressurized-water-r1", amount=50,},},
+	ingredients = {{type = "fluid", name="water" , amount = 100}},
+	results = {{type="fluid", name="pressurized-water-r1", amount=50}},
 	category = "red-compressing",
 	subgroup = "fluid-products",
 	order = "z-a-b",
 },
 {--Water for the Water Condenser-
 	type = "recipe",
-	name = "water-r1",				
+	name = "water-r1",
 	energy_required = 1,
 	enabled = false,
-	ingredients = {},		
-	results = {{type="fluid", name="water", amount=600,},},
+	ingredients = {},
+	results = {{type="fluid", name="water", amount=600}},
 	category = "red-water-condenser",
-	icon = "__RExtended__/graphics/icons/C&R/water-r1.png",
+	icon = "__RExtended__/graphics/icons/CR/water-r1.png",
 	icon_size = 32,
 	subgroup = "fluid-products",
 	order = "z-a-a",
 },
 {--Molten Iron-
 	type = "recipe",
-	name = "molten-iron-r1",	
-	icon = "__RExtended__/graphics/icons/C&R/molten-iron-r1.png",
-	icon_size = 32,	
+	name = "molten-iron-r1",
+	icon = "__RExtended__/graphics/icons/CR/molten-iron-r1.png",
+	icon_size = 32,
 	energy_required = 1,
 	enabled = false,
-	ingredients = {{"clean-iron-r1", 1},},
+	ingredients = {{type = "item", name = "clean-iron-r1", amount = 1}},
 	results = {{type="fluid", name="molten-iron-r1", amount=50}},
 	category = "red-forge-chamber",
 	subgroup = "plate-products",
@@ -68,11 +67,11 @@ data:extend({
 {--Molten Copper-
 	type = "recipe",
 	name = "molten-copper-r1",
-	icon = "__RExtended__/graphics/icons/C&R/molten-copper-r1.png",
+	icon = "__RExtended__/graphics/icons/CR/molten-copper-r1.png",
 	icon_size = 32,
 	energy_required = 1,
 	enabled = false,
-	ingredients = {{"clean-copper-r1", 1},},
+	ingredients = {{type = "item", name = "clean-copper-r1", amount = 1}},
 	results = {{type="fluid", name="molten-copper-r1", amount=50}},
 	category = "red-forge-chamber",
 	subgroup = "plate-products",
@@ -81,11 +80,11 @@ data:extend({
 {--Molten Steel-
 	type = "recipe",
 	name = "molten-steel-r1",
-	icon = "__RExtended__/graphics/icons/C&R/molten-steel-r1.png",
+	icon = "__RExtended__/graphics/icons/CR/molten-steel-r1.png",
 	icon_size = 32,
 	energy_required = 1,
 	enabled = false,
-	ingredients = {{"clean-steel-r1", 1},},		
+	ingredients = {{type = "item", name = "clean-steel-r1", amount = 1}},
 	results = {{type="fluid", name="molten-steel-r1", amount=50}},
 	category = "red-forge-chamber",
 	subgroup = "plate-products",
@@ -94,11 +93,11 @@ data:extend({
 {--Molten Coal-
 	type = "recipe",
 	name = "molten-coal-r1",
-	icon = "__RExtended__/graphics/icons/C&R/molten-coal.png",
+	icon = "__RExtended__/graphics/icons/CR/molten-coal.png",
 	icon_size = 32,
 	energy_required = 1,
 	enabled = false,
-	ingredients = {{"clean-coal-r1", 1},},		
+	ingredients = {{type = "item", name = "clean-coal-r1", amount = 1}},
 	results = {{type="fluid", name="molten-coal-r1", amount=50}},
 	category = "red-forge-chamber",
 	subgroup = "accumulators-products",
@@ -107,33 +106,33 @@ data:extend({
 {--OIL Basic Heavy-
 	type = "recipe",
 	name = "oil-basic-heavy-r1",
-	icon = "__RExtended__/graphics/icons/C&R/oil-basic-heavy-r1.png",
+	icon = "__RExtended__/graphics/icons/CR/oil-basic-heavy-r1.png",
 	icon_size = 32,
 	category = "red-oil-process",
 	enabled = false,
 	energy_required = 5,
-	ingredients = { {type="fluid", name="crude-oil", amount=100} },
-	results= { {type="fluid", name="heavy-oil", amount=45}, },
+	ingredients = {{type="fluid", name="crude-oil", amount=100}},
+	results= {{type="fluid", name="heavy-oil", amount=45}},
 	subgroup = "oil-fluid-products",
 	order = "y-a-a"
 },
 {--OIL Basic Light-
 	type = "recipe",
 	name = "oil-basic-light-r1",
-	icon = "__RExtended__/graphics/icons/C&R/oil-basic-light-r1.png",
+	icon = "__RExtended__/graphics/icons/CR/oil-basic-light-r1.png",
 	icon_size = 32,
 	category = "red-oil-process",
 	enabled = false,
 	energy_required = 5,
-	ingredients = { {type="fluid", name="crude-oil", amount=100} },
-	results= { {type="fluid", name="light-oil", amount=45}, },
+	ingredients = {{type="fluid", name="crude-oil", amount=100}},
+	results= {{type="fluid", name="light-oil", amount=45}},
 	subgroup = "oil-fluid-products",
 	order = "y-b-a"
 },
 {--OIL Advanced Heavy-
 	type = "recipe",
 	name = "oil-advanced-heavy-r1",
-	icon = "__RExtended__/graphics/icons/C&R/oil-advanced-heavy-r1.png",
+	icon = "__RExtended__/graphics/icons/CR/oil-advanced-heavy-r1.png",
 	icon_size = 32,
 	category = "red-oil-process",
 	enabled = false,
@@ -142,130 +141,128 @@ data:extend({
 		{type="fluid", name="water", amount=100},
 		{type="fluid", name="crude-oil", amount=100}
 	},
-	results= { {type="fluid", name="heavy-oil", amount=90}, },
+	results= {{type="fluid", name="heavy-oil", amount=90}},
 	subgroup = "oil-fluid-products",
 	order = "y-a-b"
 },
 {--OIL Advanced Light-
-    type = "recipe",
-    name = "oil-advanced-light-r1",
-	icon = "__RExtended__/graphics/icons/C&R/oil-advanced-light-r1.png",
+	type = "recipe",
+	name = "oil-advanced-light-r1",
+	icon = "__RExtended__/graphics/icons/CR/oil-advanced-light-r1.png",
 	icon_size = 32,
-    category = "red-oil-process",
-    enabled = false,
-    energy_required = 5,
-    ingredients = {
+	category = "red-oil-process",
+	enabled = false,
+	energy_required = 5,
+	ingredients = {
 		{type="fluid", name="water", amount=100},
 		{type="fluid", name="crude-oil", amount=100}
-    },
-    results= { {type="fluid", name="light-oil", amount=90}, },
-    subgroup = "oil-fluid-products",
+	},
+	results= {{type="fluid", name="light-oil", amount=90}},
+	subgroup = "oil-fluid-products",
 	order = "y-b-b"
 },
 {--OIL Advanced Petroleum-
-    type = "recipe",
-    name = "oil-advanced-petroleum-r1",
-	icon = "__RExtended__/graphics/icons/C&R/oil-advanced-petroleum-r1.png",
+	type = "recipe",
+	name = "oil-advanced-petroleum-r1",
+	icon = "__RExtended__/graphics/icons/CR/oil-advanced-petroleum-r1.png",
 	icon_size = 32,
-    category = "red-oil-process",
-    enabled = false,
-    energy_required = 5,
-    ingredients = {
+	category = "red-oil-process",
+	enabled = false,
+	energy_required = 5,
+	ingredients = {
 		{type="fluid", name="water", amount=100},
 		{type="fluid", name="crude-oil", amount=100}
-    },
-    results= { {type="fluid", name="petroleum-gas", amount=90}, },
-    subgroup = "oil-fluid-products",
+	},
+	results= {{type="fluid", name="petroleum-gas", amount=90}},
+	subgroup = "oil-fluid-products",
 	order = "y-c-a"
 },
 {--OIL Special Heavy-
-    type = "recipe",
-    name = "oil-special-heavy-r1",
-	icon = "__RExtended__/graphics/icons/C&R/oil-special-heavy-r1.png",
+	type = "recipe",
+	name = "oil-special-heavy-r1",
+	icon = "__RExtended__/graphics/icons/CR/oil-special-heavy-r1.png",
 	icon_size = 32,
-    category = "red-oil-process",
-    enabled = false,
-    energy_required = 5,
-    ingredients = {
+	category = "red-oil-process",
+	enabled = false,
+	energy_required = 5,
+	ingredients = {
 		{type="fluid", name="steam", amount=75},
 		{type="fluid", name="crude-oil", amount=100}
-    },
-    results= { {type="fluid", name="heavy-oil", amount=130}, },
-    subgroup = "oil-fluid-products",
+	},
+	results= {{type="fluid", name="heavy-oil", amount=130}},
+	subgroup = "oil-fluid-products",
 	order = "y-a-c",
 	allow_decomposition = false
 },
 {--OIL Special Light-
-    type = "recipe",
-    name = "oil-special-light-r1",
-    icon = "__RExtended__/graphics/icons/C&R/oil-special-light-r1.png",
+	type = "recipe",
+	name = "oil-special-light-r1",
+	icon = "__RExtended__/graphics/icons/CR/oil-special-light-r1.png",
 	icon_size = 32,
-    category = "red-oil-process",
-    enabled = false,
-    energy_required = 5,
-    ingredients = {
+	category = "red-oil-process",
+	enabled = false,
+	energy_required = 5,
+	ingredients = {
 		{type="fluid", name="steam", amount=75},
 		{type="fluid", name="crude-oil", amount=100}
-    },
-    results= { {type="fluid", name="light-oil", amount=130}, },
-    subgroup = "oil-fluid-products",
+	},
+	results= {{type="fluid", name="light-oil", amount=130}},
+	subgroup = "oil-fluid-products",
 	order = "y-b-c",
 	allow_decomposition = false
 },
 {--OIL Special Petroleum-
-    type = "recipe",
-    name = "oil-special-petroleum-r1",
-    icon = "__RExtended__/graphics/icons/C&R/oil-special-petroleum-r1.png",
+	type = "recipe",
+	name = "oil-special-petroleum-r1",
+	icon = "__RExtended__/graphics/icons/CR/oil-special-petroleum-r1.png",
 	icon_size = 32,
-    category = "red-oil-process",
-    enabled = false,
-    energy_required = 5,
-    ingredients ={
+	category = "red-oil-process",
+	enabled = false,
+	energy_required = 5,
+	ingredients ={
 		{type="fluid", name="steam", amount=75},
 		{type="fluid", name="crude-oil", amount=100}
-    },
-    results= { {type="fluid", name="petroleum-gas", amount=130}, },
-    subgroup = "oil-fluid-products",
+	},
+	results= {{type="fluid", name="petroleum-gas", amount=130}},
+	subgroup = "oil-fluid-products",
 	order = "y-c-c",
 	allow_decomposition = false
 },
 {--Oil Special Processing-
-    type = "recipe",
-    name = "oil-special-process-r1",
-    icon = "__RExtended__/graphics/icons/C&R/oil-special-r1.png",
+	type = "recipe",
+	name = "oil-special-process-r1",
+	icon = "__RExtended__/graphics/icons/CR/oil-special-r1.png",
 	icon_size = 32,
-    category = "red-oil-process",
-    enabled = false,
-    energy_required = 5,
-    ingredients = {
+	category = "red-oil-process",
+	enabled = false,
+	energy_required = 5,
+	ingredients = {
 		{type="fluid", name="steam", amount=100},
 		{type="fluid", name="crude-oil", amount=100}
-    },
-    results= {
+	},
+	results= {
 		{type="fluid", name="heavy-oil", amount=55},
 		{type="fluid", name="light-oil", amount=55},
 		{type="fluid", name="petroleum-gas", amount=55}
-    },
-    subgroup = "oil-fluid-products",
+	},
+	subgroup = "oil-fluid-products",
 	order = "y-d-a",
 	allow_decomposition = false
 },
 {--Enriched Petro-
-    type = "recipe",
-    name = "enriched-petro-r1",
-    icon = "__RExtended__/graphics/icons/C&R/enrichedPetro.png",
+	type = "recipe",
+	name = "enriched-petro-r1",
+	icon = "__RExtended__/graphics/icons/CR/enrichedPetro.png",
 	icon_size = 32,
-    category = "red-oil-process",
-    enabled = false,
-    energy_required = 5,
-    ingredients = {
+	category = "red-oil-process",
+	enabled = false,
+	energy_required = 5,
+	ingredients = {
 		{type="fluid", name="molten-coal-r1", amount=50},
 		{type="fluid", name="crude-oil", amount=100}
-    },
-    results= {
-		{type="fluid", name="enriched-petro-r1", amount=150}
-    },
-    subgroup = "accumulators-products",
+	},
+	results= {{type="fluid", name="enriched-petro-r1", amount=150}},
+	subgroup = "accumulators-products",
 	order = "k-a-b",
 	allow_decomposition = false
 },
@@ -277,18 +274,16 @@ data:extend({
 	energy_required = 5,
 	ingredients = {
 		{type = "fluid", name = "enriched-petro-r1", amount = 75},
-		{"crystalline-silicon-r1", 5}
+		{type = "item", name = "crystalline-silicon-r1", amount = 5}
 	},
-	results = {
-		{type = "fluid", name = "lithium-r1", amount = 50, temperature = 300}
-	},
+	results = {{type = "fluid", name = "lithium-r1", amount = 50, temperature = 300}}
 },
 --ITEM & Fluid
 {--Water-
 	type = "item",
 	name = "water-r1",
 	tooltip = "wftt",
-	icon = "__RETech__/graphics/technology/C&R/water-r1.png",
+	icon = "__RETech__/graphics/technology/CR/water-r1.png",
 	icon_size = 128,
 	subgroup = "fluid-products",
 	order = "z-a-b",
@@ -296,13 +291,13 @@ data:extend({
 	place_as_tile = {
 		result = "water",
 		condition_size = 1,
-		condition = { "water-tile" }
+		condition = { layers={water_tile=true} }
 	}
 },
 {--Diesel Fuel-
 	type = "fluid",
 	name = "diesel-fuel",
-	icon = "__RExtended__/graphics/icons/C&R/diesel-fuel.png",
+	icon = "__RExtended__/graphics/icons/CR/diesel-fuel.png",
 	icon_size = 32,
 	default_temperature = 300,
 	max_temperature = 300,
@@ -319,7 +314,7 @@ data:extend({
 {--Pressurized Water R1-
 	type = "fluid", 
 	name = "pressurized-water-r1", 
-	icon = "__RExtended__/graphics/icons/C&R/pressurized-water-r1.png", 
+	icon = "__RExtended__/graphics/icons/CR/pressurized-water-r1.png", 
 	icon_size = 32,
 	default_temperature = 23, 
 	max_temperature = 100, 
@@ -334,7 +329,7 @@ data:extend({
 {--Molten Iron-
 	type = "fluid", 
 	name = "molten-iron-r1", 
-	icon = "__RExtended__/graphics/icons/C&R/molten-iron-r1.png",
+	icon = "__RExtended__/graphics/icons/CR/molten-iron-r1.png",
 	icon_size = 32,
 	default_temperature = 110, 
 	max_temperature = 150, 
@@ -349,7 +344,7 @@ data:extend({
 {--Molten Copper-
 	type = "fluid", 
 	name = "molten-copper-r1", 
-	icon = "__RExtended__/graphics/icons/C&R/molten-copper-r1.png", 
+	icon = "__RExtended__/graphics/icons/CR/molten-copper-r1.png", 
 	icon_size = 32,
 	default_temperature = 110, 
 	max_temperature = 150, 
@@ -364,7 +359,7 @@ data:extend({
 {--Molten Steel-
 	type = "fluid", 
 	name = "molten-steel-r1", 
-	icon = "__RExtended__/graphics/icons/C&R/molten-steel-r1.png", 
+	icon = "__RExtended__/graphics/icons/CR/molten-steel-r1.png", 
 	icon_size = 32,
 	default_temperature = 110, 
 	max_temperature = 150, 
@@ -379,7 +374,7 @@ data:extend({
 {--Molten Coal-
 	type = "fluid", 
 	name = "molten-coal-r1", 
-	icon = "__RExtended__/graphics/icons/C&R/molten-coal.png", 
+	icon = "__RExtended__/graphics/icons/CR/molten-coal.png", 
 	icon_size = 32,
 	default_temperature = 110, 
 	max_temperature = 150, 
@@ -394,7 +389,7 @@ data:extend({
 {--Enriched Petro-
 	type = "fluid", 
 	name = "enriched-petro-r1",
-	icon = "__RExtended__/graphics/icons/C&R/enrichedPetro.png",
+	icon = "__RExtended__/graphics/icons/CR/enrichedPetro.png",
 	icon_size = 32,
 	default_temperature = 110, 
 	max_temperature = 150, 
@@ -409,7 +404,7 @@ data:extend({
 {--Lithium
 	type = "fluid",
 	name = "lithium-r1",
-	icon = "__RExtended__/graphics/icons/C&R/lithium-r1.png",
+	icon = "__RExtended__/graphics/icons/CR/lithium-r1.png",
 	icon_size = 32,
 	default_temperature = 300,
 	max_temperature = 300,
@@ -420,6 +415,5 @@ data:extend({
 	flow_to_energy_ratio = 0.200, 
 	subgroup = "accumulators-products",
 	order = "k-a-c",
-},
-
+}
 })

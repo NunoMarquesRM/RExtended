@@ -12,14 +12,14 @@ data:extend({
 	stack_size = 50
 },
 {--Medium Pole
-    type = "item",
-    name = "medium-pole-r1",
-    icon = "__RExtended__/graphics/icons/poles/medium-pole-r1.png",
+	type = "item",
+	name = "medium-pole-r1",
+	icon = "__RExtended__/graphics/icons/poles/medium-pole-r1.png",
 	icon_size = 32,
-    subgroup = "power-poles",
-    order = "a-b-a",
-    place_result = "medium-pole-r1",
-    stack_size = 50
+	subgroup = "power-poles",
+	order = "a-b-a",
+	place_result = "medium-pole-r1",
+	stack_size = 50
 },
 {--Long Pole
 	type = "item",
@@ -60,25 +60,23 @@ data:extend({
 	icon_mipmaps = 4,
 	energy_required = 1,
 	enabled = true,
-	ingredients =  {
-		{"small-electric-pole", 8}
+	ingredients = {
+		{type = "item", name = "small-electric-pole", amount = 8}
 	},
 	order = "a-a-b",
-	result = "small-pole-r1",
-	result_count = 2,
+	results = {{type="item", name="small-pole-r1", amount=2}}
 },
 {--Medium Pole
-    type = "recipe",
-    name = "medium-pole-r1",
+	type = "recipe",
+	name = "medium-pole-r1",
 	energy_required = 1.5,
-    enabled = false,
-    ingredients =  {
-		{"steel-plate", 2},
-		{"copper-plate", 2},
-		{"medium-electric-pole",1}
+	enabled = false,
+	ingredients = {
+		{type = "item", name = "steel-plate", amount = 2},
+		{type = "item", name = "copper-plate", amount = 2},
+		{type = "item", name = "medium-electric-pole", amount = 1}
 	},
-    result = "medium-pole-r1",
-	result_count = 2,
+	results = {{type="item", name="medium-pole-r1", amount=2}}
 },
 {--Long Pole
 	type = "recipe",
@@ -86,12 +84,12 @@ data:extend({
 	energy_required = 1,
 	enabled = false,
 	ingredients = {
-		{"steel-plate", 5},
-		{"iron-plate", 5},
-		{"copper-plate", 2},
-		{"big-electric-pole",2}
+		{type = "item", name = "steel-plate", amount = 5},
+		{type = "item", name = "iron-plate", amount = 5},
+		{type = "item", name = "copper-plate", amount = 2},
+		{type = "item", name = "big-electric-pole", amount = 2}
 	},
-	result = "long-pole-r1",
+	results = {{type="item", name="long-pole-r1", amount=1}}
 },
 {--Substation
 	type = "recipe",
@@ -99,11 +97,11 @@ data:extend({
 	energy_required = 1,
 	enabled = false,
 	ingredients =  {
-		{"substation", 3},
-		{"copper-gear-wheel-r1", 5},
-		{"iron-plate", 5}
+		{type = "item", name = "iron-plate", amount = 5},
+		{type = "item", name = "copper-gear-wheel-r1", amount = 5},
+		{type = "item", name = "substation", amount = 3}
 	},
-	result = "substation-pole-r1",
+	results = {{type="item", name="substation-pole-r1", amount=1}}
 },
 {--Light Pole
 	type = "recipe",
@@ -113,30 +111,30 @@ data:extend({
 	energy_required = 1,
 	enabled = false,
 	ingredients = {
-		{"copper-gear-wheel-r1", 2},
-		{"iron-plate", 5},
-		{"copper-cable", 4}
+		{type = "item", name = "iron-plate", amount = 5},
+		{type = "item", name = "copper-gear-wheel-r1", amount = 2},
+		{type = "item", name = "copper-cable", amount = 4}
 	},
-	result = "light-pole-r1",
+	results = {{type="item", name="light-pole-r1", amount=1}}
 },
 --ENTITY
 {--Medium Pole
-    type = "electric-pole",
-    name = "medium-pole-r1",
-    icon = "__RExtended__/graphics/icons/poles/medium-pole-r1.png",
+	type = "electric-pole",
+	name = "medium-pole-r1",
+	icon = "__RExtended__/graphics/icons/poles/medium-pole-r1.png",
 	icon_size = 32,
-    flags = {"placeable-neutral", "player-creation"},
-    minable = {hardness = 0.2, mining_time = 0.5, result = "medium-pole-r1"},
-    max_health = 140,
-    corpse = "medium-remnants",
-    resistances = {{type = "fire", percent = 100}},
-    collision_box = {{-0.2, -0.2}, {0.2, 0.2}},
+	flags = {"placeable-neutral", "player-creation"},
+	minable = {hardness = 0.2, mining_time = 0.5, result = "medium-pole-r1"},
+	max_health = 140,
+	corpse = "medium-remnants",
+	resistances = {{type = "fire", percent = 100}},
+	collision_box = {{-0.2, -0.2}, {0.2, 0.2}},
 	selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
-    drawing_box = {{-0.5, -1}, {0.5, 0.5}},
-    maximum_wire_distance = 16,
-    supply_area_distance = 8,
-    vehicle_impact_sound =  {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
-    pictures = {
+	drawing_box = {{-0.5, -1}, {0.5, 0.5}},
+	maximum_wire_distance = 16,
+	supply_area_distance = 8,
+	vehicle_impact_sound =  {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
+	pictures = {
 		filename = "__RExtended__/graphics/entity/poles/medium-pole-r1.png",
 		priority = "high",
 		width = 320,
@@ -144,8 +142,8 @@ data:extend({
 		direction_count = 1,
 		shift = {1.53125, -1.90625},
 		scale = 0.5
-    },
-    connection_points = {{
+	},
+	connection_points = {{
 		shadow = {
 			copper = {3.375, -0.4375},
 			green = {3.375, -0.4375},
@@ -157,13 +155,13 @@ data:extend({
 			red = {0.2,-3.125}
 		}
 	},},
-    copper_wire_picture = {
+	copper_wire_picture = {
 		filename = "__base__/graphics/entity/small-electric-pole/copper-wire.png",
 		priority = "high",
 		width = 224,
 		height = 46
 	},
-    green_wire_picture = {
+	green_wire_picture = {
 		filename = "__base__/graphics/entity/small-electric-pole/green-wire.png",
 		priority = "high",
 		width = 224,
@@ -189,22 +187,22 @@ data:extend({
 	}
 },
 {--Long Pole
-    type = "electric-pole",
-    name = "long-pole-r1",
-    icon = "__RExtended__/graphics/icons/poles/long-pole-r1.png",
+	type = "electric-pole",
+	name = "long-pole-r1",
+	icon = "__RExtended__/graphics/icons/poles/long-pole-r1.png",
 	icon_size = 32,
-    flags = {"placeable-neutral", "player-creation"},
-    minable = {hardness = 0.2, mining_time = 0.5, result = "long-pole-r1"},
-    max_health = 300,
-    corpse = "medium-remnants",
-    resistances = {{type = "fire", percent = 100}},
-    collision_box = {{-0.65, -0.65}, {0.65, 0.65}},
-    selection_box = {{-1, -1}, {1, 1}},
-    drawing_box = {{-1, -3}, {1, 0.5}},
-    maximum_wire_distance = 60,
-    supply_area_distance = 4,
-    vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
-    pictures = {
+	flags = {"placeable-neutral", "player-creation"},
+	minable = {hardness = 0.2, mining_time = 0.5, result = "long-pole-r1"},
+	max_health = 300,
+	corpse = "medium-remnants",
+	resistances = {{type = "fire", percent = 100}},
+	collision_box = {{-0.65, -0.65}, {0.65, 0.65}},
+	selection_box = {{-1, -1}, {1, 1}},
+	drawing_box = {{-1, -3}, {1, 0.5}},
+	maximum_wire_distance = 60,
+	supply_area_distance = 4,
+	vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
+	pictures = {
 		filename = "__RExtended__/graphics/entity/poles/long-pole-r1.png",
 		priority = "high",
 		width = 360,
@@ -212,8 +210,8 @@ data:extend({
 		direction_count = 1,
 		shift = {1.71875, -1.84375},
 		scale = 0.5
-    },
-    connection_points = {{
+	},
+	connection_points = {{
 		shadow = {
 			copper = {4.1875, 0},
 			green = {4.1875, 0},
@@ -257,22 +255,22 @@ data:extend({
 	}
 },
 {--Substation
-    type = "electric-pole",
-    name = "substation-pole-r1",
-    icon = "__RExtended__/graphics/icons/poles/substation-pole-r1.png",
+	type = "electric-pole",
+	name = "substation-pole-r1",
+	icon = "__RExtended__/graphics/icons/poles/substation-pole-r1.png",
 	icon_size = 32,
-    flags = {"placeable-neutral", "player-creation"},
-    minable = {hardness = 0.2, mining_time = 0.5, result = "substation-pole-r1"},
-    max_health = 330,
-    corpse = "medium-remnants",
-    resistances = {{type = "fire", percent = 100}},
-    collision_box = {{-0.65, -0.65}, {0.65, 0.65}},
-    selection_box = {{-1, -1}, {1, 1}},
-    drawing_box = {{-1, -3}, {1, 0.5}},
-    maximum_wire_distance = 64,
-    supply_area_distance = 64,
-    vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
-    pictures = {
+	flags = {"placeable-neutral", "player-creation"},
+	minable = {hardness = 0.2, mining_time = 0.5, result = "substation-pole-r1"},
+	max_health = 330,
+	corpse = "medium-remnants",
+	resistances = {{type = "fire", percent = 100}},
+	collision_box = {{-0.65, -0.65}, {0.65, 0.65}},
+	selection_box = {{-1, -1}, {1, 1}},
+	drawing_box = {{-1, -3}, {1, 0.5}},
+	maximum_wire_distance = 64,
+	supply_area_distance = 64,
+	vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
+	pictures = {
 		filename = "__RExtended__/graphics/entity/poles/substation-pole-r1.png",
 		priority = "high",
 		width = 360,
@@ -280,8 +278,8 @@ data:extend({
 		direction_count = 1,
 		shift = {1.71875, -1.84375},
 		scale = 0.5
-    },
-    connection_points = {{
+	},
+	connection_points = {{
 		shadow = {
 			copper = {4.1875, 0},
 			green = {4.1875, 0},
@@ -356,7 +354,6 @@ data:extend({
 		shift = {0.90625, -1.78125},
 	},
 }
-
 })
 
 --Small Pole

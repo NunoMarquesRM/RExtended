@@ -1,121 +1,121 @@
 function compressor_pipepictures()
 return {
 	north = {
-	  filename = "__RExtended__/graphics/entity/machinery/compressor-pipe-n.png",
-	  priority = "extra-high",
-	  width = 256,
-	  height = 256,
-	  shift = {0.28125, 1.875},
-	  scale = 0.5
+		filename = "__RExtended__/graphics/entity/machinery/compressor-pipe-n.png",
+		priority = "extra-high",
+		width = 256,
+		height = 256,
+		shift = {0.28125, 1.875},
+		scale = 0.5
 	},
 	south = {
-	  filename = "__RExtended__/graphics/entity/machinery/compressor-pipe-s.png",
-	  priority = "extra-high",
-	  width = 256,
-	  height = 256,
-	  shift = {0.28125, -2},
-	  scale = 0.5
+		filename = "__RExtended__/graphics/entity/machinery/compressor-pipe-s.png",
+		priority = "extra-high",
+		width = 256,
+		height = 256,
+		shift = {0.28125, -2},
+		scale = 0.5
 	},
 	east = {
-	  filename = "__RExtended__/graphics/entity/machinery/compressor-pipe-e.png",
-	  priority = "extra-high",
-	  width = 256,
-	  height = 256,
-	  shift = {-1.71875, 0},
-	  scale = 0.5
+		filename = "__RExtended__/graphics/entity/machinery/compressor-pipe-e.png",
+		priority = "extra-high",
+		width = 256,
+		height = 256,
+		shift = {-1.71875, 0},
+		scale = 0.5
 	},
 	west = {
-	  filename = "__RExtended__/graphics/entity/machinery/compressor-pipe-w.png",
-	  priority = "extra-high",
-	  width = 256,
-	  height = 256,
-	  shift = {2.28125, 0},
-	  scale = 0.5
+		filename = "__RExtended__/graphics/entity/machinery/compressor-pipe-w.png",
+		priority = "extra-high",
+		width = 256,
+		height = 256,
+		shift = {2.28125, 0},
+		scale = 0.5
 	}
 }
 end
 function washerpipepictures()
 return {
 	north = {
-	  filename = "__RExtended__/graphics/entity/machinery/washer-pipe-n.png",
-	  priority = "extra-high",
-	  width = 256,
-	  height = 256,
-	  shift = {0.28125, 2},
-	  scale = 0.5
+		filename = "__RExtended__/graphics/entity/machinery/washer-pipe-n.png",
+		priority = "extra-high",
+		width = 256,
+		height = 256,
+		shift = {0.28125, 2},
+		scale = 0.5
 	},
 	east = {
-	  filename = "__RExtended__/graphics/entity/machinery/washer-pipe-e.png",
-	  priority = "extra-high",
-	  width = 256,
-	  height = 256,
-	  shift = {-1.71875, 0},
-	  scale = 0.5
+		filename = "__RExtended__/graphics/entity/machinery/washer-pipe-e.png",
+		priority = "extra-high",
+		width = 256,
+		height = 256,
+		shift = {-1.71875, 0},
+		scale = 0.5
 	},
 	south = {
-	  filename = "__RExtended__/graphics/entity/machinery/washer-pipe-s.png",
-	  priority = "extra-high",
-	  width = 256,
-	  height = 256,
-	  shift = {0.28125, -2},
-	  scale = 0.5
+		filename = "__RExtended__/graphics/entity/machinery/washer-pipe-s.png",
+		priority = "extra-high",
+		width = 256,
+		height = 256,
+		shift = {0.28125, -2},
+		scale = 0.5
 	},
 	west = {
-	  filename = "__RExtended__/graphics/entity/machinery/washer-pipe-w.png",
-	  priority = "extra-high",
-	  width = 256,
-	  height = 256,
-	  shift = {2.28125, 0},
-	  scale = 0.5
+		filename = "__RExtended__/graphics/entity/machinery/washer-pipe-w.png",
+		priority = "extra-high",
+		width = 256,
+		height = 256,
+		shift = {2.28125, 0},
+		scale = 0.5
 	}
 }
 end
 function castpipepictures()
 return{
-    north = {
+	north = {
 		filename = "__RExtended__/graphics/entity/machinery/cast-chamber-pipe-n.png",
 		priority = "extra-high",
 		width = 256,
 		height = 256,
 		shift = {0.28125, 2},
 		scale = 0.5
-    },
-    east = {
+	},
+	east = {
 		filename = "__RExtended__/graphics/entity/machinery/cast-chamber-pipe-e.png",
 		priority = "extra-high",
 		width = 256,
 		height = 256,
 		shift = {-1.71875, 0},
 		scale = 0.5
-    },
-    south = {
+	},
+	south = {
 		filename = "__RExtended__/graphics/entity/machinery/cast-chamber-pipe-s.png",
 		priority = "extra-high",
 		width = 256,
 		height = 256,
 		shift = {0.28125, -2},
 		scale = 0.5
-    },
-    west = {
+	},
+	west = {
 		filename = "__RExtended__/graphics/entity/machinery/cast-chamber-pipe-w.png",
 		priority = "extra-high",
 		width = 256,
 		height = 256,
 		shift = {2.28125, 0},
 		scale = 0.5
-    }
+	}
 }
 end
 function forgepipepictures()
 return {
-    north = {
+	north = {
 		filename = "__RExtended__/graphics/entity/machinery/heat-forge-n.png",
 		priority = "extra-high",
 		width = 256,
 		height = 256,
 		shift = {0.28125, 1.875},
 		scale = 0.5
-    },
+	},
 	south = {
 		filename = "__RExtended__/graphics/entity/machinery/heat-forge-s.png",
 		priority = "extra-high",
@@ -123,89 +123,89 @@ return {
 		height = 256,
 		shift = {0.28125, -2},
 		scale = 0.5
-    },
-    east = {
+	},
+	east = {
 		filename = "__RExtended__/graphics/entity/machinery/heat-forge-e.png",
 		priority = "extra-high",
 		width = 256,
 		height = 256,
 		shift = {-1.71875, 0},
 		scale = 0.5
-    },
-    west = {
+	},
+	west = {
 		filename = "__RExtended__/graphics/entity/machinery/heat-forge-w.png",
 		priority = "extra-high",
 		width = 256,
 		height = 256,
 		shift = {2.28125, 0},
 		scale = 0.5
-    }
+	}
 }
 end
 function chemicalpipepictures()
 return {
-    north = {
-      filename = "__RExtended__/graphics/entity/machinery/chemical-pipe-n.png",
-      priority = "extra-high",
-      width = 256,
-      height = 256,
-      shift = {0.28125, 2},
-	  scale = 0.5
-    },
-    east = {
-      filename = "__RExtended__/graphics/entity/machinery/chemical-pipe-e.png",
-      priority = "extra-high",
-      width = 256,
-      height = 256,
-      shift = {-1.71875, 0},
-	  scale = 0.5
-    },
-    south = {
-      filename = "__RExtended__/graphics/entity/machinery/chemical-pipe-s.png",
-      priority = "extra-high",
-      width = 256,
-      height = 256,
-      shift = {0.28125, -2},
-	  scale = 0.5
-    },
-    west = {
-      filename = "__RExtended__/graphics/entity/machinery/chemical-pipe-w.png",
-      priority = "extra-high",
-      width = 256,
-      height = 256,
-      shift = {2.28125, 0},
-	  scale = 0.5
-    }
+	north = {
+		filename = "__RExtended__/graphics/entity/machinery/chemical-pipe-n.png",
+		priority = "extra-high",
+		width = 256,
+		height = 256,
+		shift = {0.28125, 2},
+		scale = 0.5
+	},
+	east = {
+		filename = "__RExtended__/graphics/entity/machinery/chemical-pipe-e.png",
+		priority = "extra-high",
+		width = 256,
+		height = 256,
+		shift = {-1.71875, 0},
+		scale = 0.5
+	},
+	south = {
+		filename = "__RExtended__/graphics/entity/machinery/chemical-pipe-s.png",
+		priority = "extra-high",
+		width = 256,
+		height = 256,
+		shift = {0.28125, -2},
+		scale = 0.5
+	},
+	west = {
+		filename = "__RExtended__/graphics/entity/machinery/chemical-pipe-w.png",
+		priority = "extra-high",
+		width = 256,
+		height = 256,
+		shift = {2.28125, 0},
+		scale = 0.5
+	}
 }
 end
 function npipecovers()
 return {
-    north = {
+	north = {
 		filename = "__RExtended__/graphics/entity/machinery/pipe-cover-north.png",
 		priority = "extra-high",
 		width = 128,
 		height = 128,
 		scale = 0.5,
-    },
-    east = {
+	},
+	east = {
 		filename = "__RExtended__/graphics/entity/machinery/clear.png",
 		priority = "extra-high",
 		width = 32,
 		height = 32,
-    },
-    south = {
+	},
+	south = {
 		filename = "__RExtended__/graphics/entity/machinery/pipe-cover-south.png",
 		priority = "extra-high",
 		width = 128,
 		height = 128,
 		scale = 0.5,
-    },
-    west = {
+	},
+	west = {
 		filename = "__RExtended__/graphics/entity/machinery/clear.png",
 		priority = "extra-high",
 		width = 32,
 		height = 32,
-    }
+	}
 }
 end
 
@@ -232,14 +232,14 @@ data:extend({
 	stack_size = 50
 },
 {--Water Condenser
-    type = "item",
-    name = "water-condenser-electric-r1",
-    icon = "__RExtended__/graphics/icons/machinery/water-condenser-electric-r1.png",
+	type = "item",
+	name = "water-condenser-electric-r1",
+	icon = "__RExtended__/graphics/icons/machinery/water-condenser-electric-r1.png",
 	icon_size = 32,
-    subgroup = "machinery-condenser",
-    order = "c-a-a",
-    place_result = "water-condenser-electric-r1",
-    stack_size = 50
+	subgroup = "machinery-condenser",
+	order = "c-a-a",
+	place_result = "water-condenser-electric-r1",
+	stack_size = 50
 },
 {--Mixer
 	type = "item",
@@ -252,24 +252,24 @@ data:extend({
 	stack_size = 50
 },
 {--Formation Furnace
-    type = "item",
-    name = "formation-furnace-r1",
-    icon = "__RExtended__/graphics/icons/machinery/formation-furnace-r1.png",
+	type = "item",
+	name = "formation-furnace-r1",
+	icon = "__RExtended__/graphics/icons/machinery/formation-furnace-r1.png",
 	icon_size = 32,
-    subgroup = "machinery-formation",
-    order = "d-a-a",
-    place_result = "formation-furnace-r1",
-    stack_size = 50
+	subgroup = "machinery-formation",
+	order = "d-a-a",
+	place_result = "formation-furnace-r1",
+	stack_size = 50
 },
 {--Formation Furnace Eletric
-    type = "item",
-    name = "formation-furnace-electric-r1",
-    icon = "__RExtended__/graphics/icons/machinery/electric-formation-furnace-r1.png",
+	type = "item",
+	name = "formation-furnace-electric-r1",
+	icon = "__RExtended__/graphics/icons/machinery/electric-formation-furnace-r1.png",
 	icon_size = 32,
-    subgroup = "machinery-formation",
-    order = "d-b-a",
-    place_result = "formation-furnace-electric-r1",
-    stack_size = 50
+	subgroup = "machinery-formation",
+	order = "d-b-a",
+	place_result = "formation-furnace-electric-r1",
+	stack_size = 50
 },
 {--Cast Chamber
 	type = "item",
@@ -282,54 +282,54 @@ data:extend({
 	stack_size = 50
 },
 {--Heat Forge
-    type = "item",
-    name = "heat-forge-chamber-r1",
-    icon = "__RExtended__/graphics/icons/machinery/heat-forge-chamber-r1.png",
+	type = "item",
+	name = "heat-forge-chamber-r1",
+	icon = "__RExtended__/graphics/icons/machinery/heat-forge-chamber-r1.png",
 	icon_size = 32,
-    subgroup = "machinery-ore",
-    order = "a-c-a",
-    place_result = "heat-forge-chamber-r1",
-    stack_size = 50
+	subgroup = "machinery-ore",
+	order = "a-c-a",
+	place_result = "heat-forge-chamber-r1",
+	stack_size = 50
 },
 {--Chemical Machine
-    type = "item",
-    name = "chemical-machine-r1",
-    icon = "__RExtended__/graphics/icons/machinery/chemical-machine-r1.png",
+	type = "item",
+	name = "chemical-machine-r1",
+	icon = "__RExtended__/graphics/icons/machinery/chemical-machine-r1.png",
 	icon_size = 32,
-    subgroup = "machinery-condenser",
+	subgroup = "machinery-condenser",
 	order = "c-c-a",
 	place_result = "chemical-machine-r1",
 	stack_size = 50
 },
 {--Enrichement Chamber
-    type = "item",
-    name = "enrichment-chamber-r1",
-    icon = "__RExtended__/graphics/icons/machinery/enrichment-chamber-r1.png",
+	type = "item",
+	name = "enrichment-chamber-r1",
+	icon = "__RExtended__/graphics/icons/machinery/enrichment-chamber-r1.png",
 	icon_size = 32,
-    subgroup = "machinery-condenser",
+	subgroup = "machinery-condenser",
 	order = "c-d-a",
-    place_result = "enrichment-chamber-r1",
-    stack_size = 50
+	place_result = "enrichment-chamber-r1",
+	stack_size = 50
 },
 {--Refinery
-    type = "item",
-    name = "refinery-r1",
-    icon = "__RExtended__/graphics/icons/machinery/refinery-r1.png",
+	type = "item",
+	name = "refinery-r1",
+	icon = "__RExtended__/graphics/icons/machinery/refinery-r1.png",
 	icon_size = 32,
-    subgroup = "machinery-condenser",
+	subgroup = "machinery-condenser",
 	order = "c-e-a",
-    place_result = "refinery-r1",
-    stack_size = 50
+	place_result = "refinery-r1",
+	stack_size = 50
 },
 {--Beacon
-    type = "item",
-    name = "beacon-r1",
-    icon = "__RExtended__/graphics/icons/machinery/beacon-r1.png",
+	type = "item",
+	name = "beacon-r1",
+	icon = "__RExtended__/graphics/icons/machinery/beacon-r1.png",
 	icon_size = 64,
-    subgroup = "machinery-lab",
-    order = "g-c-a",
-    place_result = "beacon-r1",
-    stack_size = 25
+	subgroup = "machinery-lab",
+	order = "g-c-a",
+	place_result = "beacon-r1",
+	stack_size = 25
 },
 --RECIPE
 {--Compressor-
@@ -338,12 +338,12 @@ data:extend({
 	energy_required = 2,
 	enabled = false,
 	ingredients = {
-		{"steel-plate", 5},
-		{"reinforced-gear-copper-r1", 3},
-		{"reinforced-copper-plate-r1", 5},
-		{"assembling-machine-2", 1}
+		{type = "item", name = "steel-plate", amount = 5},
+		{type = "item", name = "reinforced-gear-copper-r1", amount = 3},
+		{type = "item", name = "reinforced-copper-plate-r1", amount = 5},
+		{type = "item", name = "assembling-machine-2", amount = 1}
 	},
-	result = "compressor-r1"
+	results = {{type="item", name="compressor-r1", amount=1}}
 },
 {--Washer Chamber-
 	type = "recipe",
@@ -351,25 +351,25 @@ data:extend({
 	energy_required = 4,
 	enabled = false,
 	ingredients = {
-		{"steel-plate", 5},
-		{"reinforced-gear-iron-r1", 3},
-		{"reinforced-coal-plate-r1", 5},
-		{"assembling-machine-2", 1}
+		{type = "item", name = "steel-plate", amount = 5},
+		{type = "item", name = "reinforced-gear-iron-r1", amount = 3},
+		{type = "item", name = "reinforced-coal-plate-r1", amount = 5},
+		{type = "item", name = "assembling-machine-2", amount = 1}
 	},
-	result = "washer-chamber-r1"
+	results = {{type="item", name="washer-chamber-r1", amount=1}}
 },
 {--Water Condenser-
-    type = "recipe",
-    name = "water-condenser-electric-r1",
+	type = "recipe",
+	name = "water-condenser-electric-r1",
 	energy_required = 5,
-    enabled = false,
-    ingredients = {
-		{"iron-plate", 10},
-		{"copper-plate", 10},
-		{"reinforced-iron-plate-r1", 10},
-		{"cable-r1", 10}
-    },
-    result = "water-condenser-electric-r1"
+	enabled = false,
+	ingredients = {
+		{type = "item", name = "iron-plate", amount = 10},
+		{type = "item", name = "copper-plate", amount = 10},
+		{type = "item", name = "reinforced-iron-plate-r1", amount = 10},
+		{type = "item", name = "cable-r1", amount = 10}
+	},
+	results = {{type="item", name="water-condenser-electric-r1", amount=1}}
 },
 {--Mixer-
 	type = "recipe",
@@ -377,107 +377,106 @@ data:extend({
 	energy_required = 7,
 	enabled = false,
 	ingredients = {
-		{"iron-plate", 10},
-		{"copper-plate", 10},
-		{"iron-stick", 10},
-		{"reinforced-component-r1", 20}
+		{type = "item", name = "iron-plate", amount = 10},
+		{type = "item", name = "copper-plate", amount = 10},
+		{type = "item", name = "iron-stick", amount = 10},
+		{type = "item", name = "reinforced-component-r1", amount = 20}
 	},
-	result = "mixer-r1"
+	results = {{type="item", name="mixer-r1", amount=1}}
 },
 {--Formation Furnace-
-    type = "recipe",
-    name = "formation-furnace-r1",
+	type = "recipe",
+	name = "formation-furnace-r1",
 	energy_required = 2,
-    enabled = false,
-    ingredients = {
-		{"reinforced-component-r1", 4},
-		{"iron-plate", 4},
-		{"copper-plate", 4}
-    },
-    result = "formation-furnace-r1"
+	enabled = false,
+	ingredients = {
+		{type = "item", name = "reinforced-component-r1", amount = 4},
+		{type = "item", name = "iron-plate", amount = 4},
+		{type = "item", name = "copper-plate", amount = 4}
+	},
+	results = {{type="item", name="formation-furnace-r1", amount=1}}
 },
 {--Formation Furnace Eletric-
-    type = "recipe",
-    name = "formation-furnace-electric-r1",
+	type = "recipe",
+	name = "formation-furnace-electric-r1",
 	energy_required = 6,
-    enabled = false,
-    ingredients = 
-    {
-		{"reinforced-coal-plate-r1", 10},
-		{"reinforced-iron-plate-r1", 10},
-		{"reinforced-copper-plate-r1", 10},
-		{"reinforced-component-r1", 10},
-		{"cable-r1", 10}
-    },
-    result = "formation-furnace-electric-r1"
+	enabled = false,
+	ingredients = {
+		{type = "item", name = "reinforced-coal-plate-r1", amount = 10},
+		{type = "item", name = "reinforced-iron-plate-r1", amount = 10},
+		{type = "item", name = "reinforced-copper-plate-r1", amount = 10},
+		{type = "item", name = "reinforced-component-r1", amount = 10},
+		{type = "item", name = "cable-r1", amount = 10}
+	},
+	results = {{type="item", name="formation-furnace-electric-r1", amount=1}}
 },
 {--Cast Chamber-
-    type = "recipe",
-    name = "cast-chamber-r1",
+	type = "recipe",
+	name = "cast-chamber-r1",
 	energy_required = 7,
-    enabled = false,
-    ingredients = {
-		{"reinforced-copper-plate-r1", 4},
-		{"reinforced-coal-plate-r1", 4},
-		{"pipe", 10},
-		{"electric-component-r1", 5}
-    },
-    result = "cast-chamber-r1"
+	enabled = false,
+	ingredients = {
+		{type = "item", name = "reinforced-copper-plate-r1", amount = 4},
+		{type = "item", name = "reinforced-coal-plate-r1", amount = 4},
+		{type = "item", name = "pipe", amount = 10},
+		{type = "item", name = "electric-component-r1", amount = 5}
+	},
+	results = {{type="item", name="cast-chamber-r1", amount=1}}
 },
 {--Heat Forge-
-    type = "recipe",
-    name = "heat-forge-chamber-r1",
+	type = "recipe",
+	name = "heat-forge-chamber-r1",
 	energy_required = 7,
-    enabled = false,
-    ingredients = {
-		{"reinforced-iron-plate-r1", 4},
-		{"reinforced-coal-plate-r1", 4},
-		{"pipe", 10},
-		{"electric-component-r1", 5}
-    },
-    result = "heat-forge-chamber-r1"
+	enabled = false,
+	ingredients = {
+		{type = "item", name = "reinforced-iron-plate-r1", amount = 4},
+		{type = "item", name = "reinforced-coal-plate-r1", amount = 4},
+		{type = "item", name = "pipe", amount = 10},
+		{type = "item", name = "electric-component-r1", amount = 5}
+	},
+	results = {{type="item", name="heat-forge-chamber-r1", amount=1}}
 },
 {--Chemical Machine-
-    type = "recipe",
-    name = "chemical-machine-r1",
+	type = "recipe",
+	name = "chemical-machine-r1",
 	energy_required = 5,
-    enabled = false,
-    ingredients = {
-		{"steel-plate", 12},
-		{"reinforced-gear-iron-r1", 5},
-		{"reinforced-gear-copper-r1", 3},
-		{"electric-component-r1", 2},
-		{"pipe", 6},
-    },
-    result = "chemical-machine-r1"
+	enabled = false,
+	ingredients = {
+		{type = "item", name = "steel-plate", amount = 12},
+		{type = "item", name = "reinforced-gear-iron-r1", amount = 5},
+		{type = "item", name = "reinforced-gear-copper-r1", amount = 3},
+		{type = "item", name = "electric-component-r1", amount = 2},
+		{type = "item", name = "pipe", amount = 6}
+	},
+	results = {{type="item", name="chemical-machine-r1", amount=1}}
 },
 {--Enrichement Chamber
-    type = "recipe",
-    name = "enrichment-chamber-r1",
+	type = "recipe",
+	name = "enrichment-chamber-r1",
 	energy_required = 4,
-    enabled = false,
-    ingredients = {
-		{"reinforced-coal-plate-r1", 10},
-		{"reinforced-iron-plate-r1", 10},
-		{"reinforced-copper-plate-r1", 10},
-		{"electric-component-r1", 10},
-		{"cable-r1", 10},
-    },
-    result = "enrichment-chamber-r1"
+	enabled = false,
+	ingredients = {
+		{type = "item", name = "reinforced-coal-plate-r1", amount = 10},
+		{type = "item", name = "reinforced-iron-plate-r1", amount = 10},
+		{type = "item", name = "reinforced-copper-plate-r1", amount = 10},
+		{type = "item", name = "electric-component-r1", amount = 10},
+		{type = "item", name = "cable-r1", amount = 10}
+	},
+	results = {{type="item", name="enrichment-chamber-r1", amount=1}}
 },
 {--Refinery-
-    type = "recipe",
-    name = "refinery-r1",
+	type = "recipe",
+	name = "refinery-r1",
 	energy_required = 5,
-    enabled = false,
-    ingredients = {
-		{"reinforced-iron-plate-r1", 25},
-		{"reinforced-copper-plate-r1", 25},
-		{"reinforced-coal-plate-r1", 25},
-		{"electric-component-r1", 20},
-		{"pipe", 25},
-    },
-    result = "refinery-r1"
+	enabled = false,
+	ingredients = {
+		{type = "item", name = "reinforced-iron-plate-r1", amount = 25},
+		{type = "item", name = "reinforced-copper-plate-r1", amount = 25},
+		{type = "item", name = "reinforced-coal-plate-r1", amount = 25},
+		{type = "item", name = "electric-component-r1", amount = 20},
+		{type = "item", name = "pipe", amount = 25}
+	},
+	results = {{type="item", name="refinery-r1", amount=1}}
 },
 {--Beacon
 	type = "recipe",
@@ -485,12 +484,12 @@ data:extend({
 	energy_required = 4,
 	enabled = false,
 	ingredients = {
-		{"reinforced-gear-iron-r1", 5},
-		{"reinforced-gear-copper-r1", 5},
-		{"reinforced-coal-plate-r1", 5},
-		{"electric-component-r1", 2}
+		{type = "item", name = "reinforced-gear-iron-r1", amount = 5},
+		{type = "item", name = "reinforced-gear-copper-r1", amount = 5},
+		{type = "item", name = "reinforced-coal-plate-r1", amount = 5},
+		{type = "item", name = "electric-component-r1", amount = 2}
 	},
-	result = "beacon-r1"
+	results = {{type="item", name="beacon-r1", amount=1}}
 },
 --ENTITY
 {--Compressor
@@ -547,7 +546,7 @@ data:extend({
 	},
 },
 {--Washer Chamber
-    type = "assembling-machine",
+	type = "assembling-machine",
 	name = "washer-chamber-r1",
 	icon = "__RExtended__/graphics/icons/machinery/washer-chamber-r1.png",
 	icon_size = 32,
@@ -592,7 +591,7 @@ data:extend({
 	},
 },
 {--Water Condenser
-    type = "assembling-machine",
+	type = "assembling-machine",
 	name = "water-condenser-electric-r1",
 	icon = "__RExtended__/graphics/icons/machinery/water-condenser-electric-r1.png",
 	icon_size = 32,
@@ -635,7 +634,7 @@ data:extend({
 	},
 },
 {--Mixer
-    type = "assembling-machine",
+	type = "assembling-machine",
 	name = "mixer-r1",
 	icon = "__RExtended__/graphics/icons/machinery/mixer-r1.png",
 	icon_size = 32,
@@ -679,25 +678,25 @@ data:extend({
 	},
 },
 {--Formation Furnace
-    type = "assembling-machine",
-    name = "formation-furnace-r1",
-    icon = "__RExtended__/graphics/icons/machinery/formation-furnace-r1.png",
+	type = "assembling-machine",
+	name = "formation-furnace-r1",
+	icon = "__RExtended__/graphics/icons/machinery/formation-furnace-r1.png",
 	icon_size = 32,
-    flags = {"placeable-neutral", "placeable-player", "player-creation"},
-    minable = {mining_time = 1, result = "formation-furnace-r1"},
-    max_health = 200,
-    corpse = "medium-remnants",
+	flags = {"placeable-neutral", "placeable-player", "player-creation"},
+	minable = {mining_time = 1, result = "formation-furnace-r1"},
+	max_health = 200,
+	corpse = "medium-remnants",
 	open_sound = { filename = "__base__/sound/machine-open.ogg", volume = 0.85 },
-    close_sound = { filename = "__base__/sound/machine-close.ogg", volume = 0.75 },
-    working_sound = { sound = { filename = "__base__/sound/furnace.ogg" } },
-    resistances = {{type = "fire",percent = 100}},
-    collision_box = {{-0.7, -0.7}, {0.7, 0.7}},
-    selection_box = {{-0.8, -1}, {0.8, 1}},
-    crafting_categories = {"red-furnace"},
-    energy_usage = "340kW",
-    ingredient_count = 2,
-    crafting_speed = 1,
-    energy_source = {
+	close_sound = { filename = "__base__/sound/machine-close.ogg", volume = 0.75 },
+	working_sound = { sound = { filename = "__base__/sound/furnace.ogg" } },
+	resistances = {{type = "fire",percent = 100}},
+	collision_box = {{-0.7, -0.7}, {0.7, 0.7}},
+	selection_box = {{-0.8, -1}, {0.8, 1}},
+	crafting_categories = {"red-furnace"},
+	energy_usage = "340kW",
+	ingredient_count = 2,
+	crafting_speed = 1,
+	energy_source = {
 		type = "burner",
 		effectivity = 1,
 		fuel_inventory_size = 1,
@@ -733,32 +732,32 @@ data:extend({
     fast_replaceable_group = "furnace"
 },
 {--Formation Furnace Eletric
-    type = "assembling-machine",
-    name = "formation-furnace-electric-r1",
-    icon = "__RExtended__/graphics/icons/machinery/electric-formation-furnace-r1.png",
+	type = "assembling-machine",
+	name = "formation-furnace-electric-r1",
+	icon = "__RExtended__/graphics/icons/machinery/electric-formation-furnace-r1.png",
 	icon_size = 32,
-    flags = {"placeable-neutral", "placeable-player", "player-creation"},
-    minable = {mining_time = 1, result = "formation-furnace-electric-r1"},
-    max_health = 200,
-    corpse = "medium-remnants",
+	flags = {"placeable-neutral", "placeable-player", "player-creation"},
+	minable = {mining_time = 1, result = "formation-furnace-electric-r1"},
+	max_health = 200,
+	corpse = "medium-remnants",
 	open_sound = { filename = "__base__/sound/machine-open.ogg", volume = 0.85 },
-    close_sound = { filename = "__base__/sound/machine-close.ogg", volume = 0.75 },
+	close_sound = { filename = "__base__/sound/machine-close.ogg", volume = 0.75 },
 	module_specification = { module_slots = 3 },
 	allowed_effects = {"consumption", "speed", "productivity", "pollution"},
-    working_sound = { sound = { filename = "__base__/sound/furnace.ogg" } },
-    resistances = {{ type = "fire", percent = 100 }},
-    collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
+	working_sound = { sound = { filename = "__base__/sound/furnace.ogg" } },
+	resistances = {{ type = "fire", percent = 100 }},
+	collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
 	selection_box = {{-1.5, -1.5}, {1.5, 1.5}},	
-    crafting_categories = {"red-furnace"},
-    energy_usage = "350kW",
-    ingredient_count = 2,
-    crafting_speed = 2,
-    energy_source = {
+	crafting_categories = {"red-furnace"},
+	energy_usage = "350kW",
+	ingredient_count = 2,
+	crafting_speed = 2,
+	energy_source = {
 		type = "electric",
 		usage_priority = "secondary-input",
 		emissions = 0.005
-    },
-    animation = {
+	},
+	animation = {
 		filename = "__RExtended__/graphics/entity/machinery/formation-furnace-electric-r1.png",
 		priority = "extra-high",
 		width = 256,
@@ -784,7 +783,7 @@ data:extend({
     fast_replaceable_group = "furnace"
 },
 {--Cast Chamber
-    type = "assembling-machine",
+	type = "assembling-machine",
 	name = "cast-chamber-r1",
 	icon = "__RExtended__/graphics/icons/machinery/cast-chamber-r1.png",
 	icon_size = 32,
@@ -837,7 +836,7 @@ data:extend({
 	},
 },
 {--Heat Forge
-    type = "assembling-machine",
+	type = "assembling-machine",
 	name = "heat-forge-chamber-r1",
 	icon = "__RExtended__/graphics/icons/machinery/heat-forge-chamber-r1.png",
 	icon_size = 32,
@@ -881,7 +880,7 @@ data:extend({
 	},
 },
 {--Chemical Machine
-    type = "assembling-machine",
+	type = "assembling-machine",
 	name = "chemical-machine-r1",
 	icon = "__RExtended__/graphics/icons/machinery/chemical-machine-r1.png",
 	icon_size = 32,
@@ -954,7 +953,7 @@ data:extend({
 	},
 },
 {--Enrichement Chamber
-    type = "assembling-machine",
+	type = "assembling-machine",
 	name = "enrichment-chamber-r1",
 	icon = "__RExtended__/graphics/icons/machinery/enrichment-chamber-r1.png",
 	icon_size = 32,
@@ -1006,24 +1005,24 @@ data:extend({
 	},
 },
 {--Refinery
-    type = "assembling-machine",
-    name = "refinery-r1",
-    icon = "__RExtended__/graphics/icons/machinery/refinery-r1.png",
+	type = "assembling-machine",
+	name = "refinery-r1",
+	icon = "__RExtended__/graphics/icons/machinery/refinery-r1.png",
 	icon_size = 32,
-    flags = {"placeable-neutral","placeable-player", "player-creation"},
-    minable = {mining_time = 1, result = "refinery-r1"},
-    max_health = 650,
-    corpse = "big-remnants",
-    dying_explosion = "medium-explosion",
-    collision_box = {{-2.4, -2.4}, {2.4, 2.4}},
-    selection_box = {{-2.5, -2.5}, {2.5, 2.5}},
-    module_specification = { module_slots = 3 },
-    scale_entity_info_icon = true,
-    allowed_effects = {"consumption", "speed", "productivity", "pollution"},
-    crafting_categories = {"oil-processing","red-oil-process"},
-    crafting_speed = 2,
-    has_backer_name = false,
-    energy_source = {
+	flags = {"placeable-neutral","placeable-player", "player-creation"},
+	minable = {mining_time = 1, result = "refinery-r1"},
+	max_health = 650,
+	corpse = "big-remnants",
+	dying_explosion = "medium-explosion",
+	collision_box = {{-2.4, -2.4}, {2.4, 2.4}},
+	selection_box = {{-2.5, -2.5}, {2.5, 2.5}},
+	module_specification = { module_slots = 3 },
+	scale_entity_info_icon = true,
+	allowed_effects = {"consumption", "speed", "productivity", "pollution"},
+	crafting_categories = {"oil-processing","red-oil-process"},
+	crafting_speed = 2,
+	has_backer_name = false,
+	energy_source = {
 		type = "electric",
 		usage_priority = "secondary-input",
 		emissions = 0.05
@@ -1176,11 +1175,11 @@ data:extend({
 local recipe_ChemicalMachineR2 = table.deepcopy(data.raw.recipe['chemical-machine-r1'])
 recipe_ChemicalMachineR2.name = "chemical-machine-r2"
 recipe_ChemicalMachineR2.energy_required = 5
-recipe_ChemicalMachineR2.result = "chemical-machine-r2"
+recipe_ChemicalMachineR2.results = {{type="item", name="chemical-machine-r2", amount=1}}
 recipe_ChemicalMachineR2.ingredients = {
-	{"steel-plate", 10},
-	{"pipe", 4},
-	{"chemical-machine-r1", 2}
+	{type = "item", name = "steel-plate", amount = 10},
+	{type = "item", name = "pipe", amount = 4},
+	{type = "item", name = "chemical-machine-r1", amount = 2}
 }
 recipe_ChemicalMachineR2.enabled = false
 
@@ -1205,10 +1204,10 @@ data:extend({recipe_ChemicalMachineR2, item_ChemicalMachineR2, ChemicalMachineR2
 local recipe_CompressorR2 = table.deepcopy(data.raw.recipe['compressor-r1'])
 recipe_CompressorR2.name = "compressor-r2"
 recipe_CompressorR2.energy_required = 5
-recipe_CompressorR2.result = "compressor-r2"
+recipe_CompressorR2.results = {{type="item", name="compressor-r2", amount=1}}
 recipe_CompressorR2.ingredients = {
-	{"steel-plate", 10},
-	{"compressor-r1", 2}
+	{type = "item", name = "steel-plate", amount = 10},
+	{type = "item", name = "compressor-r1", amount = 2}
 }
 recipe_CompressorR2.enabled = false
 
@@ -1237,10 +1236,10 @@ data:extend({recipe_CompressorR2, item_CompressorR2, CompressorR2})
 local recipe_CastChamberR2 = table.deepcopy(data.raw.recipe['cast-chamber-r1'])
 recipe_CastChamberR2.name = "cast-chamber-r2"
 recipe_CastChamberR2.energy_required = 5
-recipe_CastChamberR2.result = "cast-chamber-r2"
+recipe_CastChamberR2.results = {{type="item", name="cast-chamber-r2", amount=1}}
 recipe_CastChamberR2.ingredients = {
-	{"steel-plate", 10},
-	{"cast-chamber-r1", 2}
+	{type = "item", name = "steel-plate", amount = 10},
+	{type = "item", name = "cast-chamber-r1", amount = 2}
 }
 recipe_CastChamberR2.enabled = false
 
@@ -1269,10 +1268,10 @@ data:extend({recipe_CastChamberR2, item_CastChamberR2, CastChamberR2})
 local recipe_WasherChamberR2 = table.deepcopy(data.raw.recipe['washer-chamber-r1'])
 recipe_WasherChamberR2.name = "washer-chamber-r2"
 recipe_WasherChamberR2.energy_required = 5
-recipe_WasherChamberR2.result = "washer-chamber-r2"
+recipe_WasherChamberR2.results = {{type="item", name="washer-chamber-r2", amount=1}}
 recipe_WasherChamberR2.ingredients = {
-	{"steel-plate", 10},
-	{"washer-chamber-r1", 2}
+	{type = "item", name = "steel-plate", amount = 10},
+	{type = "item", name = "washer-chamber-r1", amount = 2}
 }
 recipe_WasherChamberR2.enabled = false
 
@@ -1301,10 +1300,10 @@ data:extend({recipe_WasherChamberR2, item_WasherChamberR2, WasherChamberR2})
 local recipe_HeatForgeChamberR2 = table.deepcopy(data.raw.recipe['heat-forge-chamber-r1'])
 recipe_HeatForgeChamberR2.name = "heat-forge-chamber-r2"
 recipe_HeatForgeChamberR2.energy_required = 5
-recipe_HeatForgeChamberR2.result = "heat-forge-chamber-r2"
+recipe_HeatForgeChamberR2.results = {{type="item", name="heat-forge-chamber-r2", amount=1}}
 recipe_HeatForgeChamberR2.ingredients = {
-	{"steel-plate", 10},
-	{"heat-forge-chamber-r1", 2}
+	{type = "item", name = "steel-plate", amount = 10},
+	{type = "item", name = "heat-forge-chamber-r1", amount = 2}
 }
 recipe_HeatForgeChamberR2.enabled = false
 
@@ -1333,10 +1332,10 @@ data:extend({recipe_HeatForgeChamberR2, item_HeatForgeChamberR2, HeatForgeChambe
 local recipe_WaterCondenserR2 = table.deepcopy(data.raw.recipe['water-condenser-electric-r1'])
 recipe_WaterCondenserR2.name = "water-condenser-electric-r2"
 recipe_WaterCondenserR2.energy_required = 5
-recipe_WaterCondenserR2.result = "water-condenser-electric-r2"
+recipe_WaterCondenserR2.results = {{type="item", name="water-condenser-electric-r2", amount=1}}
 recipe_WaterCondenserR2.ingredients = {
-	{"steel-plate", 10},
-	{"water-condenser-electric-r1", 2}
+	{type = "item", name = "steel-plate", amount = 10},
+	{type = "item", name = "water-condenser-electric-r1", amount = 2}
 }
 recipe_WaterCondenserR2.enabled = false
 
@@ -1362,10 +1361,10 @@ data:extend({recipe_WaterCondenserR2, item_WaterCondenserR2, WaterCondenserR2})
 local recipe_RefineryR2 = table.deepcopy(data.raw.recipe['refinery-r1'])
 recipe_RefineryR2.name = "refinery-r2"
 recipe_RefineryR2.energy_required = 5
-recipe_RefineryR2.result = "refinery-r2"
+recipe_RefineryR2.results = {{type="item", name="refinery-r2", amount=1}}
 recipe_RefineryR2.ingredients = {
-	{"steel-plate", 10},
-	{"refinery-r1", 2}
+	{type = "item", name = "steel-plate", amount = 10},
+	{type = "item", name = "refinery-r1", amount = 2}
 }
 recipe_RefineryR2.enabled = false
 
@@ -1388,7 +1387,41 @@ RefineryR2.animation.south.filename = "__RExtended__/graphics/entity/machinery/r
 RefineryR2.animation.west.filename = "__RExtended__/graphics/entity/machinery/refinery-r2-w.png"
 RefineryR2.animation.north.filename = "__RExtended__/graphics/entity/machinery/refinery-r2-n.png"
 RefineryR2.animation.east.filename = "__RExtended__/graphics/entity/machinery/refinery-r2-e.png"
-RefineryR2.working_visualisations.animation.filename = "__RExtended__/graphics/entity/machinery/refinery-r2-fire.png"
-RefineryR2.working_visualisations.animation.filename = "__RExtended__/graphics/entity/machinery/refinery-r2-fire.png"
+RefineryR2.working_visualisations = {
+	{
+		north_position = {1.25, -3.3},
+		east_position = {-0.125, -2.25},
+		south_position = {1.25, -3.125},
+		west_position = {0, -2.125},
+		animation = {
+			filename = "__RExtended__/graphics/entity/machinery/refinery-r2-fire.png",
+			line_length = 10,
+			width = 40,
+			height = 81,
+			frame_count = 60,
+			animation_speed = 0.75,
+			scale = 0.75,
+			shift = util.by_pixel(0, -14.25),
+		},
+		light = {intensity = 0.4, size = 6, color = {r = 1.0, g = 1.0, b = 1.0}}
+	},
+	{
+		north_position = {-1.25, -3.3},
+		east_position = {-0.125, -4},
+		south_position = {-1.25, -3.125},
+		west_position = {0, -3.875},
+		animation = {
+			filename = "__RExtended__/graphics/entity/machinery/refinery-r2-fire.png",
+			line_length = 10,
+			width = 40,
+			height = 81,
+			frame_count = 60,
+			animation_speed = 0.75,
+			scale = 0.75,
+			shift = util.by_pixel(0, -14.25),
+		},
+		light = {intensity = 0.4, size = 6, color = {r = 1.0, g = 1.0, b = 1.0}}
+	}
+}
 
 data:extend({recipe_RefineryR2, item_RefineryR2, RefineryR2})

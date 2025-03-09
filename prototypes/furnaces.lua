@@ -9,11 +9,11 @@ item_stone_r2.place_result = "electric-stone-furnace"
 local recipe_stone_r2 = table.deepcopy(data.raw.recipe['stone-furnace'])
 recipe_stone_r2.name = "electric-stone-furnace"
 recipe_stone_r2.ingredients = {
-	{"stone-furnace", 2},
-	{"electronic-circuit", 2}
+	{type = "item", name = "stone-furnace", amount = 2},
+	{type = "item", name = "electronic-circuit", amount = 2}
 }
 recipe_stone_r2.enabled = false
-recipe_stone_r2.result = "electric-stone-furnace"
+recipe_stone_r2.results = {{type="item", name="electric-stone-furnace", amount=1}}
 
 local stone_r2 = table.deepcopy(data.raw['furnace']['stone-furnace'])
 stone_r2.name = "electric-stone-furnace"
@@ -65,12 +65,12 @@ item_steel_r2.place_result = "electric-steel-furnace"
 local recipe_steel_r2 = table.deepcopy(data.raw.recipe['steel-furnace'])
 recipe_steel_r2.name = "electric-steel-furnace"
 recipe_steel_r2.ingredients = {
-	{"steel-furnace", 2},
-	{"electronic-circuit", 5},
-	{"copper-gear-wheel-r1", 1}
+	{type = "item", name = "steel-furnace", amount = 2},
+	{type = "item", name = "electronic-circuit", amount = 5},
+	{type = "item", name = "copper-gear-wheel-r1", amount = 1}
 }
 recipe_steel_r2.enabled = false
-recipe_steel_r2.result = "electric-steel-furnace"
+recipe_steel_r2.results = {{type="item", name="electric-steel-furnace", amount=1}}
 
 local steel_r2 = table.deepcopy(data.raw['furnace']['steel-furnace'])
 steel_r2.name = "electric-steel-furnace"
@@ -94,8 +94,7 @@ steel_r2.animation = {
 	shift = {0.5, -0.375},
 	scale = 0.5
 }
-steel_r2.working_visualisations = {
-{
+steel_r2.working_visualisations = {{
 	north_position = { 0.078125, 0.5234375},
 	west_position = { 0.078125, 0.5234375},
 	south_position = { 0.078125, 0.5234375},
@@ -108,6 +107,6 @@ steel_r2.working_visualisations = {
 		frame_count = 12,
 		shift = {-0.1, 0.25}
 	}
-},}
+}}
 
 data:extend({item_steel_r2,recipe_steel_r2,steel_r2})

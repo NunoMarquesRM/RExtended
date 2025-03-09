@@ -6,9 +6,12 @@ data:extend({
 	icon = "__RExtended__/graphics/icons/bio-red/seeds-r1.png",
 	icon_size = 64,
 	energy_required = 10,
-	ingredients = {{"wood", 2}},
+	ingredients = {{type="item", name="wood", amount=2}},
 	enabled = true,
-	results = {{"seeds-r1", 25},{"resin-r1" ,5}},
+	results = {
+		{type = "item", name = "seeds-r1", amount = 25},
+		{type = "item", name = "resin-r1", amount = 5}
+	},
 	subgroup = "bio-red-products",
 	order = "m-a-a",
 },
@@ -19,9 +22,12 @@ data:extend({
 	icon_size = 64,
 	energy_required = 30,
 	category = "crafting-with-fluid",
-	ingredients = {{"seeds-r1", 10},{type = "fluid", name="water" , amount = 500}},
+	ingredients = {
+		{type = "item", name = "seeds-r1", amount = 10},
+		{type = "fluid", name="water" , amount = 500}
+	},
 	enabled = true,
-	results = {{"log-r1", 2}},
+	results = {{type="item", name="log-r1", amount=2}},
 	subgroup = "bio-red-products",
 	order = "m-a-c",
 },
@@ -29,11 +35,16 @@ data:extend({
 	type = "recipe",
 	name = "wood-r1",
 	icon = "__base__/graphics/icons/wood.png",
-	icon_size = 64, icon_mipmaps = 4,
+	icon_size = 64,
+	icon_mipmaps = 4,
 	energy_required = 10,
-	ingredients = {{"log-r1", 1}},
+	ingredients = {{type = "item", name = "log-r1", amount = 1}},
 	enabled = true,
-	results = {{"wood", 4},{"resin-r1" ,2},{"sawdust-r1" ,2}},
+	results = {
+		{type = "item", name = "wood", amount = 4},
+		{type = "item", name = "resin-r1", amount = 2},
+		{type = "item", name = "sawdust-r1", amount = 2}
+	},
 	subgroup = "bio-red-products",
 	order = "m-a-d",
 },
@@ -41,11 +52,10 @@ data:extend({
 	type = "recipe",
 	name = "wood-plate-r1",
 	energy_required = 1,
-	ingredients = {{"wood", 4}},
+	ingredients = {{type = "item", name = "wood", amount = 4}},
 	enabled = true,
-	result = "wood-plate-r1",
+	results = {{type="item", name="wood-plate-r1", amount=1}},
 },
-
 --ITEM
 {--Seeds
 	type = "item",

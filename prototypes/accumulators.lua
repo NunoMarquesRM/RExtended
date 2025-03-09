@@ -1,7 +1,7 @@
 local battery_r1_item = table.deepcopy(data.raw.item['battery'])
 battery_r1_item.name = "battery-r1"
 battery_r1_item.icon_size = 64
-battery_r1_item.icon = "__RExtended__/graphics/icons/C&R/battery-r1.png"
+battery_r1_item.icon = "__RExtended__/graphics/icons/CR/battery-r1.png"
 battery_r1_item.subgroup = "accumulators-products"
 battery_r1_item.order = "k-a-d"
 
@@ -12,18 +12,18 @@ battery_r1_recipe.normal = {
 	enabled = false,
 	ingredients = {
 		{type="fluid", name="lithium-r1", amount=20},
-		{"copper-plate", 1}
+		{type = "item", name = "copper-plate", amount=1}
 	},
-	result = "battery-r1"
+	results = {{type="item", name="battery-r1", amount=1}}
 }
 battery_r1_recipe.expensive = {
 	energy_required = 4,
 	enabled = false,
 	ingredients = {
 		{type="fluid", name="lithium-r1", amount=50},
-		{"copper-plate", 3}
+		{type = "item", name = "copper-plate", amount=3}
 	},
-	result = "battery-r1"
+	results = {{type="item", name="battery-r1", amount=1}}
 }
 
 data:extend({battery_r1_item, battery_r1_recipe})
@@ -31,10 +31,10 @@ data:extend({battery_r1_item, battery_r1_recipe})
 local recipe_r2 = table.deepcopy(data.raw.recipe['accumulator'])
 recipe_r2.name = "accumulator-r2"
 recipe_r2.ingredients = {
-	{"iron-plate",4},
-	{"battery-r1",6}
+	{type = "item", name = "iron-plate",amount=4},
+	{type = "item", name = "battery-r1",amount=6}
 }
-recipe_r2.result = "accumulator-r2"
+recipe_r2.results = {{type="item", name="accumulator-r2", amount=1}}
 
 local item_r2 = table.deepcopy(data.raw.item['accumulator'])
 item_r2.name = "accumulator-r2"
@@ -106,11 +106,11 @@ data:extend({recipe_r2,item_r2,r2})
 local recipe_r3 = table.deepcopy(data.raw.recipe['accumulator'])
 recipe_r3.name = "accumulator-r3"
 recipe_r3.ingredients = {
-	{"accumulator-r2",1},
-	{"iron-plate",4},
-	{"battery-r1",6}
+	{type = "item", name = "accumulator-r2",amount=1},
+	{type = "item", name = "iron-plate",amount=4},
+	{type = "item", name = "battery-r1",amount=6}
 }
-recipe_r3.result = "accumulator-r3"
+recipe_r3.results = {{type="item", name="accumulator-r3", amount=1}}
 
 local item_r3 = table.deepcopy(data.raw.item['accumulator'])
 item_r3.name = "accumulator-r3"

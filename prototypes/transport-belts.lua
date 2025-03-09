@@ -10,37 +10,35 @@ tb_r1_item.stack_size = 100
 local tb_r1_recipe = table.deepcopy(data.raw.recipe["transport-belt"])
 tb_r1_recipe.name = "transport-belt-r1"
 tb_r1_recipe.ingredients = {
-	{"wood-plate-r1", 2}
+	{type = "item", name = "wood-plate-r1", amount = 2}
 }
-tb_r1_recipe.result = "transport-belt-r1"
+tb_r1_recipe.results = {{type="item", name="transport-belt-r1", amount=1}}
 
 local transport_r1 = table.deepcopy(data.raw["transport-belt"]["transport-belt"])
 transport_r1.name = "transport-belt-r1"
 transport_r1.icon = "__RExtended__/graphics/icons/transport-belts/transport-belt-r1.png"
 transport_r1.icon_size = 32
 transport_r1.minable.result = "transport-belt-r1"
-
 transport_r1.belt_animation_set.animation_set.filename = "__RExtended__/graphics/entity/transport-belts/r1/r1.png"
-transport_r1.belt_animation_set.animation_set.hr_version.filename = "__RExtended__/graphics/entity/transport-belts/r1/hr-r1.png"
 
 local un_belt_r1 = table.deepcopy(data.raw.recipe['underground-belt'])
 un_belt_r1.name = "underground-belt-r1"
 un_belt_r1.ingredients = {
-	{"transport-belt-r1",5},
-	{"iron-plate",10}
+	{type = "item", name = "transport-belt-r1", amount = 5},
+	{type = "item", name = "iron-plate", amount = 10}
 }
-un_belt_r1.result = "underground-belt-r1"
+un_belt_r1.results = {{type="item", name="underground-belt-r1", amount=1}}
 un_belt_r1.subgroup = "re-belts"
 un_belt_r1.order = "h-a-b"
 
 local splitter_r1 = table.deepcopy(data.raw.recipe['splitter'])
 splitter_r1.name = "splitter-r1"
 splitter_r1.ingredients = {
-	{"electronic-circuit", 5},
-	{"iron-plate", 5},
-	{"transport-belt-r1", 4}
+	{type = "item", name = "electronic-circuit", amount = 5},
+	{type = "item", name = "iron-plate", amount = 5},
+	{type = "item", name = "transport-belt-r1", amount = 4}
 }
-splitter_r1.result = "splitter-r1"
+splitter_r1.results = {{type="item", name="splitter-r1", amount=1}}
 splitter_r1.subgroup = "re-belts"
 splitter_r1.order = "h-a-c"
 
@@ -69,21 +67,21 @@ data:extend({tb_r1_item,tb_r1_recipe,transport_r1,un_belt_r1,splitter_r1,un_belt
 local un_belt_bug = table.deepcopy(data.raw.recipe['fast-underground-belt'])
 un_belt_bug.name = "underground-belt-bug"
 un_belt_bug.ingredients = {
-	{"underground-belt-r1", 2},
-	{"iron-gear-wheel", 40}
+	{type = "item", name = "underground-belt-r1", amount = 2},
+	{type = "item", name = "iron-gear-wheel", amount = 40}
 }
-un_belt_bug.result = "fast-underground-belt"
+un_belt_bug.results = {{type="item", name="fast-underground-belt", amount=1}}
 un_belt_bug.subgroup = "re-belts"
 un_belt_bug.order = "h-a-d"
 
 local splitter_bug = table.deepcopy(data.raw.recipe['fast-splitter'])
 splitter_bug.name = "splitter-bug"
 splitter_bug.ingredients = {
-	{"electronic-circuit", 10},
-	{"iron-gear-wheel", 10},
-	{"splitter-r1", 1}
+	{type = "item", name = "electronic-circuit", amount = 10},
+	{type = "item", name = "iron-gear-wheel", amount = 10},
+	{type = "item", name = "splitter-r1", amount = 1}
 }
-splitter_bug.result = "fast-splitter"
+splitter_bug.results = {{type="item", name="fast-splitter", amount=1}}
 splitter_bug.subgroup = "re-belts"
 splitter_bug.order = "h-a-e"
 
