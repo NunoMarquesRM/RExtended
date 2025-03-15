@@ -293,7 +293,7 @@ data:extend({
 }
 })
 
-data.raw.character.character.animations.level1 = {	
+data.raw.character.character.animations = {{
 	armors =  {"initial-controller"},
 	idle = {
 		layers = {
@@ -337,4 +337,4 @@ data.raw.character.character.animations.level1 = {
 			character_animations.level1.running_shadow,
 		}
 	}
-}
+}}

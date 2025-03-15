@@ -61,39 +61,42 @@ br2.selection_box = {{-1.5, -1.5}, {1.5, 1.5}}
 br2.mode = "output-to-separate-pipe"
 br2.target_temperature = 200
 br2.fluid_box = {
+	volume = 1000,
 	base_area = 5,
 	height = 2,
 	base_level = -1,
 	pipe_covers = npipecovers(),
+	-- >> don't know what direction will be!
 	pipe_connections = {
-		{type = "input-output", position = {0, -2}},
-		{type = "input-output", position = {0, 2}},
-		{type="input-output", position = {2, 0}}
+		{flow_direction = "input-output", direction = 0.2, position = {0, -1.19}},
+		{flow_direction = "input-output", direction = 0.2, position = {0, 1.19}},
+		{flow_direction = "input-output", direction = 0.2, position = {1.19, 0}}
 	},
 	production_type = "input-output",
 	filter = "water"
 }
 br2.output_fluid_box = {
+	volume = 1000,
 	base_area = 5,
 	height = 2,
 	pipe_covers = npipecovers(),
-	pipe_connections = {{type="output", position = {-2, 0}}},
+	-- >> don't know what direction will be!
+	pipe_connections = {{flow_direction = "output", direction = 0.2, position = {-1.19, 0}}},
 	production_type = "output",
 	filter = "steam"
 }
 br2.energy_consumption = "15MW"
 br2.energy_source = {
 	type = "burner",
-	fuel_category = "chemical",
+	fuel_categories = {"chemical"},
 	effectivity = 1,
 	fuel_inventory_size = 1,
 	emissions = 0.011,
 	smoke = {{
 		name = "smoke",
-		north_position ={-0.125, -1}, south_position ={-0.125, -1},
-		east_position ={-0.125, -1}, west_position ={-0.125, -1},
-		height = 1, deviation = {0.1, 0.1},
-		frequency = 25
+		north_position={-0.125, -1}, south_position={-0.125, -1},
+		east_position={-0.125, -1}, west_position={-0.125, -1},
+		height=1, deviation={0.1, 0.1},	frequency=25
 	}}
 }
 br2.structure = {
@@ -175,28 +178,32 @@ br3.selection_box = {{-1.5, -1.5}, {1.5, 1.5}}
 br3.mode = "output-to-separate-pipe"
 br3.target_temperature = 200
 br3.fluid_box = {
+	volume = 1000,
 	base_area = 7.55,
 	height = 2,
 	base_level = -2,
+	-- >> don't know what direction will be!
 	pipe_connections = {
-		{ type = "input-output", position = { 2,  0} },
-		{ type = "input", position = { 0,  2} },
-		{ type = "input-output", position = {-2,  0} }
+		{flow_direction = "input-output", direction = 0.2, position = {1.25, 0}},
+		{flow_direction = "input", direction = 0.2, position = {0, 1.25}},
+		{flow_direction = "input-output", direction = 0.2, position = {-1.25, 0}}
 	},
 	production_type = "input-output",
 	filter = "water"
 }
 br3.output_fluid_box = {
+	volume = 1000,
 	base_area = 3,
 	height = 2,
-	pipe_connections = { {type="output", position = {0, -2}},},
+	-- >> don't know what direction will be!
+	pipe_connections = {{flow_direction = "output", direction = 0.2, position = {0, -1.25}},},
 	production_type = "output",
 	filter = "steam"
 }
 br3.energy_consumption = "60MW"
 br3.energy_source = {
 	type = "burner",
-	fuel_category = "chemical",
+	fuel_categories = {"chemical"},
 	effectivity = 1,
 	fuel_inventory_size = 1,
 	emissions = 0.011,
@@ -272,7 +279,7 @@ data:extend({
 	dying_explosion = "big-explosion",
 	collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
 	selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
-	vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
+	vehicle_impact_sound =  {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
 	mode = "output-to-separate-pipe",
 	resistances = {
 		{
@@ -290,20 +297,24 @@ data:extend({
 	},
 	target_temperature = 300,
 	fluid_box = {
+		volume = 1000,
 		base_area = 1,
 		height = 2,
 		base_level = -1,
 		--pipe_covers = pipecoverspictures(),
-		pipe_connections = {{ type="input", position = {1, -2} }},
+		-- >> don't know what direction will be!
+		pipe_connections = {{ type="input", direction = 0.2, position = {1, -1.5} }},
 		production_type = "input",
 		filter = "water"
 	},
 	output_fluid_box = {
+		volume = 1000,
 		base_area = 1,
 		height = 2,
 		base_level = 1,
 		--pipe_covers = pipecoverspictures(),
-		pipe_connections = {{type = "output", position = {0, 2}}},
+		-- >> don't know what direction will be!
+		pipe_connections = {{type = "output", direction = 0.2, position = {0, 1.5}}},
 		production_type = "output",
 		filter = "steam"
 	},
@@ -315,11 +326,13 @@ data:extend({
 		fluid_usage_per_tick = 0,
 		scale_fluid_usage = true,
 		fluid_box = {
+			volume = 1000,
 			base_area = 1,
 			height = 2,
 			base_level = -1,
 			--pipe_covers = pipecoverspictures(),
-			pipe_connections = {{ type="input", position = {-1, -2} }},
+			-- >> don't know what direction will be!
+			pipe_connections = {{flow_direction = "input", direction = 0.2, position = {-1, -1.5}}},
 			production_type = "input",
 			filter = "diesel-fuel"
 		},

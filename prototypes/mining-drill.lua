@@ -24,6 +24,8 @@ data:extend({
 {--Mining Drill R2
 	type = "recipe",
 	name = "mining-drill-r2",
+	icon = "__RExtended__/graphics/icons/mining-drill/mining-drill-r2.png",
+	icon_size = 32,
 	normal = {
 		enabled = false,
 		energy_required = 2,
@@ -48,6 +50,8 @@ data:extend({
 {--Mining Drill R3
 	type = "recipe",
 	name = "mining-drill-r3",
+	icon = "__RExtended__/graphics/icons/mining-drill/mining-drill-r3.png",
+	icon_size = 32,
 	normal = {
 		enabled = false,
 		energy_required = 2,

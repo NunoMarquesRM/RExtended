@@ -168,9 +168,12 @@ data:extend({
 			}
 		},
 		pipe_covers = pipecoverspictures(),
-		base_area = 1,
-		base_level = -1,
-		pipe_connections ={{ position = {0, -1} }}
+		volume = 1000,
+		--base_area = 1,
+		--base_level = -1,
+		-- >> don't know what direction will be! Original
+		--pipe_connections = {{flow_direction="???", direction = ???, position = {0, -1} }}
+		pipe_connections = {{flow_direction="input", direction = 0.2, position = {0, 0.289} }}
 	}},
 	pipe_covers = pipecoverspictures()
 }

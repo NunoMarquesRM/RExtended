@@ -18,8 +18,8 @@ data:extend({
 	{
         type = "recipe",
         name = "tree-eraser",
-        enabled = "true",
+        enabled = true,
         ingredients = {},
-        result = "tree-eraser"
+        results = {{type="item", name="tree-eraser", amount=0}}
     }
 })
