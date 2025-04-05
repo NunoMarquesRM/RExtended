@@ -509,7 +509,8 @@ data:extend({
 			pipe_covers = npipecovers(),
 			base_area = 10,
 			base_level = -1,
-			pipe_connections = {{ type="input", position = {0, -2} }},
+			volume = 1000,
+			pipe_connections = {{ type="input", direction = 0.2, position = {0, -1.1} }},
 			secondary_draw_orders = { north = -1 }
 		},
 		{
@@ -518,7 +519,8 @@ data:extend({
 			pipe_covers = npipecovers(),
 			base_area = 10,
 			base_level = 1,
-			pipe_connections = {{ type="output", position = {0, 2} }},
+			volume = 1000,
+			pipe_connections = {{ type="output", direction = 0.2, position = {0, 1.1} }},
 			secondary_draw_orders = { north = -1 }
 		}
 	},
@@ -562,7 +564,8 @@ data:extend({
 			pipe_covers = npipecovers(),
 			base_area = 10,
 			base_level = -1,
-			pipe_connections = {{ type="input", position = {0, -2} }}
+			volume = 1000,
+			pipe_connections = {{ type="input", direction = 0.2, position = {0, -1.1} }}
 		}
 	},
 	fluid_boxes_off_when_no_fluid_recipe = true,
@@ -607,11 +610,12 @@ data:extend({
 			pipe_covers = npipecovers(),
 			base_area = 50,
 			base_level = 1,
+			volume = 1000,
 			pipe_connections = { 
-				{type="output", position = {0, 2}}, 
-				{type="output", position = { 0, -2}},
-				{type="output", position = {2, 0}}, 
-				{type="output", position = {-2,  0}}
+				{type="output", direction = 0.2, position = {0, 1.1}}, 
+				{type="output", direction = 0.2, position = {0, -1.1}},
+				{type="output", direction = 0.2, position = {1.1, 0}}, 
+				{type="output", direction = 0.2, position = {-1.1, 0}}
 			},
 			secondary_draw_orders = { north = -1 }
 		}
@@ -655,7 +659,8 @@ data:extend({
 			pipe_covers = npipecovers(),
 			base_area = 10,
 			base_level = -1,
-			pipe_connections = {{ type="input", position = {0, -2} }},
+			volume = 1000,
+			pipe_connections = {{ type="input", direction = 0.2, position = {0, -1.1} }},
 			secondary_draw_orders = { north = -1 }
 		},
 		{
@@ -664,7 +669,8 @@ data:extend({
 			pipe_covers = npipecovers(),
 			base_area = 10,
 			base_level = 1,
-			pipe_connections = {{ type="output", position = {0, 2} }},
+			volume = 1000,
+			pipe_connections = {{ type="output", direction = 0.2, position = {0, 1.1} }},
 			secondary_draw_orders = { north = -1 }
 		}
 	},
@@ -813,7 +819,8 @@ data:extend({
 			pipe_covers = npipecovers(),
 			base_area = 10,
 			base_level = -1,
-			pipe_connections = {{ type="input", position = {1, -2} }},
+			volume = 1000,
+			pipe_connections = {{ type="input", direction = 0.2, position = {1.1, -1.1} }},
 			secondary_draw_orders = { north = -1 }
 		},
 		{
@@ -822,7 +829,8 @@ data:extend({
 			pipe_covers = npipecovers(),
 			base_area = 10,
 			base_level = -1,
-			pipe_connections = {{ type="input", position = {-1, -2} }},
+			volume = 1000,
+			pipe_connections = {{ type="input", direction = 0.2, position = {-1.1, -1.1} }},
 			secondary_draw_orders = { north = -1 }
 		}
 	},
@@ -866,7 +874,8 @@ data:extend({
 			pipe_covers = npipecovers(),
 			base_area = 10,
 			base_level = 1,
-			pipe_connections = {{ type="output", position = {0, 2} }},
+			volume = 1000,
+			pipe_connections = {{ type="output", direction = 0.2, position = {0, 1.1} }},
 			secondary_draw_orders = { north = -1 }
 		}
 	},
@@ -910,7 +919,8 @@ data:extend({
 			pipe_covers = npipecovers(),
 			base_area = 10,
 			base_level = -1,
-			pipe_connections = {{ type="input", position = {-1, -2} }},
+			volume = 1000,
+			pipe_connections = {{ type="input", direction = 0.2, position = {-1.1, -1.1} }},
 			secondary_draw_orders = { north = -1 }
 		},
 		{
@@ -919,7 +929,8 @@ data:extend({
 			pipe_covers = npipecovers(),
 			base_area = 10,
 			base_level = -1,
-			pipe_connections = {{ type="input", position = {1, -2} }},
+			volume = 1000,
+			pipe_connections = {{ type="input", direction = 0.2, position = {1.1, -1.1} }},
 			secondary_draw_orders = { north = -1 }
 		},
 		{
@@ -927,7 +938,8 @@ data:extend({
 			pipe_picture = chemicalpipepictures(),
 			pipe_covers = npipecovers(),
 			base_level = 1,
-			pipe_connections = {{ position = {-1, 2} }},
+			volume = 1000,
+			pipe_connections = {{ type="output", direction = 0.2, position = {-1.1, 1.1} }},
 			secondary_draw_orders = { north = -1 }
 		},
 		{
@@ -935,7 +947,8 @@ data:extend({
 			pipe_picture = chemicalpipepictures(),
 			pipe_covers = npipecovers(),
 			base_level = 1,
-			pipe_connections = {{ position = {1, 2} }},
+			volume = 1000,
+			pipe_connections = {{ type="output", direction = 0.2, position = {1.1, 1.1} }},
 			secondary_draw_orders = { north = -1 }
 		}
 	},
@@ -983,7 +996,8 @@ data:extend({
 			pipe_covers = npipecovers(),
 			base_area = 10,
 			base_level = -1,
-			pipe_connections = {{ type="input", position = {0, -2} }},
+			volume = 1000,
+			pipe_connections = {{ type="input", direction = 0.2, position = {0, -1.1} }},
 			secondary_draw_orders = { north = -1 },
 		},
 		{
@@ -992,7 +1006,8 @@ data:extend({
 			pipe_covers = npipecovers(),
 			base_area = 10,
 			base_level = 1,
-			pipe_connections = {{ type="output", position = {0, 2} }},
+			volume = 1000,
+			pipe_connections = {{ type="output", direction = 0.2, position = {0, 1.1} }},
 			secondary_draw_orders = { north = -1 },
 		},
 	},
@@ -1097,32 +1112,37 @@ data:extend({
 			pipe_covers = npipecovers(),
 			base_area = 10,
 			base_level = -1,
-			pipe_connections = {{ type="input", position = {-1, 3} }}
+			volume = 1000,
+			pipe_connections = {{ type="input", direction = 0.2, position = {-1, 2.3} }}
 		},
 		{
 			production_type = "input",
-			pipe_covers = npipecovers(),
+			 pipe_covers = npipecovers(),
 			base_area = 10,
 			base_level = -1,
-			pipe_connections = {{ type="input", position = {1, 3} }}
+			volume = 1000,
+			pipe_connections = {{ type="input", direction = 0.2, position = {1, 2.3} }}
 		},
 		{
 			production_type = "output",
 			pipe_covers = npipecovers(),
 			base_level = 1,
-			pipe_connections = {{ position = {-2, -3} }}
+			volume = 1000,
+			pipe_connections = {{ type="output", direction = 0.2, position = {-2, -2.3} }}
 		},
 		{
 			production_type = "output",
 			pipe_covers = npipecovers(),
 			base_level = 1,
-			pipe_connections = {{ position = {0, -3} }}
+			volume = 1000,
+			pipe_connections = {{ type="output", direction = 0.2, position = {0, -2.3} }}
 		},
 		{
 			production_type = "output",
 			pipe_covers = npipecovers(),
 			base_level = 1,
-			pipe_connections = {{ position = {2, -3} }}
+			volume = 1000,
+			pipe_connections = {{ type="output", direction = 0.2, position = {2, -2.3} }}
 		}
     },
 },

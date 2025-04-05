@@ -92,7 +92,7 @@ data:extend({
 	input_fluid_box = {
 		production_type = "input-output",
 		base_area = 1,
-		pipe_connections = {{ position = {0, 3} },}
+		pipe_connections = {{ direction = 0.2, position = {0, 2.4} },}
 	},
 	working_sound = {sound = {filename = "__base__/sound/burner-mining-drill.ogg", volume = 0.8},},
 	energy_source = {
@@ -179,7 +179,7 @@ data:extend({
 	input_fluid_box = {
 		production_type = "input-output",
 		base_area = 1,
-		pipe_connections = {{ position = {0, 3} },}
+		pipe_connections = {{ direction = 0.2, position = {0, 2.4} },}
 	},
 	working_sound = {sound = {filename = "__base__/sound/burner-mining-drill.ogg", volume = 0.8},},
 	energy_source = {

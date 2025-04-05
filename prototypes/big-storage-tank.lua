@@ -64,10 +64,10 @@ data:extend({
 		base_area = 10000,
 		pipe_covers = npipecovers(),
 		pipe_connections = {
-			{ position = {0, -2} },
-			{ position = {2, 0} },
-			{ position = {0, 2} },
-			{ position = {-2, 0} }
+			{ direction = 0.2, position = {0, -2} },
+			{ direction = 0.2, position = {2, 0} },
+			{ direction = 0.2, position = {0, 2} },
+			{ direction = 0.2, position = {-2, 0} }
 		}
 	},
 	window_bounding_box = {{-0.125, 0.6875}, {0.1875, 1.1875}},
@@ -140,10 +140,10 @@ data:extend({
 		base_area = 100000,
 		pipe_covers = npipecovers(),
 		pipe_connections = {
-			{ position = {0, -2} },
-			{ position = {2, 0} },
-			{ position = {0, 2} },
-			{ position = {-2, 0} }
+			{ direction = 0.2, position = {0, -1.1} },
+			{ direction = 0.2, position = {1.1, 0} },
+			{ direction = 0.2, position = {0, 1.1} },
+			{ direction = 0.2, position = {-1.1, 0} }
 		}
 	},
 	window_bounding_box = {{-0.125, 0.6875}, {0.1875, 1.1875}},
