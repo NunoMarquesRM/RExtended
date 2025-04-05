@@ -122,7 +122,11 @@ data:extend({
 	fast_replaceable_group = "assembling-machine",
 	open_sound = { filename = "__base__/sound/machine-open.ogg", volume = 0.85 },
     close_sound = { filename = "__base__/sound/machine-close.ogg", volume = 0.75 },
-	module_specification = { module_slots = 2},
+	module_slots = 2,
+	module_specification = {
+		module_info_icon_shift = {0, 0.2},
+		module_info_multi_row_initial_height_modifier = -0.3
+	},
 	allowed_effects = {"consumption", "speed", "productivity", "pollution"},
     working_sound = {
 		sound = {
@@ -160,7 +164,11 @@ data:extend({
 	fast_replaceable_group = "assembling-machine",
 	open_sound = { filename = "__base__/sound/machine-open.ogg", volume = 0.85 },
     close_sound = { filename = "__base__/sound/machine-close.ogg", volume = 0.75 },
-	module_specification = { module_slots = 3 },
+	module_slots = 3,
+	module_specification = {
+		module_info_icon_shift = {0, 0.2},
+		module_info_multi_row_initial_height_modifier = -0.3
+	},
 	allowed_effects = {"consumption", "speed", "productivity", "pollution"},
     working_sound = {
 		sound = {
@@ -297,7 +305,11 @@ data:extend({
 	fast_replaceable_group = "assembling-machine",
 	open_sound = { filename = "__base__/sound/machine-open.ogg", volume = 0.85 },
     close_sound = { filename = "__base__/sound/machine-close.ogg", volume = 0.75 },
-	module_specification = { module_slots = 4 },
+	module_slots = 4,
+	module_specification = {
+		module_info_icon_shift = {0, 0.2},
+		module_info_multi_row_initial_height_modifier = -0.3
+	},
 	allowed_effects = {"consumption", "speed", "productivity", "pollution"},
     working_sound = {
 		sound = {
@@ -440,7 +452,11 @@ HalfAssemblerMachineR2.icon_size = 32
 HalfAssemblerMachineR2.minable.result = "half-assembler-r2"
 HalfAssemblerMachineR2.energy_usage = "750kW"
 HalfAssemblerMachineR2.crafting_speed = 4
-HalfAssemblerMachineR2.module_specification.module_slots = 3
+HalfAssemblerMachineR2.module_slots = 3
+HalfAssemblerMachineR2.module_specification = {
+	module_info_icon_shift = {0, 0.2},
+	module_info_multi_row_initial_height_modifier = -0.3
+}
 HalfAssemblerMachineR2.animation.south.filename = "__RExtended__/graphics/entity/assemblers/half-assembler-r2.png"
 HalfAssemblerMachineR2.animation.west.filename = "__RExtended__/graphics/entity/assemblers/half-assembler-r2.png"
 HalfAssemblerMachineR2.animation.north.filename = "__RExtended__/graphics/entity/assemblers/half-assembler-r2.png"

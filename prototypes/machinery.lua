@@ -533,7 +533,11 @@ data:extend({
 	crafting_speed = 1,
 	energy_source = {type = "electric", input_priority = "secondary", usage_priority = "secondary-input", emissions = 0.004, },
 	fast_replaceable_group = "assembling-machine",
-	module_specification = { module_slots = 2 },
+	module_slots = 2,
+	module_specification = {
+		module_info_icon_shift = {0, 0.2},
+		module_info_multi_row_initial_height_modifier = -0.3
+	},
 	allowed_effects = {"consumption", "speed", "productivity", "pollution"},
 	working_sound = {
 		sound = {{ filename = "__base__/sound/chemical-plant.ogg", volume = 0.8 },},
@@ -580,7 +584,11 @@ data:extend({
 	fast_replaceable_group = "assembling-machine",
 	open_sound = { filename = "__base__/sound/machine-open.ogg", volume = 0.85 },
 	close_sound = { filename = "__base__/sound/machine-close.ogg", volume = 0.75 },
-	module_specification = { module_slots = 2 },
+	module_slots = 2,
+	module_specification = {
+		module_info_icon_shift = {0, 0.2},
+		module_info_multi_row_initial_height_modifier = -0.3
+	},
 	allowed_effects = {"consumption", "speed", "productivity", "pollution"},
 	working_sound = {
 		sound = {{ filename = "__base__/sound/chemical-plant.ogg", volume = 0.8 },},
@@ -632,7 +640,11 @@ data:extend({
 	fast_replaceable_group = "assembling-machine",
 	open_sound = { filename = "__base__/sound/machine-open.ogg", volume = 0.85 },
 	close_sound = { filename = "__base__/sound/machine-close.ogg", volume = 0.75 },
-	module_specification = { module_slots = 3 },
+	module_slots = 3,
+	module_specification = {
+		module_info_icon_shift = {0, 0.2},
+		module_info_multi_row_initial_height_modifier = -0.3
+	},
 	allowed_effects = {"consumption", "speed", "productivity", "pollution"},
 	working_sound = {
 		sound = {{ filename = "__base__/sound/chemical-plant.ogg", },},
@@ -684,7 +696,11 @@ data:extend({
 	crafting_speed = 1,
 	energy_source = {type = "electric", input_priority = "secondary", usage_priority = "secondary-input", emissions = 0.005, },
 	fast_replaceable_group = "assembling-machine",
-	module_specification = {module_slots = 2},
+	module_slots = 2,
+	module_specification = {
+		module_info_icon_shift = {0, 0.2},
+		module_info_multi_row_initial_height_modifier = -0.3
+	},
 	allowed_effects = {"consumption", "speed", "productivity", "pollution"},
 	working_sound = {
 		sound = {{filename = "__base__/sound/chemical-plant.ogg",volume = 0.8},},
@@ -763,7 +779,11 @@ data:extend({
 	corpse = "medium-remnants",
 	open_sound = { filename = "__base__/sound/machine-open.ogg", volume = 0.85 },
 	close_sound = { filename = "__base__/sound/machine-close.ogg", volume = 0.75 },
-	module_specification = { module_slots = 3 },
+	module_slots = 3,
+	module_specification = {
+		module_info_icon_shift = {0, 0.2},
+		module_info_multi_row_initial_height_modifier = -0.3
+	},
 	allowed_effects = {"consumption", "speed", "productivity", "pollution"},
 	working_sound = { sound = { filename = "__base__/sound/furnace.ogg" } },
 	resistances = {{ type = "fire", percent = 100 }},
@@ -844,7 +864,11 @@ data:extend({
 	crafting_speed = 1,
 	energy_source = {type = "electric", input_priority = "secondary", usage_priority = "secondary-input", emissions = 0.018, },
 	fast_replaceable_group = "assembling-machine",
-	module_specification = { module_slots = 2 },
+	module_slots = 2,
+	module_specification = {
+		module_info_icon_shift = {0, 0.2},
+		module_info_multi_row_initial_height_modifier = -0.3
+	},
 	allowed_effects = {"consumption", "speed", "productivity", "pollution"},
 	working_sound = {
 		sound = {{ filename = "__base__/sound/chemical-plant.ogg", volume = 0.8 },},
@@ -889,7 +913,11 @@ data:extend({
 	crafting_speed = 1,
 	energy_source = {type = "electric", input_priority = "secondary", usage_priority = "secondary-input", emissions = 0.023, },
 	fast_replaceable_group = "assembling-machine",
-	module_specification = { module_slots = 2 },
+	module_slots = 2,
+	module_specification = {
+		module_info_icon_shift = {0, 0.2},
+		module_info_multi_row_initial_height_modifier = -0.3
+	},
 	allowed_effects = {"consumption", "speed", "productivity", "pollution"},
 	working_sound = {
 		sound = {{ filename = "__base__/sound/chemical-plant.ogg", volume = 0.8},},
@@ -962,7 +990,11 @@ data:extend({
 	crafting_speed = 2,
 	energy_source = {type = "electric", input_priority = "secondary", usage_priority = "secondary-input", emissions = 0.018, },
 	fast_replaceable_group = "assembling-machine",
-	module_specification = { module_slots = 3 },
+	module_slots = 3,
+	module_specification = {
+		module_info_icon_shift = {0, 0.2},
+		module_info_multi_row_initial_height_modifier = -0.3
+	},
 	allowed_effects = {"consumption", "speed", "productivity", "pollution"},
 	working_sound = {
 		sound = { { filename = "__base__/sound/chemical-plant.ogg", volume = 0.8 }, },
@@ -1020,7 +1052,11 @@ data:extend({
 	ingredient_count = 4,
 	crafting_speed = 1,
 	energy_source = {type = "electric", input_priority = "secondary", usage_priority = "secondary-input", emissions = 0.05, },
-	module_specification = { module_slots = 2 },
+	module_slots = 5,
+	module_specification = {
+		module_info_icon_shift = {0, 0.2},
+		module_info_multi_row_initial_height_modifier = -0.3
+	},
 	allowed_effects = {"consumption", "speed", "productivity", "pollution"},
 	working_sound = {
 		sound = { { filename = "__base__/sound/chemical-plant.ogg", volume = 0.8 }, },
@@ -1046,7 +1082,11 @@ data:extend({
 	dying_explosion = "medium-explosion",
 	collision_box = {{-2.4, -2.4}, {2.4, 2.4}},
 	selection_box = {{-2.5, -2.5}, {2.5, 2.5}},
-	module_specification = { module_slots = 3 },
+	module_slots = 3,
+	module_specification = {
+		module_info_icon_shift = {0, 0.2},
+		module_info_multi_row_initial_height_modifier = -0.3
+	},
 	scale_entity_info_icon = true,
 	allowed_effects = {"consumption", "speed", "productivity", "pollution"},
 	crafting_categories = {"oil-processing","red-oil-process"},
@@ -1167,8 +1207,8 @@ data:extend({
 	vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
 	energy_usage = "1MW",
 	distribution_effectivity = 0.90,
+	module_slots = 5,
 	module_specification = {
-		module_slots = 5,
 		module_info_icon_shift = {0, 0.2},
 		module_info_multi_row_initial_height_modifier = -0.3
 	},
@@ -1260,7 +1300,11 @@ CompressorR2.icon_size = 32
 CompressorR2.minable.result = "compressor-r2"
 CompressorR2.energy_usage = "750kW"
 CompressorR2.crafting_speed = 4
-CompressorR2.module_specification.module_slots = 3
+CompressorR2.module_slots = 3
+CompressorR2.module_specification = {
+    module_info_icon_shift = {0, 0.2},
+    module_info_multi_row_initial_height_modifier = -0.3
+}
 CompressorR2.animation.south.filename = "__RExtended__/graphics/entity/machinery/compressor-r2-v.png"
 CompressorR2.animation.west.filename = "__RExtended__/graphics/entity/machinery/compressor-r2-h.png"
 CompressorR2.animation.north.filename = "__RExtended__/graphics/entity/machinery/compressor-r2-v.png"
@@ -1292,7 +1336,11 @@ CastChamberR2.icon_size = 32
 CastChamberR2.minable.result = "cast-chamber-r2"
 CastChamberR2.energy_usage = "750kW"
 CastChamberR2.crafting_speed = 4
-CastChamberR2.module_specification.module_slots = 3
+CastChamberR2.module_slots = 3
+CastChamberR2.module_specification = {
+    module_info_icon_shift = {0, 0.2},
+    module_info_multi_row_initial_height_modifier = -0.3
+}
 CastChamberR2.animation.south.filename = "__RExtended__/graphics/entity/machinery/cast-chamber-r2.png"
 CastChamberR2.animation.west.filename = "__RExtended__/graphics/entity/machinery/cast-chamber-r2.png"
 CastChamberR2.animation.north.filename = "__RExtended__/graphics/entity/machinery/cast-chamber-r2.png"
@@ -1324,7 +1372,11 @@ WasherChamberR2.icon_size = 32
 WasherChamberR2.minable.result = "washer-chamber-r2"
 WasherChamberR2.energy_usage = "750kW"
 WasherChamberR2.crafting_speed = 4
-WasherChamberR2.module_specification.module_slots = 3
+WasherChamberR2.module_slots = 3
+WasherChamberR2.module_specification = {
+    module_info_icon_shift = {0, 0.2},
+    module_info_multi_row_initial_height_modifier = -0.3
+}
 WasherChamberR2.animation.south.filename = "__RExtended__/graphics/entity/machinery/washer-chamber-r2.png"
 WasherChamberR2.animation.west.filename = "__RExtended__/graphics/entity/machinery/washer-chamber-r2.png"
 WasherChamberR2.animation.north.filename = "__RExtended__/graphics/entity/machinery/washer-chamber-r2.png"
@@ -1356,7 +1408,11 @@ HeatForgeChamberR2.icon_size = 32
 HeatForgeChamberR2.minable.result = "heat-forge-chamber-r2"
 HeatForgeChamberR2.energy_usage = "750kW"
 HeatForgeChamberR2.crafting_speed = 4
-HeatForgeChamberR2.module_specification.module_slots = 3
+HeatForgeChamberR2.module_slots = 3
+HeatForgeChamberR2.module_specification = {
+    module_info_icon_shift = {0, 0.2},
+    module_info_multi_row_initial_height_modifier = -0.3
+}
 HeatForgeChamberR2.animation.south.filename = "__RExtended__/graphics/entity/machinery/heat-forge-chamber-r2.png"
 HeatForgeChamberR2.animation.west.filename = "__RExtended__/graphics/entity/machinery/heat-forge-chamber-r2.png"
 HeatForgeChamberR2.animation.north.filename = "__RExtended__/graphics/entity/machinery/heat-forge-chamber-r2.png"
@@ -1388,7 +1444,11 @@ WaterCondenserR2.icon_size = 32
 WaterCondenserR2.minable.result = "water-condenser-electric-r2"
 WaterCondenserR2.energy_usage = "750kW"
 WaterCondenserR2.crafting_speed = 4
-WaterCondenserR2.module_specification.module_slots = 3
+WaterCondenserR2.module_slots = 3
+WaterCondenserR2.module_specification = {
+    module_info_icon_shift = {0, 0.2},
+    module_info_multi_row_initial_height_modifier = -0.3
+}
 WaterCondenserR2.animation.filename = "__RExtended__/graphics/entity/machinery/water-condenser-electric-r2.png"
 
 data:extend({recipe_WaterCondenserR2, item_WaterCondenserR2, WaterCondenserR2})
@@ -1417,7 +1477,11 @@ RefineryR2.icon_size = 32
 RefineryR2.minable.result = "refinery-r2"
 RefineryR2.energy_usage = "1.5MW"
 RefineryR2.crafting_speed = 4
-RefineryR2.module_specification.module_slots = 3
+RefineryR2.module_slots = 3
+RefineryR2.module_specification = {
+    module_info_icon_shift = {0, 0.2},
+    module_info_multi_row_initial_height_modifier = -0.3
+}
 RefineryR2.animation.south.filename = "__RExtended__/graphics/entity/machinery/refinery-r2-s.png"
 RefineryR2.animation.west.filename = "__RExtended__/graphics/entity/machinery/refinery-r2-w.png"
 RefineryR2.animation.north.filename = "__RExtended__/graphics/entity/machinery/refinery-r2-n.png"

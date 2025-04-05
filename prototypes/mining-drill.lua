@@ -102,7 +102,11 @@ data:extend({
 	},
 	energy_usage = "220kW",
 	mining_power = 1,
-	module_specification ={module_slots = 2,},
+	module_slots = 2,
+	module_specification = {
+		module_info_icon_shift = {0, 0.2},
+		module_info_multi_row_initial_height_modifier = -0.3
+	},
 	allowed_effects = {"consumption", "speed", "productivity", "pollution"},
 	animations = {
 		north = {
@@ -189,7 +193,11 @@ data:extend({
 	},
 	energy_usage = "750kW",
 	mining_power = 1,
-	module_specification ={module_slots = 2,},
+	module_slots = 2,
+	module_specification = {
+		module_info_icon_shift = {0, 0.2},
+		module_info_multi_row_initial_height_modifier = -0.3
+	},
 	allowed_effects = {"consumption", "speed", "productivity", "pollution"},
 	animations = {
 		north = {
