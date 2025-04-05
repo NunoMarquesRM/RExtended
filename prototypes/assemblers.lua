@@ -173,8 +173,7 @@ data:extend({
 	fluid_boxes = {
 		{
 			production_type = "input",
-			pipe_picture =
-			{
+			pipe_picture = {
 				north = {
 					filename = "__RExtended__/graphics/entity/assemblers/assembler-r1-n.png",
 					priority = "extra-high",
@@ -211,7 +210,10 @@ data:extend({
 			pipe_covers = npipecovers(),
 			base_area = 10,
 			base_level = -1,
-			pipe_connections = {{ type="input", position = {0, -2} }},
+			volume = 1000,
+			-- >> don't know what direction will be!
+			-- type="input", position = {0, -2} 
+			pipe_connections = {{flow_direction = "input", direction = 0.2, position = {0, -1.1} }},
 			secondary_draw_orders = { north = -1 }
 		},
 		{
@@ -253,11 +255,14 @@ data:extend({
 			pipe_covers = npipecovers(),
 			base_area = 10,
 			base_level = 1,
-			pipe_connections = {{ type="output", position = {0, 2} }},
+			volume = 1000,
+			-- >> don't know what direction will be!
+			-- type="output", position = {0, 2} 
+			pipe_connections = {{flow_direction = "output", direction = 0.2, position = {0, 1.1} }},
 			secondary_draw_orders = { north = -1 }
-		},
-		off_when_no_fluid_recipe = true
+		}
     },
+	fluid_boxes_off_when_no_fluid_recipe = true,
     animation = {
 		layers = {{
 			filename = "__RExtended__/graphics/entity/assemblers/assembler-r1.png",
@@ -342,7 +347,10 @@ data:extend({
 			pipe_covers = npipecovers(),
 			base_area = 10,
 			base_level = -1,
-			pipe_connections = {{ type="input", position = {0, -2} }},
+			volume = 1000,
+			-- >> don't know what direction will be!
+			-- type="input", position = {0, -2} 
+			pipe_connections = {{flow_direction = "input", direction = 0.2, position = {0, -1.2}}},
 			secondary_draw_orders = { north = -1 }
 		},
 		{
@@ -384,11 +392,14 @@ data:extend({
 			pipe_covers = npipecovers(),
 			base_area = 10,
 			base_level = 1,
-			pipe_connections = {{ type="output", position = {0, 2} }},
+			volume = 1000,
+			-- >> don't know what direction will be!
+			-- type="output", position = {0, 2} 
+			pipe_connections = {{flow_direction = "output", direction = 0.2, position = {0, 1.2} }},
 			secondary_draw_orders = { north = -1 }
-		},
-		off_when_no_fluid_recipe = true
+		}
     },
+	fluid_boxes_off_when_no_fluid_recipe = true,
     animation = {
 		layers = {{
 			filename = "__RExtended__/graphics/entity/assemblers/assembler-r2.png",

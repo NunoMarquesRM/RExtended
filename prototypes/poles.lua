@@ -332,7 +332,7 @@ data:extend({
 	max_health = 150,
 	corpse = "big-remnants",	
 	energy_source = {type = "electric", input_priority = "secondary", usage_priority = "secondary-input", emissions = 0.004, },
-	energy_usage_per_tick = "40KW",		
+	energy_usage_per_tick = "40kW",		
 	light = {intensity = 1.0, size = 250},
 	circuit_wire_max_distance = 20,
 	collision_box = {{-0.65, -0.65}, {0.65, 0.65}},

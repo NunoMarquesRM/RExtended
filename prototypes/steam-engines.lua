@@ -28,7 +28,6 @@ return {
 	}
 }
 end
-
 data:extend({
 {--Item Diesel Genarator
 	type = "item",
@@ -77,14 +76,18 @@ data:extend({
 	collision_box = {{-0.7, -2.7}, {0.7, 2.7}},
 	selection_box = {{-1, -3}, {1, 3}},
 	fluid_box = {
+		volume = 1000,
 		base_area = 1,
 		base_level = -1,
 		height = 2,
 		pipe_covers = pipecoverspictures(),
 		production_type = "input-output",
 		pipe_connections = {
-			{position = {-1.5, 0.5}, type = "input-output"},
-			{position = {1.5, 0.5}, type = "input-output"}
+			--Original
+			--position = {-1.5, 0.5}
+			--position = {1.5, 0.5}
+			{flow_direction="input-output", direction = 0.2, position = {-0.7, 0.5}},
+			{flow_direction="input-output", direction = 0.2, position = {0.7, 0.5}}
 		},
 		filter = "diesel-fuel"
 	},
@@ -174,11 +177,15 @@ data:extend({
 	collision_box = {{-1.3, -1.7}, {1.3, 1.7}},
 	selection_box = {{-1.5, -2.0}, {1.5, 2.0}},
 	fluid_box = {
+		volume = 1000,
 		base_area = 2,
 		pipe_covers = npipecovers(),				
 		pipe_connections = {
-			{ type = "input-output", position = {0, 2.5} },
-			{ type = "input-output", position = {0,-2.5} },
+			--Original
+			--position = {0, 2.5}
+			--position = {0, -2.5}
+			{flow_direction="input-output", direction = 0.2, position = {0, 1.7} },
+			{flow_direction="input-output", direction = 0.2, position = {0,-1.7} },
 		},
 		production_type = "input-output",
 		filter = "steam",
@@ -227,11 +234,15 @@ data:extend({
 	collision_box = {{-1.3, -1.7}, {1.3, 1.7}},
 	selection_box = {{-1.5, -2.0}, {1.5, 2.0}},
 	fluid_box = {
+		volume = 1000,
 		base_area = 3,	
 		pipe_covers = npipecovers(),				
 		pipe_connections = {
-			{ type = "input-output", position = {0, 2.5} },
-			{ type = "input-output", position = {0,-2.5} },
+			--Original
+			--position = {0, 2.5}
+			--position = {0, -2.5}
+			{flow_direction="input-output", direction = 0.2, position = {0, 1.7} },
+			{flow_direction="input-output", direction = 0.2, position = {0,-1.7} },
 		},
 		production_type = "input-output",
 		filter = "steam",

@@ -176,5 +176,6 @@ data:extend({
 		pipe_connections = {{flow_direction="input", direction = 0.2, position = {0, 0.289} }}
 	}},
 	pipe_covers = pipecoverspictures()
+	--fluid_boxes_off_when_no_fluid_recipe = true
 }
 })

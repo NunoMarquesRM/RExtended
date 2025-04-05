@@ -520,9 +520,9 @@ data:extend({
 			base_level = 1,
 			pipe_connections = {{ type="output", position = {0, 2} }},
 			secondary_draw_orders = { north = -1 }
-		},
-		off_when_no_fluid_recipe = true
+		}
 	},
+	fluid_boxes_off_when_no_fluid_recipe = true,
 	collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
 	selection_box = {{-1.5, -1.5}, {1.5, 1.5}},	
 	crafting_categories = {"red-compressing"},
@@ -562,12 +562,12 @@ data:extend({
 			pipe_covers = npipecovers(),
 			base_area = 10,
 			base_level = -1,
-			pipe_connections = {{ type="input", position = {0, -2} }},
-		},
-		off_when_no_fluid_recipe = true
+			pipe_connections = {{ type="input", position = {0, -2} }}
+		}
 	},
+	fluid_boxes_off_when_no_fluid_recipe = true,
 	collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
-	selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
+	selection_box = {{-1.5, -1.5}, {1.5, 1.5}},	
 	crafting_categories = {"red-washer-chamber"},
 	energy_usage = "210kW",
 	ingredient_count = 4,
@@ -607,11 +607,16 @@ data:extend({
 			pipe_covers = npipecovers(),
 			base_area = 50,
 			base_level = 1,
-			pipe_connections = { {type="output", position = {0, 2}}, {type="output", position = { 0, -2}},{type="output", position = {2, 0}}, {type="output", position = {-2,  0}},},
-			secondary_draw_orders = { north = -1 },
-		},
-		off_when_no_fluid_recipe = true
+			pipe_connections = { 
+				{type="output", position = {0, 2}}, 
+				{type="output", position = { 0, -2}},
+				{type="output", position = {2, 0}}, 
+				{type="output", position = {-2,  0}}
+			},
+			secondary_draw_orders = { north = -1 }
+		}
 	},
+	fluid_boxes_off_when_no_fluid_recipe = true,
 	collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
 	selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
 	crafting_categories = {"red-water-condenser"},
@@ -653,8 +658,17 @@ data:extend({
 			pipe_connections = {{ type="input", position = {0, -2} }},
 			secondary_draw_orders = { north = -1 }
 		},
-		off_when_no_fluid_recipe = true
+		{
+			production_type = "output",
+			pipe_picture = compressor_pipepictures(),
+			pipe_covers = npipecovers(),
+			base_area = 10,
+			base_level = 1,
+			pipe_connections = {{ type="output", position = {0, 2} }},
+			secondary_draw_orders = { north = -1 }
+		}
 	},
+	fluid_boxes_off_when_no_fluid_recipe = true,
 	collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
 	selection_box = {{-1.5, -1.5}, {1.5, 1.5}},	
 	crafting_categories = {"red-mixing"},
@@ -800,7 +814,7 @@ data:extend({
 			base_area = 10,
 			base_level = -1,
 			pipe_connections = {{ type="input", position = {1, -2} }},
-			secondary_draw_orders = { north = -1 },
+			secondary_draw_orders = { north = -1 }
 		},
 		{
 			production_type = "input",
@@ -809,10 +823,10 @@ data:extend({
 			base_area = 10,
 			base_level = -1,
 			pipe_connections = {{ type="input", position = {-1, -2} }},
-			secondary_draw_orders = { north = -1 },
-		},
-		off_when_no_fluid_recipe = true
+			secondary_draw_orders = { north = -1 }
+		}
 	},
+	fluid_boxes_off_when_no_fluid_recipe = true,
 	collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
 	selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
 	crafting_categories = {"red-casting-chamber"},
@@ -853,10 +867,10 @@ data:extend({
 			base_area = 10,
 			base_level = 1,
 			pipe_connections = {{ type="output", position = {0, 2} }},
-			secondary_draw_orders = { north = -1 },
-		},
-		off_when_no_fluid_recipe = true
+			secondary_draw_orders = { north = -1 }
+		}
 	},
+	fluid_boxes_off_when_no_fluid_recipe = true,
 	collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
 	selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
 	crafting_categories = {"red-forge-chamber"},
@@ -897,7 +911,7 @@ data:extend({
 			base_area = 10,
 			base_level = -1,
 			pipe_connections = {{ type="input", position = {-1, -2} }},
-			secondary_draw_orders = { north = -1 },
+			secondary_draw_orders = { north = -1 }
 		},
 		{
 			production_type = "input",
@@ -906,7 +920,7 @@ data:extend({
 			base_area = 10,
 			base_level = -1,
 			pipe_connections = {{ type="input", position = {1, -2} }},
-			secondary_draw_orders = { north = -1 },
+			secondary_draw_orders = { north = -1 }
 		},
 		{
 			production_type = "output",
@@ -914,7 +928,7 @@ data:extend({
 			pipe_covers = npipecovers(),
 			base_level = 1,
 			pipe_connections = {{ position = {-1, 2} }},
-			secondary_draw_orders = { north = -1 },
+			secondary_draw_orders = { north = -1 }
 		},
 		{
 			production_type = "output",
@@ -922,10 +936,10 @@ data:extend({
 			pipe_covers = npipecovers(),
 			base_level = 1,
 			pipe_connections = {{ position = {1, 2} }},
-			secondary_draw_orders = { north = -1 },
-		},
-		off_when_no_fluid_recipe = true
+			secondary_draw_orders = { north = -1 }
+		}
 	},
+	fluid_boxes_off_when_no_fluid_recipe = true,
 	collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
 	selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
 	crafting_categories = {"chemistry"},
@@ -981,8 +995,8 @@ data:extend({
 			pipe_connections = {{ type="output", position = {0, 2} }},
 			secondary_draw_orders = { north = -1 },
 		},
-		off_when_no_fluid_recipe = true
 	},
+	fluid_boxes_off_when_no_fluid_recipe = true,
 	collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
 	selection_box = {{-1.5, -1.5}, {1.5, 1.5}},	
 	crafting_categories = {"red-enrichment-chamber"},

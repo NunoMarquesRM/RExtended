@@ -99,52 +99,125 @@ br2.energy_source = {
 		height=1, deviation={0.1, 0.1},	frequency=25
 	}}
 }
-br2.structure = {
+br2.pictures = {
 	north = {
-		layers ={{
-			filename = "__RExtended__/graphics/entity/boiler/r2.png",
+		structure = {
+			layers ={{
+				filename = "__RExtended__/graphics/entity/boiler/r2.png",
+				priority = "extra-high",
+				width = 256,
+				height = 256,
+				shift = {0.25, -0.1},
+				scale = 0.5
+			}}
+		},
+		fire = {
+			filename = "__base__/graphics/entity/boiler/boiler-N-idle.png",
 			priority = "extra-high",
-			width = 256,
-			height = 256,
-			shift = {0.25, -0.1},
-			scale = 0.5,
-		}}
+			width = 269,
+			height = 221,
+			shift = util.by_pixel(-1.25, 5.25),
+			scale = 0
+		},
+		fire_glow = {
+			filename = "__base__/graphics/entity/boiler/boiler-N-shadow.png",
+			priority = "extra-high",
+			width = 274,
+			height = 164,
+			scale = 0,
+			shift = util.by_pixel(20.5, 9),
+			draw_as_shadow = false
+		}
 	},
 	east = {
-		layers = {{
-			filename = "__RExtended__/graphics/entity/boiler/r2.png",
+		structure = {
+			layers = {{
+				filename = "__RExtended__/graphics/entity/boiler/r2.png",
+				priority = "extra-high",
+				width = 256,
+				height = 256,
+				shift = {0.25, -0.1},
+				scale = 0.5
+			}}
+		},
+		fire = {
+			filename = "__base__/graphics/entity/boiler/boiler-N-idle.png",
 			priority = "extra-high",
-			width = 256,
-			height = 256,
-			shift = {0.25, -0.1},
-			scale = 0.5,
-		}}
+			width = 269,
+			height = 221,
+			shift = util.by_pixel(-1.25, 5.25),
+			scale = 0
+		},
+		fire_glow = {
+			filename = "__base__/graphics/entity/boiler/boiler-N-shadow.png",
+			priority = "extra-high",
+			width = 274,
+			height = 164,
+			scale = 0,
+			shift = util.by_pixel(20.5, 9),
+			draw_as_shadow = false
+		}
 	},
 	south = {
-		layers = {{
-			filename = "__RExtended__/graphics/entity/boiler/r2.png",
+		structure = {
+			layers = {{
+				filename = "__RExtended__/graphics/entity/boiler/r2.png",
+				priority = "extra-high",
+				width = 256,
+				height = 256,
+				shift = {0.25, -0.1},
+				scale = 0.5
+			}}
+		},
+		fire = {
+			filename = "__base__/graphics/entity/boiler/boiler-N-idle.png",
 			priority = "extra-high",
-			width = 256,
-			height = 256,
-			shift = {0.25, -0.1},
-			scale = 0.5,
-		}}
+			width = 269,
+			height = 221,
+			shift = util.by_pixel(-1.25, 5.25),
+			scale = 0
+		},
+		fire_glow = {
+			filename = "__base__/graphics/entity/boiler/boiler-N-shadow.png",
+			priority = "extra-high",
+			width = 274,
+			height = 164,
+			scale = 0,
+			shift = util.by_pixel(20.5, 9),
+			draw_as_shadow = false
+		}
 	},
 	west = {
-		layers = {{
-			filename = "__RExtended__/graphics/entity/boiler/r2.png",
+		structure = {
+			layers = {{
+				filename = "__RExtended__/graphics/entity/boiler/r2.png",
+				priority = "extra-high",
+				width = 256,
+				height = 256,
+				shift = {0.25, -0.1},
+				scale = 0.5
+			}}
+		},
+		fire = {
+			filename = "__base__/graphics/entity/boiler/boiler-N-idle.png",
 			priority = "extra-high",
-			width = 256,
-			height = 256,
-			shift = {0.25, -0.1},
-			scale = 0.5,
-		}}
+			width = 269,
+			height = 221,
+			shift = util.by_pixel(-1.25, 5.25),
+			scale = 0
+		},
+		fire_glow = {
+			filename = "__base__/graphics/entity/boiler/boiler-N-shadow.png",
+			priority = "extra-high",
+			width = 274,
+			height = 164,
+			scale = 0,
+			shift = util.by_pixel(20.5, 9),
+			draw_as_shadow = false
+		}
 	}
 }
-br2.fire = {}
-br2.fire_glow = {}
 br2.burning_cooldown = 20
-br2.pictures = pipepictures()
 
 data:extend({recipe_br2,item_br2,br2})
 ------------------------------------------------------------
@@ -214,32 +287,113 @@ br3.energy_source = {
 		frequency = 20.0
 	}}
 }
-br3.structure = {
-	north ={
-		filename = "__RExtended__/graphics/entity/boiler/r3.png",
-		priority = "extra-high", width = 256, height = 256, scale=0.5,
-		shift = {0.375, -0.25}
+br3.pictures = {
+	north = {
+		structure = {
+			layers ={{
+				filename = "__RExtended__/graphics/entity/boiler/r3.png",
+				priority = "extra-high", width = 256, height = 256, scale=0.5,
+				shift = {0.375, -0.25}
+			}}
+		},
+		fire = {
+			filename = "__base__/graphics/entity/boiler/boiler-N-idle.png",
+			priority = "extra-high",
+			width = 269,
+			height = 221,
+			shift = util.by_pixel(-1.25, 5.25),
+			scale = 0
+		},
+		fire_glow = {
+			filename = "__base__/graphics/entity/boiler/boiler-N-shadow.png",
+			priority = "extra-high",
+			width = 274,
+			height = 164,
+			scale = 0,
+			shift = util.by_pixel(20.5, 9),
+			draw_as_shadow = false
+		}
 	},
-	east ={
-		filename = "__RExtended__/graphics/entity/boiler/r3.png",
-		priority = "extra-high", width = 256, height = 256, scale=0.5,
-		shift = {0.375, -0.25}
+	east = {
+		structure = {
+			layers = {{
+				filename = "__RExtended__/graphics/entity/boiler/r3.png",
+				priority = "extra-high", width = 256, height = 256, scale=0.5,
+				shift = {0.375, -0.25}
+			}}
+		},
+		fire = {
+			filename = "__base__/graphics/entity/boiler/boiler-N-idle.png",
+			priority = "extra-high",
+			width = 269,
+			height = 221,
+			shift = util.by_pixel(-1.25, 5.25),
+			scale = 0
+		},
+		fire_glow = {
+			filename = "__base__/graphics/entity/boiler/boiler-N-shadow.png",
+			priority = "extra-high",
+			width = 274,
+			height = 164,
+			scale = 0,
+			shift = util.by_pixel(20.5, 9),
+			draw_as_shadow = false
+		}
 	},
-	south ={
-		filename = "__RExtended__/graphics/entity/boiler/r3.png",
-		priority = "extra-high", width = 256, height = 256, scale=0.5,
-		shift = {0.375, -0.25}
+	south = {
+		structure = {
+			layers = {{
+				filename = "__RExtended__/graphics/entity/boiler/r3.png",
+				priority = "extra-high", width = 256, height = 256, scale=0.5,
+				shift = {0.375, -0.25}
+			}}
+		},
+		fire = {
+			filename = "__base__/graphics/entity/boiler/boiler-N-idle.png",
+			priority = "extra-high",
+			width = 269,
+			height = 221,
+			shift = util.by_pixel(-1.25, 5.25),
+			scale = 0
+		},
+		fire_glow = {
+			filename = "__base__/graphics/entity/boiler/boiler-N-shadow.png",
+			priority = "extra-high",
+			width = 274,
+			height = 164,
+			scale = 0,
+			shift = util.by_pixel(20.5, 9),
+			draw_as_shadow = false
+		}
 	},
-	west ={
-		filename = "__RExtended__/graphics/entity/boiler/r3.png",
-		priority = "extra-high", width = 256, height = 256, scale=0.5,
-		shift = {0.375, -0.25}
-	},
+	west = {
+		structure = {
+			layers = {{
+				filename = "__RExtended__/graphics/entity/boiler/r3.png",
+				priority = "extra-high", width = 256, height = 256, scale=0.5,
+				shift = {0.375, -0.25}
+			}}
+		},
+		fire = {
+			filename = "__base__/graphics/entity/boiler/boiler-N-idle.png",
+			priority = "extra-high",
+			width = 269,
+			height = 221,
+			shift = util.by_pixel(-1.25, 5.25),
+			scale = 0
+		},
+		fire_glow = {
+			filename = "__base__/graphics/entity/boiler/boiler-N-shadow.png",
+			priority = "extra-high",
+			width = 274,
+			height = 164,
+			scale = 0,
+			shift = util.by_pixel(20.5, 9),
+			draw_as_shadow = false
+		}
+	}
 }
-br3.fire = {}
-br3.fire_glow = {}
 br3.burning_cooldown = 20
-br3.pictures = pipepictures()
 
 data:extend({recipe_br3,item_br3,br3})
 ------------------------------------------------------------
@@ -303,7 +457,7 @@ data:extend({
 		base_level = -1,
 		--pipe_covers = pipecoverspictures(),
 		-- >> don't know what direction will be!
-		pipe_connections = {{ type="input", direction = 0.2, position = {1, -1.5} }},
+		pipe_connections = {{flow_direction="input", direction = 0.2, position = {1, -1.1} }},
 		production_type = "input",
 		filter = "water"
 	},
@@ -314,7 +468,7 @@ data:extend({
 		base_level = 1,
 		--pipe_covers = pipecoverspictures(),
 		-- >> don't know what direction will be!
-		pipe_connections = {{type = "output", direction = 0.2, position = {0, 1.5}}},
+		pipe_connections = {{flow_direction = "output", direction = 0.2, position = {0, 1.1}}},
 		production_type = "output",
 		filter = "steam"
 	},
@@ -332,7 +486,7 @@ data:extend({
 			base_level = -1,
 			--pipe_covers = pipecoverspictures(),
 			-- >> don't know what direction will be!
-			pipe_connections = {{flow_direction = "input", direction = 0.2, position = {-1, -1.5}}},
+			pipe_connections = {{flow_direction = "input", direction = 0.2, position = {-1, -1.1}}},
 			production_type = "input",
 			filter = "diesel-fuel"
 		},
